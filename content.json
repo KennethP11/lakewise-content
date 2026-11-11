@@ -1,0 +1,1784 @@
+{
+  "schemaVersion": 1,
+  "version": 3,
+  "generatedAt": "2026-11-10T21:00:00Z",
+  "layers": [
+    {
+      "id": "ingest",
+      "order": 1,
+      "name": {
+        "en": "Ingest",
+        "nl": "Ingest",
+        "fr": "Ingestion"
+      },
+      "subtitle": "Pipelines · Copy job · Mirroring"
+    },
+    {
+      "id": "store",
+      "order": 2,
+      "name": {
+        "en": "Store",
+        "nl": "Store",
+        "fr": "Stockage"
+      },
+      "subtitle": "OneLake · Lakehouse · Warehouse"
+    },
+    {
+      "id": "transform",
+      "order": 3,
+      "name": {
+        "en": "Transform",
+        "nl": "Transform",
+        "fr": "Transformation"
+      },
+      "subtitle": "Notebooks · Spark · Dataflows"
+    },
+    {
+      "id": "serve",
+      "order": 4,
+      "name": {
+        "en": "Serve",
+        "nl": "Serve",
+        "fr": "Restitution"
+      },
+      "subtitle": "Semantic models · Direct Lake"
+    },
+    {
+      "id": "govern",
+      "order": 5,
+      "name": {
+        "en": "Govern",
+        "nl": "Govern",
+        "fr": "Gouvernance"
+      },
+      "subtitle": "Git · Deployment pipelines · Security"
+    },
+    {
+      "id": "intelligence",
+      "order": 6,
+      "name": {
+        "en": "Intelligence",
+        "nl": "Intelligence",
+        "fr": "Intelligence"
+      },
+      "subtitle": "Fabric IQ · Ontology · Data agents"
+    }
+  ],
+  "components": [
+    {
+      "id": "copyjob",
+      "layerId": "ingest",
+      "name": "Copy job",
+      "icon": "pipeline"
+    },
+    {
+      "id": "pipelines",
+      "layerId": "ingest",
+      "name": "Pipelines",
+      "icon": "pipeline"
+    },
+    {
+      "id": "onelake",
+      "layerId": "store",
+      "name": "OneLake",
+      "icon": "database"
+    },
+    {
+      "id": "lakehouse",
+      "layerId": "store",
+      "name": "Lakehouse",
+      "icon": "waves"
+    },
+    {
+      "id": "warehouse",
+      "layerId": "store",
+      "name": "Warehouse",
+      "icon": "warehouse"
+    },
+    {
+      "id": "shortcuts",
+      "layerId": "store",
+      "name": "Shortcuts",
+      "icon": "link"
+    },
+    {
+      "id": "spark",
+      "layerId": "transform",
+      "name": "Spark & V-Order",
+      "icon": "notebook"
+    },
+    {
+      "id": "dataflows",
+      "layerId": "transform",
+      "name": "Dataflow Gen2",
+      "icon": "pipeline"
+    },
+    {
+      "id": "semantic",
+      "layerId": "serve",
+      "name": "Direct Lake",
+      "icon": "model"
+    },
+    {
+      "id": "cicd",
+      "layerId": "govern",
+      "name": "Git & deployment",
+      "icon": "shield"
+    },
+    {
+      "id": "fabriciq",
+      "layerId": "intelligence",
+      "name": "Fabric IQ",
+      "icon": "sparkle"
+    },
+    {
+      "id": "ontology",
+      "layerId": "intelligence",
+      "name": "Ontology",
+      "icon": "graph"
+    },
+    {
+      "id": "dataagents",
+      "layerId": "intelligence",
+      "name": "Data agents",
+      "icon": "sparkle"
+    }
+  ],
+  "skillAreas": [
+    {
+      "id": "dp600-maintain",
+      "exam": "dp600",
+      "name": "Maintain a data analytics solution"
+    },
+    {
+      "id": "dp600-prepare",
+      "exam": "dp600",
+      "name": "Prepare data"
+    },
+    {
+      "id": "dp600-model",
+      "exam": "dp600",
+      "name": "Implement and manage semantic models"
+    },
+    {
+      "id": "dp700-implement",
+      "exam": "dp700",
+      "name": "Implement and manage an analytics solution"
+    },
+    {
+      "id": "dp700-ingest",
+      "exam": "dp700",
+      "name": "Ingest and transform data"
+    },
+    {
+      "id": "dp700-monitor",
+      "exam": "dp700",
+      "name": "Monitor and optimize an analytics solution"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "onelake-basics",
+      "layerId": "store",
+      "componentId": "onelake",
+      "title": {
+        "en": "OneLake basics",
+        "nl": "OneLake-basis",
+        "fr": "Les bases de OneLake"
+      },
+      "questions": [
+        {
+          "id": "ol-1",
+          "skills": [
+            "dp600-prepare",
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "Your company has one Fabric tenant with ten workspaces. How many OneLakes does it have?",
+            "nl": "Je bedrijf heeft één Fabric-tenant met tien workspaces. Hoeveel OneLakes heeft het?",
+            "fr": "Votre entreprise a un tenant Fabric avec dix workspaces. Combien de OneLake possède-t-elle ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Exactly one",
+                "nl": "Precies één",
+                "fr": "Exactement un"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "One per workspace",
+                "nl": "Eén per workspace",
+                "fr": "Un par workspace"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "One per capacity",
+                "nl": "Eén per capacity",
+                "fr": "Un par capacité"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "As many as you create",
+                "nl": "Zoveel als je aanmaakt",
+                "fr": "Autant que vous en créez"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Every Fabric tenant comes with a single OneLake. You can't delete it or create multiple OneLakes.",
+            "nl": "Elke Fabric-tenant krijgt één OneLake. Je kunt hem niet verwijderen en er ook geen extra aanmaken.",
+            "fr": "Chaque tenant Fabric dispose d'un seul OneLake. On ne peut ni le supprimer ni en créer plusieurs."
+          },
+          "source": {
+            "title": "OneLake, the OneDrive for data",
+            "url": "https://learn.microsoft.com/fabric/onelake/onelake-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "You can't delete OneLake or create multiple OneLakes"
+        },
+        {
+          "id": "ol-2",
+          "skills": [
+            "dp600-prepare",
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "Data lives in Azure Data Lake Storage Gen2. You want to use it in a lakehouse without copying it. What do you create?",
+            "nl": "Data staat in Azure Data Lake Storage Gen2. Je wilt die in een lakehouse gebruiken zonder ze te kopiëren. Wat maak je aan?",
+            "fr": "Les données sont dans Azure Data Lake Storage Gen2. Vous voulez les utiliser dans un lakehouse sans les copier. Que créez-vous ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A Copy job",
+                "nl": "Een Copy job",
+                "fr": "Un Copy job"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A OneLake shortcut",
+                "nl": "Een OneLake-shortcut",
+                "fr": "Un raccourci OneLake"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Dataflow Gen2",
+                "nl": "Dataflow Gen2",
+                "fr": "Dataflow Gen2"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A mirrored database",
+                "nl": "Een mirrored database",
+                "fr": "Une base mise en miroir"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Shortcuts give live, read-only references to data in other locations, so the lakehouse uses it without copying it.",
+            "nl": "Shortcuts zijn live, alleen-lezen verwijzingen naar data op een andere locatie, dus de lakehouse gebruikt ze zonder te kopiëren.",
+            "fr": "Les raccourcis sont des références dynamiques en lecture seule vers des données situées ailleurs : le lakehouse les utilise sans copie."
+          },
+          "source": {
+            "title": "What is a lakehouse in Microsoft Fabric?",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "without copying it into the lakehouse"
+        },
+        {
+          "id": "ol-3",
+          "skills": [
+            "dp600-prepare",
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "You uploaded CSV files to a lakehouse, but they don't show up in the SQL analytics endpoint. Why?",
+            "nl": "Je hebt CSV-bestanden in een lakehouse gezet, maar ze verschijnen niet in de SQL analytics endpoint. Waarom?",
+            "fr": "Vous avez chargé des fichiers CSV dans un lakehouse, mais ils n'apparaissent pas dans le SQL analytics endpoint. Pourquoi ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The endpoint only supports KQL",
+                "nl": "De endpoint ondersteunt enkel KQL",
+                "fr": "L'endpoint ne supporte que KQL"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "You need a Warehouse first",
+                "nl": "Je hebt eerst een Warehouse nodig",
+                "fr": "Il faut d'abord un Warehouse"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only Delta tables appear there",
+                "nl": "Enkel Delta-tabellen verschijnen daar",
+                "fr": "Seules les tables Delta y apparaissent"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "CSV files must be zipped",
+                "nl": "CSV-bestanden moeten gezipt zijn",
+                "fr": "Les CSV doivent être compressés"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Only Delta tables appear in the SQL analytics endpoint. Parquet, CSV and other formats can't be queried there, so convert them to Delta.",
+            "nl": "Enkel Delta-tabellen verschijnen in de SQL analytics endpoint. Parquet, CSV en andere formaten kun je daar niet bevragen; zet ze om naar Delta.",
+            "fr": "Seules les tables Delta apparaissent dans le SQL analytics endpoint. Parquet, CSV et autres formats n'y sont pas interrogeables : convertissez-les en Delta."
+          },
+          "source": {
+            "title": "What is a lakehouse in Microsoft Fabric?",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "Only Delta tables appear in the SQL analytics endpoint"
+        }
+      ]
+    },
+    {
+      "id": "lakehouse-or-warehouse",
+      "layerId": "store",
+      "componentId": "lakehouse",
+      "title": {
+        "en": "Lakehouse or Warehouse?",
+        "nl": "Lakehouse of Warehouse?",
+        "fr": "Lakehouse ou Warehouse ?"
+      },
+      "questions": [
+        {
+          "id": "lw-1",
+          "skills": [
+            "dp600-prepare",
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "A team wants to load and update several tables in one transaction, using only T-SQL. Which item fits best?",
+            "nl": "Een team wil meerdere tabellen in één transactie laden en bijwerken, enkel met T-SQL. Welk item past het best?",
+            "fr": "Une équipe veut charger et mettre à jour plusieurs tables dans une seule transaction, uniquement en T-SQL. Quel élément convient le mieux ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Lakehouse",
+                "nl": "Lakehouse",
+                "fr": "Lakehouse"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Warehouse",
+                "nl": "Warehouse",
+                "fr": "Warehouse"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Eventhouse",
+                "nl": "Eventhouse",
+                "fr": "Eventhouse"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "KQL database",
+                "nl": "KQL database",
+                "fr": "KQL database"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "A Warehouse supports multi-table transactions with T-SQL; a lakehouse doesn't, and its SQL analytics endpoint is read-only.",
+            "nl": "Een Warehouse ondersteunt transacties over meerdere tabellen met T-SQL; een lakehouse niet, en de SQL analytics endpoint ervan is alleen-lezen.",
+            "fr": "Un Warehouse prend en charge les transactions multi-tables en T-SQL ; pas un lakehouse, dont le SQL analytics endpoint est en lecture seule."
+          },
+          "source": {
+            "title": "What is a lakehouse in Microsoft Fabric?",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "**Multi-table transactions** | No | Yes"
+        },
+        {
+          "id": "lw-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Can you run INSERT or UPDATE statements through the SQL analytics endpoint of a lakehouse?",
+            "nl": "Kun je INSERT- of UPDATE-statements uitvoeren via de SQL analytics endpoint van een lakehouse?",
+            "fr": "Peut-on exécuter des INSERT ou UPDATE via le SQL analytics endpoint d'un lakehouse ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Yes, always",
+                "nl": "Ja, altijd",
+                "fr": "Oui, toujours"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only as workspace admin",
+                "nl": "Enkel als workspace-admin",
+                "fr": "Seulement en tant qu'admin"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "No, it is read-only",
+                "nl": "Nee, die is alleen-lezen",
+                "fr": "Non, il est en lecture seule"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only on CSV files",
+                "nl": "Enkel op CSV-bestanden",
+                "fr": "Seulement sur des CSV"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "The SQL analytics endpoint is read-only over Delta tables. To modify data, switch to the lakehouse and use Apache Spark.",
+            "nl": "De SQL analytics endpoint is alleen-lezen over Delta-tabellen. Om data te wijzigen gebruik je Apache Spark in de lakehouse.",
+            "fr": "Le SQL analytics endpoint est en lecture seule sur les tables Delta. Pour modifier les données, utilisez Apache Spark dans le lakehouse."
+          },
+          "source": {
+            "title": "SQL analytics endpoint of a lakehouse",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-sql-analytics-endpoint",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "you can't insert, update, or delete data through it"
+        },
+        {
+          "id": "lw-3",
+          "skills": [
+            "dp600-prepare",
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "Your data engineers work in Spark notebooks with both structured and unstructured data. Which item fits?",
+            "nl": "Je data engineers werken in Spark-notebooks met zowel gestructureerde als ongestructureerde data. Welk item past?",
+            "fr": "Vos data engineers travaillent dans des notebooks Spark avec des données structurées et non structurées. Quel élément convient ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Lakehouse",
+                "nl": "Lakehouse",
+                "fr": "Lakehouse"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Warehouse",
+                "nl": "Warehouse",
+                "fr": "Warehouse"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Eventhouse",
+                "nl": "Eventhouse",
+                "fr": "Eventhouse"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Semantic model",
+                "nl": "Semantic model",
+                "fr": "Semantic model"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "A lakehouse is built for Apache Spark development and stores both structured and unstructured data; a warehouse holds structured data with T-SQL.",
+            "nl": "Een lakehouse is gemaakt voor Apache Spark en bewaart gestructureerde én ongestructureerde data; een warehouse bevat gestructureerde data met T-SQL.",
+            "fr": "Un lakehouse est conçu pour Apache Spark et stocke des données structurées et non structurées ; un warehouse contient des données structurées en T-SQL."
+          },
+          "source": {
+            "title": "What is a lakehouse in Microsoft Fabric?",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "| **Data types** | Structured and unstructured | Structured |"
+        },
+        {
+          "id": "lw-4",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What does Fabric create automatically when you create a lakehouse?",
+            "nl": "Wat maakt Fabric automatisch aan wanneer je een lakehouse aanmaakt?",
+            "fr": "Que crée Fabric automatiquement lorsque vous créez un lakehouse ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "An Eventhouse",
+                "nl": "Een Eventhouse",
+                "fr": "Un Eventhouse"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A data pipeline",
+                "nl": "Een data pipeline",
+                "fr": "Un pipeline de données"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A KQL database",
+                "nl": "Een KQL database",
+                "fr": "Une KQL database"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A SQL analytics endpoint",
+                "nl": "Een SQL analytics endpoint",
+                "fr": "Un SQL analytics endpoint"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Creating a lakehouse automatically generates a SQL analytics endpoint to query its Delta tables with T-SQL.",
+            "nl": "Bij het aanmaken van een lakehouse wordt automatisch een SQL analytics endpoint gegenereerd om de Delta-tabellen met T-SQL te bevragen.",
+            "fr": "La création d'un lakehouse génère automatiquement un SQL analytics endpoint pour interroger ses tables Delta en T-SQL."
+          },
+          "source": {
+            "title": "What is a lakehouse in Microsoft Fabric?",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "When you create a lakehouse, Fabric automatically generates a"
+        }
+      ]
+    },
+    {
+      "id": "copy-job-basics",
+      "layerId": "ingest",
+      "componentId": "copyjob",
+      "title": {
+        "en": "Copy job: full, incremental, CDC",
+        "nl": "Copy job: volledig, incrementeel, CDC",
+        "fr": "Copy job : complet, incrémentiel, CDC"
+      },
+      "questions": [
+        {
+          "id": "cj-1",
+          "skills": [
+            "dp600-prepare",
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "CDC is enabled on your source and you must replicate inserts, updates and deletes. Which Copy job mode fits?",
+            "nl": "CDC staat aan op je bron en je moet inserts, updates én deletes repliceren. Welke Copy job-modus past?",
+            "fr": "Le CDC est activé sur votre source et vous devez répliquer les insertions, mises à jour et suppressions. Quel mode de Copy job convient ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Full copy on every run",
+                "nl": "Volledige kopie bij elke run",
+                "fr": "Copie complète à chaque exécution"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Watermark-based incremental copy",
+                "nl": "Incrementeel op basis van watermark",
+                "fr": "Copie incrémentielle par watermark"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "CDC-based incremental copy",
+                "nl": "Incrementeel op basis van CDC",
+                "fr": "Copie incrémentielle basée sur le CDC"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Append only",
+                "nl": "Enkel append",
+                "fr": "Ajout uniquement"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Use CDC-based incremental copy when CDC is enabled and you need inserts, updates and deletes. Watermark-based copy only tracks inserts and updates.",
+            "nl": "Gebruik CDC-gebaseerde incrementele kopie als CDC aanstaat en je inserts, updates en deletes nodig hebt. Watermark volgt enkel inserts en updates.",
+            "fr": "Utilisez la copie incrémentielle basée sur le CDC quand il est activé et que vous avez besoin des suppressions. Le watermark ne suit que les insertions et mises à jour."
+          },
+          "source": {
+            "title": "What is Copy job in Data Factory?",
+            "url": "https://learn.microsoft.com/fabric/data-factory/what-is-copy-job",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "you need to replicate inserts, updates, and **deletes**"
+        },
+        {
+          "id": "cj-2",
+          "skills": [
+            "dp700-ingest",
+            "dp700-monitor"
+          ],
+          "prompt": {
+            "en": "An incremental Copy job run fails halfway. What happens on the next run?",
+            "nl": "Een incrementele Copy job-run faalt halverwege. Wat gebeurt er bij de volgende run?",
+            "fr": "Une exécution incrémentielle d'un Copy job échoue à mi-chemin. Que se passe-t-il à l'exécution suivante ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "It restarts with a full copy",
+                "nl": "Hij herstart met een volledige kopie",
+                "fr": "Il recommence par une copie complète"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "It resumes from the end of the last successful run",
+                "nl": "Hij hervat vanaf het einde van de laatste geslaagde run",
+                "fr": "Il reprend à la fin de la dernière exécution réussie"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "The failed rows are skipped for good",
+                "nl": "De mislukte rijen worden definitief overgeslagen",
+                "fr": "Les lignes en échec sont ignorées définitivement"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "You must recreate the job",
+                "nl": "Je moet de job opnieuw aanmaken",
+                "fr": "Il faut recréer le job"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "A failure doesn't change the state Copy job manages, so the next run resumes from the end of the last successful run. No data is lost.",
+            "nl": "Een fout verandert de status die Copy job bijhoudt niet, dus de volgende run hervat vanaf het einde van de laatste geslaagde run. Er gaat geen data verloren.",
+            "fr": "Un échec ne modifie pas l'état géré par le Copy job : l'exécution suivante reprend à la fin de la dernière exécution réussie, sans perte de données."
+          },
+          "source": {
+            "title": "What is Copy job in Data Factory?",
+            "url": "https://learn.microsoft.com/fabric/data-factory/what-is-copy-job",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "The copy job always resumes from the end of the last successful run"
+        },
+        {
+          "id": "cj-3",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "What does the very first run of an incremental Copy job do?",
+            "nl": "Wat doet de allereerste run van een incrementele Copy job?",
+            "fr": "Que fait la toute première exécution d'un Copy job incrémentiel ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Copies everything; later runs move only new or changed data",
+                "nl": "Kopieert alles; latere runs enkel nieuwe of gewijzigde data",
+                "fr": "Copie tout ; les suivantes ne déplacent que les nouveautés"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Copies only today's rows",
+                "nl": "Kopieert enkel de rijen van vandaag",
+                "fr": "Copie seulement les lignes du jour"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Copies only the schema",
+                "nl": "Kopieert enkel het schema",
+                "fr": "Copie seulement le schéma"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Nothing until a watermark exists",
+                "nl": "Niets tot er een watermark bestaat",
+                "fr": "Rien tant qu'il n'y a pas de watermark"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "With incremental copy, the first run copies everything and subsequent runs only move new or changed data since the last run.",
+            "nl": "Bij incrementele kopie kopieert de eerste run alles en verplaatsen latere runs enkel nieuwe of gewijzigde data sinds de vorige run.",
+            "fr": "En copie incrémentielle, la première exécution copie tout, puis les suivantes ne déplacent que les données nouvelles ou modifiées."
+          },
+          "source": {
+            "title": "What is Copy job in Data Factory?",
+            "url": "https://learn.microsoft.com/fabric/data-factory/what-is-copy-job",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "The first run copies everything, and subsequent runs only move new or changed data since the last run."
+        }
+      ]
+    },
+    {
+      "id": "v-order-basics",
+      "layerId": "transform",
+      "componentId": "spark",
+      "title": {
+        "en": "V-Order and read performance",
+        "nl": "V-Order en leesprestaties",
+        "fr": "V-Order et performances de lecture"
+      },
+      "questions": [
+        {
+          "id": "vo-1",
+          "skills": [
+            "dp700-monitor",
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What is V-Order in Fabric?",
+            "nl": "Wat is V-Order in Fabric?",
+            "fr": "Qu'est-ce que V-Order dans Fabric ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A write-time optimization for Parquet files",
+                "nl": "Een optimalisatie van Parquet-bestanden bij het schrijven",
+                "fr": "Une optimisation des fichiers Parquet à l'écriture"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A new file format that replaces Parquet",
+                "nl": "Een nieuw bestandsformaat dat Parquet vervangt",
+                "fr": "Un nouveau format qui remplace Parquet"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A Spark cluster size",
+                "nl": "Een Spark-clustergrootte",
+                "fr": "Une taille de cluster Spark"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A KQL index type",
+                "nl": "Een KQL-indextype",
+                "fr": "Un type d'index KQL"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "V-Order is a write-time optimization for Parquet files that can speed up reads across Fabric engines. The files stay open-source Parquet compliant.",
+            "nl": "V-Order is een optimalisatie bij het schrijven van Parquet-bestanden die het lezen in alle Fabric-engines kan versnellen. De bestanden blijven gewone Parquet.",
+            "fr": "V-Order est une optimisation à l'écriture des fichiers Parquet qui peut accélérer les lectures dans les moteurs Fabric. Les fichiers restent du Parquet standard."
+          },
+          "source": {
+            "title": "Delta Lake table optimization and V-Order",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/delta-optimization-and-v-order",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "V-order is a write-time optimization for Parquet files"
+        },
+        {
+          "id": "vo-2",
+          "skills": [
+            "dp700-monitor"
+          ],
+          "prompt": {
+            "en": "You create a new Fabric workspace. Is V-Order on by default for Spark writes?",
+            "nl": "Je maakt een nieuwe Fabric-workspace aan. Staat V-Order standaard aan voor Spark-writes?",
+            "fr": "Vous créez un nouveau workspace Fabric. V-Order est-il activé par défaut pour les écritures Spark ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Yes, always",
+                "nl": "Ja, altijd",
+                "fr": "Oui, toujours"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "No, it is disabled by default to favour write-heavy workloads",
+                "nl": "Nee, standaard uit om schrijfintensieve workloads te bevoordelen",
+                "fr": "Non, désactivé par défaut pour favoriser les charges en écriture"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only for warehouses",
+                "nl": "Enkel voor warehouses",
+                "fr": "Seulement pour les warehouses"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only for CSV files",
+                "nl": "Enkel voor CSV-bestanden",
+                "fr": "Seulement pour les CSV"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "V-Order is disabled by default in new workspaces (spark.sql.parquet.vorder.default = false) to improve write performance.",
+            "nl": "V-Order staat standaard uit in nieuwe workspaces (spark.sql.parquet.vorder.default = false) om sneller te schrijven.",
+            "fr": "V-Order est désactivé par défaut dans les nouveaux workspaces (spark.sql.parquet.vorder.default = false) pour accélérer l'écriture."
+          },
+          "source": {
+            "title": "Delta Lake table optimization and V-Order",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/delta-optimization-and-v-order",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "V-order is _disabled by default_ for all newly created workspaces"
+        },
+        {
+          "id": "vo-3",
+          "skills": [
+            "dp700-monitor"
+          ],
+          "prompt": {
+            "en": "Dashboards read a lakehouse table all day. How do you turn on V-Order for your Spark session?",
+            "nl": "Dashboards lezen de hele dag een lakehouse-tabel. Hoe zet je V-Order aan voor je Spark-sessie?",
+            "fr": "Des tableaux de bord lisent une table du lakehouse toute la journée. Comment activer V-Order pour votre session Spark ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Set spark.sql.parquet.vorder.default to true",
+                "nl": "Zet spark.sql.parquet.vorder.default op true",
+                "fr": "Mettre spark.sql.parquet.vorder.default à true"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Set spark.sql.parquet.vorder.enable to true",
+                "nl": "Zet spark.sql.parquet.vorder.enable op true",
+                "fr": "Mettre spark.sql.parquet.vorder.enable à true"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Convert the table to CSV",
+                "nl": "Zet de tabel om naar CSV",
+                "fr": "Convertir la table en CSV"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Disable Delta on the table",
+                "nl": "Schakel Delta uit op de tabel",
+                "fr": "Désactiver Delta sur la table"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "For read-heavy workloads, set spark.sql.parquet.vorder.default to true (or use a ReadHeavy resource profile). The older vorder.enable setting was removed in runtime 1.3.",
+            "nl": "Voor leesintensieve workloads zet je spark.sql.parquet.vorder.default op true (of gebruik je een ReadHeavy-profiel). De oude instelling vorder.enable is verwijderd in runtime 1.3.",
+            "fr": "Pour les charges en lecture, mettez spark.sql.parquet.vorder.default à true (ou utilisez un profil ReadHeavy). L'ancien paramètre vorder.enable a été supprimé dans le runtime 1.3."
+          },
+          "source": {
+            "title": "Delta Lake table optimization and V-Order",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/delta-optimization-and-v-order",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "enable V-order by setting `spark.sql.parquet.vorder.default` to `true`"
+        }
+      ]
+    },
+    {
+      "id": "direct-lake-basics",
+      "layerId": "serve",
+      "componentId": "semantic",
+      "title": {
+        "en": "Direct Lake essentials",
+        "nl": "Direct Lake: de basis",
+        "fr": "L'essentiel de Direct Lake"
+      },
+      "questions": [
+        {
+          "id": "dl-1",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "What does a refresh of a Direct Lake semantic model copy?",
+            "nl": "Wat kopieert een refresh van een Direct Lake semantic model?",
+            "fr": "Que copie l'actualisation d'un semantic model Direct Lake ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Only metadata (framing)",
+                "nl": "Enkel metadata (framing)",
+                "fr": "Uniquement les métadonnées (framing)"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A full copy of all data",
+                "nl": "Een volledige kopie van alle data",
+                "fr": "Une copie complète des données"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only the report visuals",
+                "nl": "Enkel de rapportvisuals",
+                "fr": "Seulement les visuels du rapport"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A CSV export of each table",
+                "nl": "Een CSV-export van elke tabel",
+                "fr": "Un export CSV de chaque table"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Import mode copies the data; a Direct Lake refresh only copies metadata (framing), which can take a few seconds.",
+            "nl": "Import kopieert de data; een Direct Lake-refresh kopieert enkel metadata (framing), wat maar enkele seconden kan duren.",
+            "fr": "Le mode Import copie les données ; une actualisation Direct Lake ne copie que des métadonnées (framing), ce qui peut prendre quelques secondes."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "a Direct Lake refresh copies only metadata"
+        },
+        {
+          "id": "dl-2",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "Which engine processes Direct Lake queries?",
+            "nl": "Welke engine verwerkt Direct Lake-queries?",
+            "fr": "Quel moteur traite les requêtes Direct Lake ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The VertiPaq engine, like Import",
+                "nl": "De VertiPaq-engine, net als Import",
+                "fr": "Le moteur VertiPaq, comme Import"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The SQL analytics endpoint",
+                "nl": "De SQL analytics endpoint",
+                "fr": "Le SQL analytics endpoint"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A Spark cluster",
+                "nl": "Een Spark-cluster",
+                "fr": "Un cluster Spark"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "The KQL engine",
+                "nl": "De KQL-engine",
+                "fr": "Le moteur KQL"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Direct Lake and Import queries are processed by the VertiPaq engine, while DirectQuery federates queries to the source.",
+            "nl": "Direct Lake- en Import-queries worden verwerkt door de VertiPaq-engine; DirectQuery stuurt queries door naar de bron.",
+            "fr": "Les requêtes Direct Lake et Import sont traitées par VertiPaq, tandis que DirectQuery les transmet à la source."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "Direct Lake and Import queries are processed by the VertiPaq query engine"
+        },
+        {
+          "id": "dl-3",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "A Direct Lake on SQL model reads from a SQL view. What happens?",
+            "nl": "Een Direct Lake on SQL-model leest uit een SQL-view. Wat gebeurt er?",
+            "fr": "Un modèle Direct Lake on SQL lit une vue SQL. Que se passe-t-il ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The query fails",
+                "nl": "De query faalt",
+                "fr": "La requête échoue"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "It falls back to DirectQuery",
+                "nl": "Het valt terug op DirectQuery",
+                "fr": "Il bascule en DirectQuery"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "The view is imported",
+                "nl": "De view wordt geïmporteerd",
+                "fr": "La vue est importée"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "The view becomes a Delta table",
+                "nl": "De view wordt een Delta-tabel",
+                "fr": "La vue devient une table Delta"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Direct Lake on SQL analytics endpoints falls back to DirectQuery when it can't load data straight from a Delta table, for example from a SQL view.",
+            "nl": "Direct Lake on SQL valt terug op DirectQuery als het data niet rechtstreeks uit een Delta-tabel kan laden, bijvoorbeeld bij een SQL-view.",
+            "fr": "Direct Lake on SQL bascule en DirectQuery quand il ne peut pas charger directement une table Delta, par exemple pour une vue SQL."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "fall back to DirectQuery table storage mode when they can't load the data directly from a Delta table"
+        }
+      ]
+    },
+    {
+      "id": "cicd-basics",
+      "layerId": "govern",
+      "componentId": "cicd",
+      "title": {
+        "en": "Git and deployment pipelines",
+        "nl": "Git en deployment pipelines",
+        "fr": "Git et pipelines de déploiement"
+      },
+      "questions": [
+        {
+          "id": "gv-1",
+          "skills": [
+            "dp600-maintain",
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "How many stages can a Fabric deployment pipeline have?",
+            "nl": "Hoeveel stages kan een Fabric deployment pipeline hebben?",
+            "fr": "Combien d'étapes un pipeline de déploiement Fabric peut-il avoir ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Always exactly three",
+                "nl": "Altijd precies drie",
+                "fr": "Toujours exactement trois"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Between two and ten",
+                "nl": "Tussen twee en tien",
+                "fr": "Entre deux et dix"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "One to five",
+                "nl": "Eén tot vijf",
+                "fr": "Une à cinq"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Unlimited",
+                "nl": "Onbeperkt",
+                "fr": "Illimité"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "You choose between two and 10 stages. New pipelines start with three (development, test, production), which you can rename, add or delete.",
+            "nl": "Je kiest tussen twee en 10 stages. Nieuwe pipelines starten met drie (development, test, production), die je kunt hernoemen, toevoegen of verwijderen.",
+            "fr": "Vous choisissez entre deux et 10 étapes. Un nouveau pipeline en propose trois (développement, test, production), modifiables."
+          },
+          "source": {
+            "title": "Introduction to deployment pipelines",
+            "url": "https://learn.microsoft.com/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "There can be anywhere from two to 10 stages"
+        },
+        {
+          "id": "gv-2",
+          "skills": [
+            "dp600-maintain",
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "Which Git providers can you connect a Fabric workspace to?",
+            "nl": "Met welke Git-providers kun je een Fabric-workspace verbinden?",
+            "fr": "À quels fournisseurs Git pouvez-vous connecter un workspace Fabric ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Azure DevOps and GitHub (cloud-based)",
+                "nl": "Azure DevOps en GitHub (in de cloud)",
+                "fr": "Azure DevOps et GitHub (cloud)"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only GitLab",
+                "nl": "Enkel GitLab",
+                "fr": "Uniquement GitLab"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only on-premises Git servers",
+                "nl": "Enkel on-premises Git-servers",
+                "fr": "Uniquement des serveurs Git locaux"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Bitbucket and GitLab",
+                "nl": "Bitbucket en GitLab",
+                "fr": "Bitbucket et GitLab"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Git integration supports Azure DevOps, GitHub and GitHub Enterprise, all cloud-based only.",
+            "nl": "Git-integratie ondersteunt Azure DevOps, GitHub en GitHub Enterprise, allemaal enkel in de cloud.",
+            "fr": "L'intégration Git prend en charge Azure DevOps, GitHub et GitHub Enterprise, uniquement dans le cloud."
+          },
+          "source": {
+            "title": "What is Microsoft Fabric Git integration?",
+            "url": "https://learn.microsoft.com/fabric/cicd/git-integration/intro-to-git-integration",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "[GitHub](https://github.com/) (cloud-based only)"
+        },
+        {
+          "id": "gv-3",
+          "skills": [
+            "dp600-maintain",
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "You create a new deployment pipeline. How many stages does it start with?",
+            "nl": "Je maakt een nieuwe deployment pipeline. Met hoeveel stages start die?",
+            "fr": "Vous créez un nouveau pipeline de déploiement. Avec combien d'étapes démarre-t-il ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Two",
+                "nl": "Twee",
+                "fr": "Deux"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Three",
+                "nl": "Drie",
+                "fr": "Trois"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Five",
+                "nl": "Vijf",
+                "fr": "Cinq"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Ten",
+                "nl": "Tien",
+                "fr": "Dix"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "The default is three stages, a typical development, test and production setup that you can adapt.",
+            "nl": "Standaard zijn er drie stages, een klassieke opzet met development, test en production die je kunt aanpassen.",
+            "fr": "Par défaut, il y a trois étapes : développement, test et production, que vous pouvez adapter."
+          },
+          "source": {
+            "title": "Introduction to deployment pipelines",
+            "url": "https://learn.microsoft.com/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
+            "verifiedOn": "2026-11-09"
+          },
+          "evidence": "The default is 3."
+        }
+      ]
+    },
+    {
+      "id": "fabric-iq-basics",
+      "layerId": "intelligence",
+      "componentId": "fabriciq",
+      "preview": true,
+      "title": {
+        "en": "Fabric IQ and ontology",
+        "nl": "Fabric IQ en ontology",
+        "fr": "Fabric IQ et ontology"
+      },
+      "questions": [
+        {
+          "id": "iq-1",
+          "skills": [],
+          "prompt": {
+            "en": "Fabric IQ brings three layers of business context. Which layer do ontologies provide?",
+            "nl": "Fabric IQ brengt drie lagen bedrijfscontext samen. Welke laag leveren ontologies?",
+            "fr": "Fabric IQ apporte trois couches de contexte métier. Quelle couche les ontologies fournissent-elles ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Unified data",
+                "nl": "Unified data",
+                "fr": "Unified data"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Business intelligence",
+                "nl": "Business intelligence",
+                "fr": "Business intelligence"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Operational intelligence",
+                "nl": "Operational intelligence",
+                "fr": "Operational intelligence"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Capacity management",
+                "nl": "Capacity management",
+                "fr": "Capacity management"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "The three layers are unified data (OneLake), business intelligence (Power BI semantic models) and operational intelligence (ontologies).",
+            "nl": "De drie lagen zijn unified data (OneLake), business intelligence (Power BI semantic models) en operational intelligence (ontologies).",
+            "fr": "Les trois couches sont unified data (OneLake), business intelligence (semantic models Power BI) et operational intelligence (ontologies)."
+          },
+          "source": {
+            "title": "What is Fabric IQ?",
+            "url": "https://learn.microsoft.com/fabric/iq/overview",
+            "verifiedOn": "2026-11-10"
+          },
+          "evidence": "Fabric IQ brings three layers of business context into Microsoft IQ"
+        },
+        {
+          "id": "iq-2",
+          "skills": [],
+          "prompt": {
+            "en": "A colleague wants to copy all sales data into the ontology so agents can query it there. What do you tell them?",
+            "nl": "Een collega wil alle verkoopdata in de ontology kopiëren zodat agents ze daar kunnen bevragen. Wat zeg je?",
+            "fr": "Un collègue veut copier toutes les ventes dans l'ontology pour que les agents les interrogent. Que lui dites-vous ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Ontology stores definitions and bindings; the data stays in its source",
+                "nl": "Ontology bewaart definities en bindings; de data blijft in de bron",
+                "fr": "L'ontology stocke définitions et bindings ; les données restent à la source"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Good idea: ontology is a new data warehouse",
+                "nl": "Goed idee: ontology is een nieuw datawarehouse",
+                "fr": "Bonne idée : l'ontology est un nouvel entrepôt"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Export everything to CSV first",
+                "nl": "Exporteer eerst alles naar CSV",
+                "fr": "Exportez d'abord tout en CSV"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Ontology only works with Excel files",
+                "nl": "Ontology werkt enkel met Excel-bestanden",
+                "fr": "L'ontology ne fonctionne qu'avec Excel"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Ontology stores and serves definitions and bindings. It isn't a general-purpose query engine: source data remains in the system that owns it.",
+            "nl": "Ontology bewaart en levert definities en bindings. Het is geen algemene query-engine: de data blijft in het systeem dat ze beheert.",
+            "fr": "L'ontology stocke et sert des définitions et des bindings. Ce n'est pas un moteur de requêtes : les données restent dans leur système source."
+          },
+          "source": {
+            "title": "What is ontology (preview)?",
+            "url": "https://learn.microsoft.com/fabric/iq/ontology/overview",
+            "verifiedOn": "2026-11-10"
+          },
+          "evidence": "It stores and serves ontology definitions and bindings (it isn't itself a general-purpose data-query engine)"
+        },
+        {
+          "id": "iq-3",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "You generate an ontology from a Power BI semantic model with trusted DAX measures. Who owns the DAX afterwards?",
+            "nl": "Je genereert een ontology uit een Power BI semantic model met betrouwbare DAX-measures. Wie is daarna eigenaar van de DAX?",
+            "fr": "Vous générez une ontology depuis un semantic model Power BI avec des mesures DAX fiables. Qui possède ensuite le DAX ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The ontology rewrites and owns it",
+                "nl": "De ontology herschrijft en beheert ze",
+                "fr": "L'ontology le réécrit et le possède"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The source semantic model",
+                "nl": "Het bron-semantic model",
+                "fr": "Le semantic model source"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Each data agent keeps its own copy",
+                "nl": "Elke data agent bewaart een eigen kopie",
+                "fr": "Chaque data agent garde sa copie"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Nobody, measures are dropped",
+                "nl": "Niemand, measures vallen weg",
+                "fr": "Personne, les mesures sont supprimées"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Measures appear in the ontology as metrics, but the source semantic model remains the owner of the DAX expression.",
+            "nl": "Measures verschijnen in de ontology als metrics, maar het bron-semantic model blijft eigenaar van de DAX-expressie.",
+            "fr": "Les mesures apparaissent comme metrics dans l'ontology, mais le semantic model source reste propriétaire de l'expression DAX."
+          },
+          "source": {
+            "title": "What is ontology (preview)?",
+            "url": "https://learn.microsoft.com/fabric/iq/ontology/overview",
+            "verifiedOn": "2026-11-10"
+          },
+          "evidence": "The source semantic model remains the owner of the DAX expression"
+        },
+        {
+          "id": "iq-4",
+          "skills": [],
+          "prompt": {
+            "en": "You want every agent to know that 'an order is late after 5 days'. Where do you put that?",
+            "nl": "Je wilt dat elke agent weet dat 'een bestelling na 5 dagen te laat is'. Waar zet je dat?",
+            "fr": "Vous voulez que chaque agent sache qu'« une commande est en retard après 5 jours ». Où le placez-vous ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "In a rule in the ontology",
+                "nl": "In een rule in de ontology",
+                "fr": "Dans une règle de l'ontology"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "In each agent's prompt",
+                "nl": "In de prompt van elke agent",
+                "fr": "Dans le prompt de chaque agent"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "In a deployment pipeline",
+                "nl": "In een deployment pipeline",
+                "fr": "Dans un pipeline de déploiement"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "In a OneLake shortcut",
+                "nl": "In een OneLake-shortcut",
+                "fr": "Dans un raccourci OneLake"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Rules capture business logic in natural language and link it to entities, so every consumer shares the same rule instead of copying it into prompts.",
+            "nl": "Rules leggen bedrijfslogica vast in gewone taal en koppelen ze aan entiteiten, zodat elke gebruiker dezelfde regel deelt in plaats van ze in prompts te kopiëren.",
+            "fr": "Les règles décrivent la logique métier en langage naturel et la relient aux entités : tous les consommateurs partagent la même règle."
+          },
+          "source": {
+            "title": "What is ontology (preview)?",
+            "url": "https://learn.microsoft.com/fabric/iq/ontology/overview",
+            "verifiedOn": "2026-11-10"
+          },
+          "evidence": "capture business logic in natural language and link it to entities, properties, and relationships"
+        }
+      ]
+    },
+    {
+      "id": "ontology-building-blocks",
+      "layerId": "intelligence",
+      "componentId": "ontology",
+      "preview": true,
+      "title": {
+        "en": "Ontology building blocks",
+        "nl": "Bouwstenen van een ontology",
+        "fr": "Les briques d'une ontology"
+      },
+      "questions": [
+        {
+          "id": "ob-1",
+          "skills": [],
+          "prompt": {
+            "en": "What connects an ontology definition to real data?",
+            "nl": "Wat verbindt een ontology-definitie met echte data?",
+            "fr": "Qu'est-ce qui relie une définition d'ontology à des données réelles ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A namespace",
+                "nl": "Een namespace",
+                "fr": "Un namespace"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A data binding",
+                "nl": "Een data binding",
+                "fr": "Un data binding"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A shortcut",
+                "nl": "Een shortcut",
+                "fr": "Un raccourci"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A metric",
+                "nl": "Een metric",
+                "fr": "Une metric"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "A data binding connects an ontology definition to real data and keeps the mapping between business terms and source structures.",
+            "nl": "Een data binding verbindt een ontology-definitie met echte data en bewaart de koppeling tussen bedrijfstermen en bronstructuren.",
+            "fr": "Un data binding relie une définition à des données réelles et conserve le lien entre termes métier et structures source."
+          },
+          "source": {
+            "title": "What is ontology (preview)?",
+            "url": "https://learn.microsoft.com/fabric/iq/ontology/overview",
+            "verifiedOn": "2026-11-10"
+          },
+          "evidence": "connects an ontology definition to real data"
+        },
+        {
+          "id": "ob-2",
+          "skills": [],
+          "prompt": {
+            "en": "You want one 'Asset' type and more specific 'Pump' and 'Valve' types. Which feature fits?",
+            "nl": "Je wilt één type 'Asset' en specifiekere types 'Pump' en 'Valve'. Welke functie past?",
+            "fr": "Vous voulez un type « Asset » et des types plus précis « Pump » et « Valve ». Quelle fonctionnalité convient ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Inheritance",
+                "nl": "Inheritance",
+                "fr": "Inheritance"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Data binding",
+                "nl": "Data binding",
+                "fr": "Data binding"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Row-level security",
+                "nl": "Row-level security",
+                "fr": "Row-level security"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Mirroring",
+                "nl": "Mirroring",
+                "fr": "Mirroring"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Inheritance lets you define a common entity type and extend it for more specialized concepts.",
+            "nl": "Met inheritance definieer je een algemeen entiteitstype en breid je het uit voor specifiekere concepten.",
+            "fr": "L'héritage permet de définir un type d'entité commun et de l'étendre pour des concepts plus spécialisés."
+          },
+          "source": {
+            "title": "What is ontology (preview)?",
+            "url": "https://learn.microsoft.com/fabric/iq/ontology/overview",
+            "verifiedOn": "2026-11-10"
+          },
+          "evidence": "lets authors define a common entity type and extend it for more specialized concepts"
+        },
+        {
+          "id": "ob-3",
+          "skills": [],
+          "prompt": {
+            "en": "Which assistant helps you build and refine an ontology in natural language?",
+            "nl": "Welke assistent helpt je een ontology op te bouwen en te verfijnen in gewone taal?",
+            "fr": "Quel assistant vous aide à construire et affiner une ontology en langage naturel ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The ontology agent",
+                "nl": "De ontology agent",
+                "fr": "L'ontology agent"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The Spark monitor",
+                "nl": "De Spark monitor",
+                "fr": "Le Spark monitor"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "The deployment pipeline",
+                "nl": "De deployment pipeline",
+                "fr": "Le pipeline de déploiement"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "The capacity metrics app",
+                "nl": "De capacity metrics app",
+                "fr": "L'app capacity metrics"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "The ontology agent supports the ontology lifecycle through natural-language interactions, for example generating definitions and proposing changes for review.",
+            "nl": "De ontology agent ondersteunt de levenscyclus van een ontology in gewone taal, bijvoorbeeld door definities te genereren en wijzigingen voor te stellen.",
+            "fr": "L'ontology agent accompagne le cycle de vie de l'ontology en langage naturel, par exemple en générant des définitions et en proposant des changements."
+          },
+          "source": {
+            "title": "What is ontology (preview)?",
+            "url": "https://learn.microsoft.com/fabric/iq/ontology/overview",
+            "verifiedOn": "2026-11-10"
+          },
+          "evidence": "supports the ontology lifecycle through natural-language interactions"
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "id": "news-2026-09-snowflake-readonly-cdc",
+      "month": "2026-09",
+      "status": "ga",
+      "title": {
+        "en": "Snowflake read-only CDC is GA",
+        "nl": "Snowflake read-only CDC is GA",
+        "fr": "Le CDC Snowflake en lecture seule est GA"
+      },
+      "summary": {
+        "en": "Copy job can now ingest changes from read-only Snowflake databases. Learn how Copy job handles incremental and CDC loads.",
+        "nl": "Copy job kan nu wijzigingen ophalen uit alleen-lezen Snowflake-databases. Leer hoe Copy job incrementele en CDC-loads afhandelt.",
+        "fr": "Copy job peut désormais ingérer les modifications de bases Snowflake en lecture seule. Découvrez comment Copy job gère les chargements incrémentiels et CDC."
+      },
+      "lessonId": "copy-job-basics",
+      "source": {
+        "title": "What's new in Microsoft Fabric?",
+        "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+        "verifiedOn": "2026-11-09"
+      },
+      "evidence": "lets Copy job ingest changes from read-only Snowflake databases"
+    }
+  ]
+}
