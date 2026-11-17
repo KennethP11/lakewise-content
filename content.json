@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": 4,
-  "generatedAt": "2026-11-13T15:15:14Z",
+  "version": 5,
+  "generatedAt": "2026-11-16T14:35:06Z",
   "layers": [
     {
       "id": "ingest",
@@ -208,6 +208,42 @@
       "layerId": "intelligence",
       "name": "Copilot",
       "icon": "sparkle"
+    },
+    {
+      "id": "gateway",
+      "layerId": "ingest",
+      "name": "On-premises gateway",
+      "icon": "link"
+    },
+    {
+      "id": "udf",
+      "layerId": "transform",
+      "name": "User data functions",
+      "icon": "bolt"
+    },
+    {
+      "id": "sqldb",
+      "layerId": "store",
+      "name": "SQL database",
+      "icon": "database"
+    },
+    {
+      "id": "aifunc",
+      "layerId": "intelligence",
+      "name": "AI functions",
+      "icon": "sparkle"
+    },
+    {
+      "id": "privatelink",
+      "layerId": "govern",
+      "name": "Network security",
+      "icon": "shield"
+    },
+    {
+      "id": "rtdash",
+      "layerId": "serve",
+      "name": "Real-Time Dashboards",
+      "icon": "graph"
     }
   ],
   "skillAreas": [
@@ -1366,64 +1402,6 @@
             "verifiedOn": "2026-11-09"
           },
           "evidence": "[GitHub](https://github.com/) (cloud-based only)"
-        },
-        {
-          "id": "gv-3",
-          "skills": [
-            "dp600-maintain",
-            "dp700-implement"
-          ],
-          "prompt": {
-            "en": "You create a new deployment pipeline. How many stages does it start with?",
-            "nl": "Je maakt een nieuwe deployment pipeline. Met hoeveel stages start die?",
-            "fr": "Vous créez un nouveau pipeline de déploiement. Avec combien d'étapes démarre-t-il ?"
-          },
-          "options": [
-            {
-              "id": "a",
-              "label": {
-                "en": "Two",
-                "nl": "Twee",
-                "fr": "Deux"
-              }
-            },
-            {
-              "id": "b",
-              "label": {
-                "en": "Three",
-                "nl": "Drie",
-                "fr": "Trois"
-              }
-            },
-            {
-              "id": "c",
-              "label": {
-                "en": "Five",
-                "nl": "Vijf",
-                "fr": "Cinq"
-              }
-            },
-            {
-              "id": "d",
-              "label": {
-                "en": "Ten",
-                "nl": "Tien",
-                "fr": "Dix"
-              }
-            }
-          ],
-          "correctId": "b",
-          "explanation": {
-            "en": "The default is three stages, a typical development, test and production setup that you can adapt.",
-            "nl": "Standaard zijn er drie stages, een klassieke opzet met development, test en production die je kunt aanpassen.",
-            "fr": "Par défaut, il y a trois étapes : développement, test et production, que vous pouvez adapter."
-          },
-          "source": {
-            "title": "Introduction to deployment pipelines",
-            "url": "https://learn.microsoft.com/fabric/cicd/deployment-pipelines/intro-to-deployment-pipelines",
-            "verifiedOn": "2026-11-09"
-          },
-          "evidence": "The default is 3."
         }
       ],
       "roles": [
@@ -8231,56 +8209,56 @@
           "id": "da-4",
           "skills": [],
           "prompt": {
-            "en": "Can you test the data agent in a Fabric trial capacity?",
-            "nl": "Kun je de data agent testen in een Fabric trial capacity?",
-            "fr": "Peut-on tester le data agent dans une capacité d'essai Fabric ?"
+            "en": "Which kinds of data sources can a Fabric data agent work with?",
+            "nl": "Met welke soorten databronnen kan een Fabric data agent werken?",
+            "fr": "Avec quels types de sources de données un agent de données Fabric peut-il travailler ?"
           },
           "options": [
             {
               "id": "a",
               "label": {
-                "en": "Yes, but only for 7 days",
-                "nl": "Ja, maar enkel 7 dagen",
-                "fr": "Oui, mais 7 jours seulement"
+                "en": "Only Kafka topics",
+                "nl": "Alleen Kafka-topics",
+                "fr": "Seulement des sujets Kafka"
               }
             },
             {
               "id": "b",
               "label": {
-                "en": "Only with a P capacity",
-                "nl": "Enkel met een P-capacity",
-                "fr": "Seulement avec une capacité P"
+                "en": "Only Git repositories",
+                "nl": "Alleen Git-repositories",
+                "fr": "Seulement des dépôts Git"
               }
             },
             {
               "id": "c",
               "label": {
-                "en": "No, AI experiences such as Data agent are not supported in the trial",
-                "nl": "Nee, AI-ervaringen zoals Data agent worden niet ondersteund in de trial",
-                "fr": "Non, les expériences IA comme Data agent ne sont pas prises en charge en essai"
+                "en": "Lakehouse, Warehouse, Power BI semantic models, KQL databases and ontology",
+                "nl": "Lakehouse, Warehouse, Power BI-semantische modellen, KQL-databases en ontologie",
+                "fr": "Lakehouse, entrepôt, modèles sémantiques Power BI, bases KQL et ontologie"
               }
             },
             {
               "id": "d",
               "label": {
-                "en": "Yes, fully",
-                "nl": "Ja, volledig",
-                "fr": "Oui, entièrement"
+                "en": "Only Excel files",
+                "nl": "Alleen Excel-bestanden",
+                "fr": "Seulement des fichiers Excel"
               }
             }
           ],
           "correctId": "c",
           "explanation": {
-            "en": "Check feature support before planning a demo on a trial capacity.",
-            "nl": "Controleer de ondersteuning voor je een demo op een trial capacity plant.",
-            "fr": "Vérifiez la prise en charge avant de planifier une démo sur une capacité d'essai."
+            "en": "The agent picks the most relevant source for a question and generates the right query for it.",
+            "nl": "De agent kiest de meest relevante bron voor een vraag en genereert de juiste query.",
+            "fr": "L'agent choisit la source la plus pertinente pour une question et génère la bonne requête."
           },
           "source": {
-            "title": "Fabric trial capacity",
-            "url": "https://learn.microsoft.com/fabric/fundamentals/fabric-trial",
+            "title": "Fabric data agent concepts",
+            "url": "https://learn.microsoft.com/fabric/data-science/concept-data-agent",
             "verifiedOn": "2026-11-11"
           },
-          "evidence": "AI Experiences such as Data agent, AI functions and AI services"
+          "evidence": "KQL databases, ontology, or Microsoft Graph"
         }
       ],
       "roles": [
@@ -12259,6 +12237,4187 @@
       },
       "roles": [
         "data-engineer"
+      ]
+    },
+    {
+      "id": "pipeline-parameters",
+      "layerId": "ingest",
+      "componentId": "pipelines",
+      "title": {
+        "en": "Pipeline parameters and expressions",
+        "nl": "Pipeline-parameters en expressies",
+        "fr": "Paramètres et expressions de pipeline"
+      },
+      "questions": [
+        {
+          "id": "pp-1",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "You run the same pipeline for ten customers, each with its own source folder. How do you avoid ten copies?",
+            "nl": "Je draait dezelfde pipeline voor tien klanten, elk met een eigen bronmap. Hoe vermijd je tien kopieën?",
+            "fr": "Vous exécutez le même pipeline pour dix clients, chacun avec son dossier source. Comment éviter dix copies ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Hard-code all ten folders in one Copy activity",
+                "nl": "Hardcode alle tien mappen in één Copy-activiteit",
+                "fr": "Coder en dur les dix dossiers dans une seule activité Copy"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Clone the pipeline and edit the folder in each copy",
+                "nl": "Kloon de pipeline en pas de map in elke kopie aan",
+                "fr": "Cloner le pipeline et modifier le dossier dans chaque copie"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Use a parameter and pass a different value per run",
+                "nl": "Gebruik een parameter en geef per run een andere waarde mee",
+                "fr": "Utiliser un paramètre et passer une valeur différente à chaque exécution"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Create one workspace per customer",
+                "nl": "Maak één workspace per klant",
+                "fr": "Créer un espace de travail par client"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Parameters pass external values into a pipeline, so one pipeline serves many cases.",
+            "nl": "Parameters geven externe waarden aan een pipeline door, zodat één pipeline voor veel gevallen werkt.",
+            "fr": "Les paramètres transmettent des valeurs externes à un pipeline : un seul pipeline sert plusieurs cas."
+          },
+          "source": {
+            "title": "Parameters for Data Factory in Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-factory/parameters",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Parameters let you reuse the same pipeline with different values each time."
+        },
+        {
+          "id": "pp-2",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "A pipeline parameter is set at the start of a run. Can an activity change its value halfway through?",
+            "nl": "Een pipeline-parameter wordt aan het begin van een run ingesteld. Kan een activiteit de waarde halverwege wijzigen?",
+            "fr": "Un paramètre de pipeline est défini au début d'une exécution. Une activité peut-elle modifier sa valeur en cours de route ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Yes, but only in the first activity",
+                "nl": "Ja, maar alleen in de eerste activiteit",
+                "fr": "Oui, mais seulement dans la première activité"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Yes, any Set variable activity can overwrite it",
+                "nl": "Ja, elke Set variable-activiteit kan hem overschrijven",
+                "fr": "Oui, n'importe quelle activité Set variable peut l'écraser"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "No, it stays the same for the whole run",
+                "nl": "Nee, die blijft gelijk tijdens de hele run",
+                "fr": "Non, elle reste identique pendant toute l'exécution"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only when the pipeline is paused",
+                "nl": "Alleen als de pipeline gepauzeerd is",
+                "fr": "Seulement si le pipeline est en pause"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Parameters are constants for a run. For values that change during a run, use variables instead.",
+            "nl": "Parameters zijn constant tijdens een run. Voor waarden die tijdens een run veranderen gebruik je variabelen.",
+            "fr": "Les paramètres sont constants pendant une exécution. Pour des valeurs qui changent, utilisez des variables."
+          },
+          "source": {
+            "title": "Parameters for Data Factory in Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-factory/parameters",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "After you set a parameter, its value stays the same throughout the run."
+        },
+        {
+          "id": "pp-3",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "The expression @{pipeline().parameters.myNumber} is used where myNumber is 42. What type does it return?",
+            "nl": "De expressie @{pipeline().parameters.myNumber} wordt gebruikt waar myNumber 42 is. Welk type geeft ze terug?",
+            "fr": "L'expression @{pipeline().parameters.myNumber} est utilisée avec myNumber égal à 42. Quel type renvoie-t-elle ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A string, because interpolation with @{ } always returns a string",
+                "nl": "Een string, want interpolatie met @{ } geeft altijd een string",
+                "fr": "Une chaîne, car l'interpolation avec @{ } renvoie toujours une chaîne"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A boolean",
+                "nl": "Een boolean",
+                "fr": "Un booléen"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A number",
+                "nl": "Een getal",
+                "fr": "Un nombre"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "An array with one item",
+                "nl": "Een array met één item",
+                "fr": "Un tableau à un élément"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Without the braces, @pipeline().parameters.myNumber keeps the number type; wrapping it in @{ } turns it into text.",
+            "nl": "Zonder accolades blijft het getaltype behouden; met @{ } wordt het tekst.",
+            "fr": "Sans les accolades, le type nombre est conservé ; avec @{ } on obtient du texte."
+          },
+          "source": {
+            "title": "Parameters for Data Factory in Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-factory/parameters",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "String interpolation always returns a string."
+        }
+      ],
+      "roles": [
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "open-mirroring",
+      "layerId": "ingest",
+      "componentId": "mirroring",
+      "title": {
+        "en": "Open mirroring",
+        "nl": "Open mirroring",
+        "fr": "Open mirroring"
+      },
+      "questions": [
+        {
+          "id": "om-1",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "Your SaaS app has no built-in Fabric mirroring connector. How can its data still land in a mirrored database?",
+            "nl": "Je SaaS-app heeft geen ingebouwde Fabric-mirroringconnector. Hoe kan de data toch in een gemirrorde database komen?",
+            "fr": "Votre application SaaS n'a pas de connecteur de mirroring Fabric intégré. Comment ses données peuvent-elles arriver dans une base mise en miroir ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "It can't; mirroring only supports Microsoft sources",
+                "nl": "Het kan niet; mirroring ondersteunt alleen Microsoft-bronnen",
+                "fr": "Impossible ; le mirroring ne gère que les sources Microsoft"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Open mirroring: the app writes change data into the landing zone",
+                "nl": "Open mirroring: de app schrijft wijzigingsdata naar de landing zone",
+                "fr": "Open mirroring : l'application écrit les changements dans la landing zone"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Create a shortcut to the app's database",
+                "nl": "Een shortcut naar de database van de app maken",
+                "fr": "Créer un raccourci vers la base de l'application"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Export CSV by hand every night",
+                "nl": "Elke nacht met de hand een CSV exporteren",
+                "fr": "Exporter un CSV à la main chaque nuit"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Open mirroring lets any application write change data directly into a mirrored database.",
+            "nl": "Met open mirroring kan elke toepassing wijzigingsdata rechtstreeks naar een gemirrorde database schrijven.",
+            "fr": "L'open mirroring permet à toute application d'écrire directement ses changements dans une base mise en miroir."
+          },
+          "source": {
+            "title": "Open mirroring in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/mirroring/open-mirroring",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Open mirroring enables any application to write change data directly into a mirrored database in Fabric."
+        },
+        {
+          "id": "om-2",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "After files arrive in the landing zone, what does the mirroring engine do?",
+            "nl": "Wat doet de mirroring-engine nadat bestanden in de landing zone zijn aangekomen?",
+            "fr": "Que fait le moteur de mirroring une fois les fichiers arrivés dans la landing zone ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Deletes them after a day without processing",
+                "nl": "Verwijdert ze na een dag zonder verwerking",
+                "fr": "Les supprime après un jour sans traitement"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Handles the changes and converts them to Delta Parquet tables",
+                "nl": "Verwerkt de wijzigingen en zet ze om naar Delta Parquet-tabellen",
+                "fr": "Traite les changements et les convertit en tables Delta Parquet"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Leaves the files untouched for you to process",
+                "nl": "Laat de bestanden onaangeroerd zodat jij ze verwerkt",
+                "fr": "Laisse les fichiers intacts pour que vous les traitiez"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Converts them to CSV for Excel",
+                "nl": "Zet ze om naar CSV voor Excel",
+                "fr": "Les convertit en CSV pour Excel"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "You only deliver the changes in the agreed format; the engine takes care of applying them to Delta tables.",
+            "nl": "Jij levert alleen de wijzigingen in het afgesproken formaat; de engine past ze toe op Delta-tabellen.",
+            "fr": "Vous livrez seulement les changements au format convenu ; le moteur les applique aux tables Delta."
+          },
+          "source": {
+            "title": "Open mirroring in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/mirroring/open-mirroring",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "the mirroring replication engine manages the complexity of changes and converts data into Delta Parquet"
+        },
+        {
+          "id": "om-3",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "Can you run UPDATE statements through the SQL analytics endpoint of an open mirrored database?",
+            "nl": "Kun je UPDATE-statements uitvoeren via het SQL analytics endpoint van een open mirrored database?",
+            "fr": "Peut-on exécuter des UPDATE via le point de terminaison d'analyse SQL d'une base open mirroring ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Yes, it is a full read-write warehouse",
+                "nl": "Ja, het is een volledige lees-schrijf-warehouse",
+                "fr": "Oui, c'est un entrepôt complet en lecture-écriture"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Yes, but only INSERT",
+                "nl": "Ja, maar alleen INSERT",
+                "fr": "Oui, mais seulement INSERT"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "No, you can query and define objects but not change the data",
+                "nl": "Nee, je kunt bevragen en objecten definiëren maar de data niet wijzigen",
+                "fr": "Non, on peut interroger et définir des objets mais pas modifier les données"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only for workspace admins",
+                "nl": "Alleen voor workspace-admins",
+                "fr": "Seulement pour les admins de l'espace de travail"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "The endpoint is analytical and read-only for data. Changes come in through the source or landing zone.",
+            "nl": "Het endpoint is analytisch en alleen-lezen voor data. Wijzigingen komen via de bron of landing zone binnen.",
+            "fr": "Le point de terminaison est analytique et en lecture seule pour les données. Les changements passent par la source ou la landing zone."
+          },
+          "source": {
+            "title": "Open mirroring in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/mirroring/open-mirroring",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Users have access to familiar T-SQL commands that can define and query data objects but not manipulate the data from the SQL analytics endpoint"
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "on-premises-gateway",
+      "layerId": "ingest",
+      "componentId": "gateway",
+      "title": {
+        "en": "On-premises data gateway",
+        "nl": "On-premises data gateway",
+        "fr": "Passerelle de données locale"
+      },
+      "questions": [
+        {
+          "id": "gw-1",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "Your source database sits in the company's own datacenter behind a firewall. What connects it safely to Fabric pipelines?",
+            "nl": "Je brondatabase staat in het eigen datacenter achter een firewall. Wat verbindt die veilig met Fabric-pipelines?",
+            "fr": "Votre base source est dans le datacenter de l'entreprise derrière un pare-feu. Qu'est-ce qui la relie en sécurité aux pipelines Fabric ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "An on-premises data gateway installed in your network",
+                "nl": "Een on-premises data gateway die in je netwerk is geïnstalleerd",
+                "fr": "Une passerelle de données locale installée dans votre réseau"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A OneLake shortcut",
+                "nl": "Een OneLake-shortcut",
+                "fr": "Un raccourci OneLake"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "An eventstream",
+                "nl": "Een eventstream",
+                "fr": "Un eventstream"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A sensitivity label",
+                "nl": "Een gevoeligheidslabel",
+                "fr": "Une étiquette de confidentialité"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "The gateway is software in your local network that lets the cloud service reach on-premises sources.",
+            "nl": "De gateway is software in je lokale netwerk waarmee de clouddienst on-premises bronnen kan bereiken.",
+            "fr": "La passerelle est un logiciel de votre réseau local qui permet au service cloud d'atteindre les sources locales."
+          },
+          "source": {
+            "title": "Access on-premises data sources in Data Factory",
+            "url": "https://learn.microsoft.com/fabric/data-factory/how-to-access-on-premises-data",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "An on-premises data gateway is software that you install within your local network."
+        },
+        {
+          "id": "gw-2",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "Your gateway is several versions old and Fabric pipelines can't use it. What does the documentation require?",
+            "nl": "Je gateway is al enkele versies oud en Fabric-pipelines kunnen hem niet gebruiken. Wat vereist de documentatie?",
+            "fr": "Votre passerelle a plusieurs versions de retard et les pipelines Fabric ne peuvent pas l'utiliser. Que demande la documentation ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Any version works",
+                "nl": "Elke versie werkt",
+                "fr": "Toute version fonctionne"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Version 3000.214.2 or later",
+                "nl": "Versie 3000.214.2 of nieuwer",
+                "fr": "La version 3000.214.2 ou ultérieure"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only a version older than 2000",
+                "nl": "Alleen een versie ouder dan 2000",
+                "fr": "Seulement une version antérieure à 2000"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A gateway is not supported for pipelines",
+                "nl": "Een gateway wordt niet ondersteund voor pipelines",
+                "fr": "Une passerelle n'est pas prise en charge pour les pipelines"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Update the gateway before you use it with Fabric pipelines.",
+            "nl": "Werk de gateway bij voordat je hem met Fabric-pipelines gebruikt.",
+            "fr": "Mettez la passerelle à jour avant de l'utiliser avec des pipelines Fabric."
+          },
+          "source": {
+            "title": "Access on-premises data sources in Data Factory",
+            "url": "https://learn.microsoft.com/fabric/data-factory/how-to-access-on-premises-data",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "You need an on-premises data gateway version 3000.214.2 or later to support Fabric pipelines."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "dataflow-fast-copy",
+      "layerId": "transform",
+      "componentId": "dataflows",
+      "title": {
+        "en": "Dataflow Gen2: Fast copy",
+        "nl": "Dataflow Gen2: Fast copy",
+        "fr": "Dataflow Gen2 : Fast copy"
+      },
+      "questions": [
+        {
+          "id": "fc-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What does Fast copy add to a Dataflow Gen2?",
+            "nl": "Wat voegt Fast copy toe aan een Dataflow Gen2?",
+            "fr": "Qu'apporte Fast copy à un Dataflow Gen2 ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Automatic row-level security",
+                "nl": "Automatische row-level security",
+                "fr": "Une sécurité au niveau des lignes automatique"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A Spark cluster for every query step",
+                "nl": "Een Spark-cluster voor elke querystap",
+                "fr": "Un cluster Spark pour chaque étape de requête"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "The fast backend of pipeline Copy activity for ingesting large data",
+                "nl": "De snelle backend van de pipeline-Copy-activiteit om grote data in te laden",
+                "fr": "Le moteur rapide de l'activité Copy des pipelines pour ingérer de gros volumes"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Real-time streaming from Kafka",
+                "nl": "Realtime streaming vanuit Kafka",
+                "fr": "Du streaming temps réel depuis Kafka"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Fast copy handles the ingestion part with the powerful backend of pipeline Copy activity, while you keep the dataflow experience.",
+            "nl": "Fast copy neemt het inladen over met de krachtige backend van de Copy-activiteit, terwijl je de dataflow-ervaring behoudt.",
+            "fr": "Fast copy gère l'ingestion avec le moteur de l'activité Copy, tout en gardant l'expérience dataflow."
+          },
+          "source": {
+            "title": "Fast copy in Dataflow Gen2",
+            "url": "https://learn.microsoft.com/fabric/data-factory/dataflows-gen2-fast-copy",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Fast copy takes care of the ingestion part by giving you the easy dataflow experience with the powerful backend of pipeline Copy Activity."
+        },
+        {
+          "id": "fc-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "From which size does a database source (such as Azure SQL DB) automatically use Fast copy?",
+            "nl": "Vanaf welke grootte gebruikt een databasebron (zoals Azure SQL DB) automatisch Fast copy?",
+            "fr": "À partir de quelle taille une source de base de données (comme Azure SQL DB) utilise-t-elle automatiquement Fast copy ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "5 million rows or more",
+                "nl": "5 miljoen rijen of meer",
+                "fr": "5 millions de lignes ou plus"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "1 million rows exactly",
+                "nl": "Precies 1 miljoen rijen",
+                "fr": "Exactement 1 million de lignes"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Always, whatever the size",
+                "nl": "Altijd, ongeacht de grootte",
+                "fr": "Toujours, quelle que soit la taille"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "100 rows",
+                "nl": "100 rijen",
+                "fr": "100 lignes"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Fast copy kicks in above a threshold. For files the threshold is 100 MB of CSV or Parquet.",
+            "nl": "Fast copy start boven een drempel. Voor bestanden is dat 100 MB CSV of Parquet.",
+            "fr": "Fast copy se déclenche au-delà d'un seuil. Pour les fichiers : 100 Mo de CSV ou Parquet."
+          },
+          "source": {
+            "title": "Fast copy in Dataflow Gen2",
+            "url": "https://learn.microsoft.com/fabric/data-factory/dataflows-gen2-fast-copy",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "For databases (including Azure SQL DB and PostgreSQL): 5 million rows or more of data in the data source"
+        },
+        {
+          "id": "fc-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "You want a refresh to fail fast when Fast copy can't be used, instead of silently running slower. What do you enable?",
+            "nl": "Je wilt dat een refresh snel faalt als Fast copy niet kan, in plaats van stilletjes trager te lopen. Wat schakel je in?",
+            "fr": "Vous voulez qu'une actualisation échoue vite quand Fast copy est impossible, plutôt que de ralentir en silence. Que activez-vous ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Autosave",
+                "nl": "Autosave",
+                "fr": "L'enregistrement automatique"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The Require fast copy option",
+                "nl": "De optie Require fast copy",
+                "fr": "L'option Require fast copy"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A bigger capacity",
+                "nl": "Een grotere capacity",
+                "fr": "Une capacité plus grande"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Row-level security",
+                "nl": "Row-level security",
+                "fr": "La sécurité au niveau des lignes"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Require fast copy stops the refresh instead of waiting for a timeout, which helps when debugging. It also bypasses the size threshold.",
+            "nl": "Require fast copy stopt de refresh in plaats van op een timeout te wachten, handig bij debuggen. Het omzeilt ook de groottedrempel.",
+            "fr": "Require fast copy arrête l'actualisation au lieu d'attendre un délai, utile pour déboguer. Il contourne aussi le seuil de taille."
+          },
+          "source": {
+            "title": "Fast copy in Dataflow Gen2",
+            "url": "https://learn.microsoft.com/fabric/data-factory/dataflows-gen2-fast-copy",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "If you enable the Require fast copy option, the dataflow refresh stops if fast copy can't be used for some reason."
+        }
+      ],
+      "roles": [
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "dataflow-incremental",
+      "layerId": "transform",
+      "componentId": "dataflows",
+      "title": {
+        "en": "Dataflow Gen2: incremental refresh",
+        "nl": "Dataflow Gen2: incrementele refresh",
+        "fr": "Dataflow Gen2 : actualisation incrémentielle"
+      },
+      "questions": [
+        {
+          "id": "di-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What does a source need for incremental refresh in Dataflow Gen2?",
+            "nl": "Wat heeft een bron nodig voor incrementele refresh in Dataflow Gen2?",
+            "fr": "De quoi une source a-t-elle besoin pour l'actualisation incrémentielle dans Dataflow Gen2 ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Query folding support and a Date/DateTime column to filter on",
+                "nl": "Ondersteuning voor query folding en een Date/DateTime-kolom om op te filteren",
+                "fr": "La prise en charge du query folding et une colonne Date/DateTime pour filtrer"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A primary key named ID",
+                "nl": "Een primaire sleutel genaamd ID",
+                "fr": "Une clé primaire nommée ID"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A CDC log on the source",
+                "nl": "Een CDC-log op de bron",
+                "fr": "Un journal CDC sur la source"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A Spark notebook",
+                "nl": "Een Spark-notebook",
+                "fr": "Un notebook Spark"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Without a date column to filter on and a query that folds to the source, the dataflow can't limit what it reads.",
+            "nl": "Zonder datumkolom en een query die naar de bron foldt, kan de dataflow niet beperken wat hij leest.",
+            "fr": "Sans colonne de date ni requête qui se replie vers la source, le dataflow ne peut pas limiter ce qu'il lit."
+          },
+          "source": {
+            "title": "Incremental refresh in Dataflow Gen2",
+            "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-incremental-refresh",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "A data source that supports folding (recommended) and contains a Date/DateTime column for filtering data"
+        },
+        {
+          "id": "di-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Your dataflow uses the default destination configuration. Can you turn on incremental refresh?",
+            "nl": "Je dataflow gebruikt de standaard bestemmingsconfiguratie. Kun je incrementele refresh aanzetten?",
+            "fr": "Votre dataflow utilise la configuration de destination par défaut. Pouvez-vous activer l'actualisation incrémentielle ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "No, define the destination explicitly in the query settings",
+                "nl": "Nee, definieer de bestemming expliciet in de query-instellingen",
+                "fr": "Non, définissez explicitement la destination dans les paramètres de la requête"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Yes, it works with every setup",
+                "nl": "Ja, het werkt met elke opzet",
+                "fr": "Oui, cela marche avec toute configuration"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only with a Warehouse in another tenant",
+                "nl": "Alleen met een Warehouse in een andere tenant",
+                "fr": "Seulement avec un entrepôt d'un autre locataire"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only for CSV destinations",
+                "nl": "Alleen voor CSV-bestemmingen",
+                "fr": "Seulement pour des destinations CSV"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Default destination configuration is not supported for incremental refresh.",
+            "nl": "De standaard bestemmingsconfiguratie wordt niet ondersteund voor incrementele refresh.",
+            "fr": "La configuration de destination par défaut n'est pas prise en charge pour l'actualisation incrémentielle."
+          },
+          "source": {
+            "title": "Incremental refresh in Dataflow Gen2",
+            "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-incremental-refresh",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "default destination configuration is not supported for incremental refresh. You must explicitly define the destination in your query settings."
+        },
+        {
+          "id": "di-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Which destination supports incremental refresh directly?",
+            "nl": "Welke bestemming ondersteunt incrementele refresh rechtstreeks?",
+            "fr": "Quelle destination prend directement en charge l'actualisation incrémentielle ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "An Excel workbook",
+                "nl": "Een Excel-werkmap",
+                "fr": "Un classeur Excel"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Fabric Lakehouse",
+                "nl": "Fabric Lakehouse",
+                "fr": "Fabric Lakehouse"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A Power BI report page",
+                "nl": "Een Power BI-rapportpagina",
+                "fr": "Une page de rapport Power BI"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A CSV file in SharePoint",
+                "nl": "Een CSV-bestand in SharePoint",
+                "fr": "Un fichier CSV dans SharePoint"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Lakehouse, Warehouse and Azure SQL Database support it directly. For other destinations, stage the data and use a second query.",
+            "nl": "Lakehouse, Warehouse en Azure SQL Database ondersteunen het direct. Voor andere bestemmingen stage je de data en gebruik je een tweede query.",
+            "fr": "Lakehouse, Warehouse et Azure SQL Database le prennent en charge. Pour les autres, stagez les données et utilisez une seconde requête."
+          },
+          "source": {
+            "title": "Incremental refresh in Dataflow Gen2",
+            "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-incremental-refresh",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Fabric Lakehouse"
+        }
+      ],
+      "roles": [
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "native-execution-engine",
+      "layerId": "transform",
+      "componentId": "spark",
+      "title": {
+        "en": "Native execution engine",
+        "nl": "Native execution engine",
+        "fr": "Moteur d'exécution natif"
+      },
+      "questions": [
+        {
+          "id": "ne-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Which technologies is the Native Execution Engine built on?",
+            "nl": "Op welke technologieën is de Native Execution Engine gebouwd?",
+            "fr": "Sur quelles technologies repose le Native Execution Engine ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Hive and MapReduce",
+                "nl": "Hive en MapReduce",
+                "fr": "Hive et MapReduce"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Velox and Apache Gluten",
+                "nl": "Velox en Apache Gluten",
+                "fr": "Velox et Apache Gluten"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Kusto and Power Query",
+                "nl": "Kusto en Power Query",
+                "fr": "Kusto et Power Query"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Kafka and Flink",
+                "nl": "Kafka en Flink",
+                "fr": "Kafka et Flink"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Supported Spark operators are offloaded from the JVM to a vectorized C++ path using Velox, with Gluten as the middle layer.",
+            "nl": "Ondersteunde Spark-operators worden van de JVM naar een gevectoriseerd C++-pad verplaatst met Velox, met Gluten als tussenlaag.",
+            "fr": "Les opérateurs Spark pris en charge sont déportés de la JVM vers un chemin C++ vectorisé avec Velox, Gluten servant de couche intermédiaire."
+          },
+          "source": {
+            "title": "Native execution engine for Fabric Data Engineering",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/native-execution-engine-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Velox, a C++ database acceleration library introduced by Meta"
+        },
+        {
+          "id": "ne-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Which data formats does the engine process natively?",
+            "nl": "Welke dataformaten verwerkt de engine native?",
+            "fr": "Quels formats de données le moteur traite-t-il nativement ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Excel and XML",
+                "nl": "Excel en XML",
+                "fr": "Excel et XML"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Avro only",
+                "nl": "Alleen Avro",
+                "fr": "Seulement Avro"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "CSV and JSON only",
+                "nl": "Alleen CSV en JSON",
+                "fr": "Seulement CSV et JSON"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Parquet and Delta",
+                "nl": "Parquet en Delta",
+                "fr": "Parquet et Delta"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "It is effective with Parquet and Delta, the formats that lakehouse tables use.",
+            "nl": "Het is effectief met Parquet en Delta, de formaten van lakehouse-tabellen.",
+            "fr": "Il est efficace avec Parquet et Delta, les formats des tables de lakehouse."
+          },
+          "source": {
+            "title": "Native execution engine for Fabric Data Engineering",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/native-execution-engine-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "The engine is effective when working with data in Parquet and Delta formats, which it can process natively and efficiently."
+        },
+        {
+          "id": "ne-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Your workload is mostly simple, I/O-bound reads. How much gain do you expect from the native engine?",
+            "nl": "Je workload bestaat vooral uit simpele, I/O-gebonden reads. Hoeveel winst verwacht je van de native engine?",
+            "fr": "Votre charge consiste surtout en lectures simples limitées par les E/S. Quel gain attendre du moteur natif ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "It makes reads fail",
+                "nl": "Het laat reads falen",
+                "fr": "Il fait échouer les lectures"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "It only helps CSV files",
+                "nl": "Het helpt alleen bij CSV-bestanden",
+                "fr": "Il n'aide que les fichiers CSV"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "The biggest gain of all workloads",
+                "nl": "De grootste winst van alle workloads",
+                "fr": "Le plus grand gain de toutes les charges"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Little: it suits computationally intensive queries best",
+                "nl": "Weinig: het past het best bij rekenintensieve queries",
+                "fr": "Peu : il convient surtout aux requêtes intensives en calcul"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Gains are biggest for complex transformations and aggregations, and when queries avoid unsupported features that trigger fallback.",
+            "nl": "De winst is het grootst bij complexe transformaties en aggregaties, en als queries niet-ondersteunde functies mijden die fallback veroorzaken.",
+            "fr": "Les gains sont maximaux pour les transformations et agrégations complexes, sans fonctionnalité non prise en charge qui déclenche un repli."
+          },
+          "source": {
+            "title": "Native execution engine for Fabric Data Engineering",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/native-execution-engine-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "The engine is well-suited for queries that are computationally intensive, rather than simple or I/O-bound."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "spark-runtime",
+      "layerId": "transform",
+      "componentId": "spark",
+      "title": {
+        "en": "Spark runtimes: 1.3 and 2.0",
+        "nl": "Spark-runtimes: 1.3 en 2.0",
+        "fr": "Runtimes Spark : 1.3 et 2.0"
+      },
+      "questions": [
+        {
+          "id": "rt-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Which runtime does Microsoft advise for new production workloads?",
+            "nl": "Welke runtime adviseert Microsoft voor nieuwe productieworkloads?",
+            "fr": "Quel runtime Microsoft recommande-t-il pour les nouvelles charges de production ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Always the oldest, for stability",
+                "nl": "Altijd de oudste, voor stabiliteit",
+                "fr": "Toujours le plus ancien, par stabilité"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The most recent generally available one, currently Runtime 2.0",
+                "nl": "De meest recente algemeen beschikbare, momenteel Runtime 2.0",
+                "fr": "Le plus récent en disponibilité générale, actuellement Runtime 2.0"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Any preview runtime",
+                "nl": "Een willekeurige previewruntime",
+                "fr": "N'importe quel runtime en préversion"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Runtime 1.1 only",
+                "nl": "Alleen Runtime 1.1",
+                "fr": "Seulement Runtime 1.1"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Use the latest GA runtime for production workloads.",
+            "nl": "Gebruik de nieuwste GA-runtime voor productieworkloads.",
+            "fr": "Utilisez le dernier runtime GA pour les charges de production."
+          },
+          "source": {
+            "title": "Apache Spark runtime in Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/runtime",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Always use the most recent, generally available (GA) runtime version for your production workload, which currently is Runtime 2.0."
+        },
+        {
+          "id": "rt-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Which Spark and Delta versions does Runtime 2.0 carry?",
+            "nl": "Welke Spark- en Delta-versies draagt Runtime 2.0?",
+            "fr": "Quelles versions de Spark et Delta Runtime 2.0 embarque-t-il ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Apache Spark 4.1 and Delta Lake 3.2",
+                "nl": "Apache Spark 4.1 en Delta Lake 3.2",
+                "fr": "Apache Spark 4.1 et Delta Lake 3.2"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Apache Spark 4.1 and Delta Lake 4.1",
+                "nl": "Apache Spark 4.1 en Delta Lake 4.1",
+                "fr": "Apache Spark 4.1 et Delta Lake 4.1"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Apache Spark 2.4 and Delta Lake 1.0",
+                "nl": "Apache Spark 2.4 en Delta Lake 1.0",
+                "fr": "Apache Spark 2.4 et Delta Lake 1.0"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Apache Spark 3.5 and Delta Lake 3.2",
+                "nl": "Apache Spark 3.5 en Delta Lake 3.2",
+                "fr": "Apache Spark 3.5 et Delta Lake 3.2"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Runtime 1.3 is Spark 3.5 with Delta 3.2. Runtime 2.0 is Spark 4.1 with Delta 4.1. The native engine supports both.",
+            "nl": "Runtime 1.3 is Spark 3.5 met Delta 3.2. Runtime 2.0 is Spark 4.1 met Delta 4.1. De native engine ondersteunt beide.",
+            "fr": "Runtime 1.3 : Spark 3.5 avec Delta 3.2. Runtime 2.0 : Spark 4.1 avec Delta 4.1. Le moteur natif prend en charge les deux."
+          },
+          "source": {
+            "title": "Native execution engine for Fabric Data Engineering",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/native-execution-engine-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Runtime 2.0 (Apache Spark 4.1, Delta Lake 4.1)"
+        }
+      ],
+      "roles": [
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "spark-environments",
+      "layerId": "transform",
+      "componentId": "spark",
+      "title": {
+        "en": "Spark environments",
+        "nl": "Spark-omgevingen",
+        "fr": "Environnements Spark"
+      },
+      "questions": [
+        {
+          "id": "se-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Why use an environment item instead of per-notebook settings?",
+            "nl": "Waarom een environment-item gebruiken in plaats van instellingen per notebook?",
+            "fr": "Pourquoi utiliser un élément environnement plutôt que des paramètres par notebook ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "It makes Spark free of charge",
+                "nl": "Het maakt Spark gratis",
+                "fr": "Cela rend Spark gratuit"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Define compute and libraries once and apply them across notebooks and Spark job definitions",
+                "nl": "Compute en libraries één keer definiëren en toepassen op notebooks en Spark job definitions",
+                "fr": "Définir calcul et bibliothèques une fois et les appliquer aux notebooks et définitions de travaux Spark"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "It replaces OneLake",
+                "nl": "Het vervangt OneLake",
+                "fr": "Cela remplace OneLake"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "It encrypts the notebooks",
+                "nl": "Het versleutelt de notebooks",
+                "fr": "Cela chiffre les notebooks"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "An environment gives teams reusable, governed defaults for Spark compute and libraries.",
+            "nl": "Een environment geeft teams herbruikbare, beheerde standaarden voor Spark-compute en libraries.",
+            "fr": "Un environnement offre aux équipes des valeurs par défaut réutilisables et gouvernées pour le calcul et les bibliothèques."
+          },
+          "source": {
+            "title": "Create, configure, and use an environment",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/create-and-use-environment",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Define Spark compute and libraries once, and apply them consistently across notebooks and Spark job definitions."
+        },
+        {
+          "id": "se-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Must a notebook always have an environment item attached to run?",
+            "nl": "Moet een notebook altijd een environment-item hebben om te draaien?",
+            "fr": "Un notebook doit-il toujours avoir un élément environnement pour s'exécuter ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Yes, otherwise it fails",
+                "nl": "Ja, anders faalt het",
+                "fr": "Oui, sinon il échoue"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only in a trial",
+                "nl": "Alleen in een trial",
+                "fr": "Seulement en essai"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "No, it can use the Workspace default settings",
+                "nl": "Nee, het kan de Workspace default-instellingen gebruiken",
+                "fr": "Non, il peut utiliser les paramètres par défaut de l'espace de travail"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only for Python notebooks",
+                "nl": "Alleen voor Python-notebooks",
+                "fr": "Seulement pour les notebooks Python"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Without an environment, you use the workspace-level Spark settings.",
+            "nl": "Zonder environment gebruik je de Spark-instellingen op workspaceniveau.",
+            "fr": "Sans environnement, vous utilisez les paramètres Spark de l'espace de travail."
+          },
+          "source": {
+            "title": "Create, configure, and use an environment",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/create-and-use-environment",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "You can run notebooks and Spark job definitions by using Workspace default without attaching an environment item."
+        }
+      ],
+      "roles": [
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "high-concurrency",
+      "layerId": "transform",
+      "componentId": "spark",
+      "title": {
+        "en": "High concurrency mode",
+        "nl": "High concurrency-modus",
+        "fr": "Mode haute concurrence"
+      },
+      "questions": [
+        {
+          "id": "hc-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What is different in high concurrency mode compared with standard mode?",
+            "nl": "Wat is anders in high concurrency-modus dan in standaardmodus?",
+            "fr": "Qu'est-ce qui diffère en mode haute concurrence par rapport au mode standard ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "One Spark application hosts several notebooks, each isolated in its own REPL",
+                "nl": "Eén Spark-applicatie host meerdere notebooks, elk geïsoleerd in een eigen REPL",
+                "fr": "Une application Spark héberge plusieurs notebooks, chacun isolé dans son REPL"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "All users of the workspace share one session",
+                "nl": "Alle gebruikers van de workspace delen één sessie",
+                "fr": "Tous les utilisateurs partagent une session"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Each notebook gets a bigger cluster",
+                "nl": "Elke notebook krijgt een groter cluster",
+                "fr": "Chaque notebook reçoit un cluster plus grand"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Notebooks run without Spark",
+                "nl": "Notebooks draaien zonder Spark",
+                "fr": "Les notebooks tournent sans Spark"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Standard mode starts a session per notebook or pipeline activity. High concurrency shares one application, so later workloads start faster and cost less.",
+            "nl": "Standaardmodus start een sessie per notebook of pipeline-activiteit. High concurrency deelt één applicatie, dus latere workloads starten sneller en kosten minder.",
+            "fr": "Le mode standard démarre une session par notebook ou activité. La haute concurrence partage une application : démarrage plus rapide et coût réduit."
+          },
+          "source": {
+            "title": "High concurrency mode in Apache Spark for Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/high-concurrency-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "In standard mode, each notebook or pipeline activity starts its own Spark session."
+        },
+        {
+          "id": "hc-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Whose notebooks can share a high concurrency session?",
+            "nl": "Wiens notebooks kunnen een high concurrency-sessie delen?",
+            "fr": "Les notebooks de qui peuvent partager une session haute concurrence ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Only admins",
+                "nl": "Alleen admins",
+                "fr": "Seulement les admins"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only the same user's, within a single-user boundary",
+                "nl": "Alleen die van dezelfde gebruiker, binnen één gebruikersgrens",
+                "fr": "Seulement ceux du même utilisateur, dans une limite mono-utilisateur"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Any user in the tenant",
+                "nl": "Elke gebruiker in de tenant",
+                "fr": "Tout utilisateur du locataire"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Any user in the workspace",
+                "nl": "Elke gebruiker in de workspace",
+                "fr": "Tout utilisateur de l'espace de travail"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Session sharing stays within one user, which keeps security intact.",
+            "nl": "Sessies delen blijft binnen één gebruiker, wat de beveiliging intact houdt.",
+            "fr": "Le partage de session reste limité à un utilisateur, ce qui préserve la sécurité."
+          },
+          "source": {
+            "title": "High concurrency mode in Apache Spark for Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/high-concurrency-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Session sharing stays within a single-user boundary."
+        },
+        {
+          "id": "hc-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What must sessions have in common to be shared?",
+            "nl": "Wat moeten sessies gemeen hebben om gedeeld te worden?",
+            "fr": "Que doivent avoir en commun les sessions pour être partagées ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The same Git branch",
+                "nl": "Dezelfde Git-branch",
+                "fr": "La même branche Git"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The same Spark compute settings",
+                "nl": "Dezelfde Spark-computeinstellingen",
+                "fr": "Les mêmes paramètres de calcul Spark"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "The same notebook name",
+                "nl": "Dezelfde notebooknaam",
+                "fr": "Le même nom de notebook"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "The same sensitivity label",
+                "nl": "Hetzelfde gevoeligheidslabel",
+                "fr": "La même étiquette de confidentialité"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Shared sessions run on one Spark application, so compute settings must match.",
+            "nl": "Gedeelde sessies draaien op één Spark-applicatie, dus de computeinstellingen moeten overeenkomen.",
+            "fr": "Les sessions partagées tournent sur une même application Spark : les paramètres de calcul doivent correspondre."
+          },
+          "source": {
+            "title": "High concurrency mode in Apache Spark for Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/high-concurrency-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Sessions use the same Spark compute settings."
+        }
+      ],
+      "roles": [
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "user-data-functions",
+      "layerId": "transform",
+      "componentId": "udf",
+      "title": {
+        "en": "User data functions",
+        "nl": "User data functions",
+        "fr": "Fonctions de données utilisateur"
+      },
+      "questions": [
+        {
+          "id": "uf-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What are user data functions?",
+            "nl": "Wat zijn user data functions?",
+            "fr": "Que sont les fonctions de données utilisateur ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A type of capacity",
+                "nl": "Een soort capacity",
+                "fr": "Un type de capacité"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Excel macros for Power BI",
+                "nl": "Excel-macro's voor Power BI",
+                "fr": "Des macros Excel pour Power BI"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A storage tier for Parquet",
+                "nl": "Een opslaglaag voor Parquet",
+                "fr": "Un niveau de stockage pour Parquet"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Reusable Python functions you host in Fabric and call from many places",
+                "nl": "Herbruikbare Python-functies die je in Fabric host en op veel plekken aanroept",
+                "fr": "Des fonctions Python réutilisables hébergées dans Fabric et appelées de partout"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "You write business logic once and reuse it from pipelines, notebooks and external systems.",
+            "nl": "Je schrijft bedrijfslogica één keer en hergebruikt ze in pipelines, notebooks en externe systemen.",
+            "fr": "Vous écrivez la logique métier une fois et la réutilisez dans pipelines, notebooks et systèmes externes."
+          },
+          "source": {
+            "title": "User data functions overview",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/user-data-functions/user-data-functions-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "User data functions enable you to create reusable Python functions that you can call from across Fabric and from external applications."
+        },
+        {
+          "id": "uf-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Who has to manage the servers that run user data functions?",
+            "nl": "Wie moet de servers beheren waarop user data functions draaien?",
+            "fr": "Qui doit gérer les serveurs qui exécutent les fonctions de données utilisateur ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A gateway you install",
+                "nl": "Een gateway die je installeert",
+                "fr": "Une passerelle que vous installez"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The workspace admin, on a VM",
+                "nl": "De workspace-admin, op een VM",
+                "fr": "L'admin de l'espace de travail, sur une VM"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "You, with your own container cluster",
+                "nl": "Jij, met je eigen containercluster",
+                "fr": "Vous, avec votre propre cluster de conteneurs"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Nobody: hosting is serverless",
+                "nl": "Niemand: de hosting is serverless",
+                "fr": "Personne : l'hébergement est serverless"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Serverless hosting with built-in authentication: no separate API service or container to maintain.",
+            "nl": "Serverless hosting met ingebouwde authenticatie: geen aparte API-service of container om te onderhouden.",
+            "fr": "Hébergement serverless avec authentification intégrée : pas de service API ni de conteneur à maintenir."
+          },
+          "source": {
+            "title": "User data functions overview",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/user-data-functions/user-data-functions-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Deploy Python functions without managing infrastructure."
+        },
+        {
+          "id": "uf-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "From where can you call a user data function?",
+            "nl": "Van waaruit kun je een user data function aanroepen?",
+            "fr": "D'où peut-on appeler une fonction de données utilisateur ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Pipelines, notebooks, Activator rules and external systems via REST",
+                "nl": "Pipelines, notebooks, Activator-regels en externe systemen via REST",
+                "fr": "Pipelines, notebooks, règles Activator et systèmes externes via REST"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only from Power BI Desktop",
+                "nl": "Alleen vanuit Power BI Desktop",
+                "fr": "Seulement depuis Power BI Desktop"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only from Git",
+                "nl": "Alleen vanuit Git",
+                "fr": "Seulement depuis Git"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only from the SQL analytics endpoint",
+                "nl": "Alleen vanuit het SQL analytics endpoint",
+                "fr": "Seulement depuis le point de terminaison SQL"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "The same function serves the whole platform and outside callers.",
+            "nl": "Dezelfde functie bedient het hele platform en externe aanroepers.",
+            "fr": "La même fonction sert toute la plateforme et les appelants externes."
+          },
+          "source": {
+            "title": "User data functions overview",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/user-data-functions/user-data-functions-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Write your business logic once and call it from pipelines, notebooks, activator rules, Power BI translytical task flows, or any external system via REST endpoints."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "lakehouse-schemas",
+      "layerId": "store",
+      "componentId": "lakehouse",
+      "title": {
+        "en": "Lakehouse schemas",
+        "nl": "Lakehouse-schema's",
+        "fr": "Schémas de lakehouse"
+      },
+      "questions": [
+        {
+          "id": "ls-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Which default schema does every schema-enabled lakehouse contain?",
+            "nl": "Welk standaardschema bevat elke lakehouse met schema's?",
+            "fr": "Quel schéma par défaut contient chaque lakehouse avec schémas ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "default, which you can delete",
+                "nl": "default, dat je kunt verwijderen",
+                "fr": "default, que vous pouvez supprimer"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "bronze",
+                "nl": "bronze",
+                "fr": "bronze"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "public, created on demand",
+                "nl": "public, op aanvraag gemaakt",
+                "fr": "public, créé à la demande"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "dbo, which can't be renamed or removed",
+                "nl": "dbo, dat niet hernoemd of verwijderd kan worden",
+                "fr": "dbo, qui ne peut être ni renommé ni supprimé"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "dbo is always there under Tables. You add your own schemas such as sales or hr next to it.",
+            "nl": "dbo staat er altijd onder Tables. Je voegt eigen schema's zoals sales of hr ernaast toe.",
+            "fr": "dbo est toujours présent sous Tables. Vous ajoutez vos schémas (sales, hr…) à côté."
+          },
+          "source": {
+            "title": "What are lakehouse schemas?",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-schemas",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Every schema-enabled lakehouse includes a dbo default schema under Tables that can't be renamed or removed."
+        },
+        {
+          "id": "ls-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "How do you join tables from two lakehouses in different workspaces in one Spark SQL query?",
+            "nl": "Hoe join je tabellen uit twee lakehouses in verschillende workspaces in één Spark SQL-query?",
+            "fr": "Comment joindre des tables de deux lakehouses de deux espaces de travail dans une requête Spark SQL ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Use a sensitivity label",
+                "nl": "Gebruik een gevoeligheidslabel",
+                "fr": "Utiliser une étiquette de confidentialité"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "It is impossible",
+                "nl": "Het is onmogelijk",
+                "fr": "C'est impossible"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Copy both into a CSV first",
+                "nl": "Kopieer beide eerst naar een CSV",
+                "fr": "Copier les deux dans un CSV d'abord"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Use the four-part name workspace.lakehouse.schema.table",
+                "nl": "Gebruik de viedelige naam workspace.lakehouse.schema.table",
+                "fr": "Utiliser le nom en quatre parties workspace.lakehouse.schema.table"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Schema-enabled lakehouses support four-part namespaces for cross-workspace queries.",
+            "nl": "Lakehouses met schema's ondersteunen viedelige namespaces voor queries over workspaces heen.",
+            "fr": "Les lakehouses avec schémas prennent en charge les espaces de noms en quatre parties entre espaces de travail."
+          },
+          "source": {
+            "title": "What are lakehouse schemas?",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-schemas",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Reference tables with a four-part namespace (workspace.lakehouse.schema.table) to join data from multiple lakehouses and workspaces in a single Spark SQL query"
+        },
+        {
+          "id": "ls-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "You want to use materialized lake views. What must the lakehouse have?",
+            "nl": "Je wilt materialized lake views gebruiken. Wat moet de lakehouse hebben?",
+            "fr": "Vous voulez utiliser des materialized lake views. De quoi le lakehouse a-t-il besoin ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Schemas enabled",
+                "nl": "Schema's ingeschakeld",
+                "fr": "Les schémas activés"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "An eventstream",
+                "nl": "Een eventstream",
+                "fr": "Un eventstream"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A Warehouse attached",
+                "nl": "Een Warehouse eraan gekoppeld",
+                "fr": "Un entrepôt rattaché"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A Git branch",
+                "nl": "Een Git-branch",
+                "fr": "Une branche Git"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Schemas are on by default in the portal. Through the REST API you must enable them explicitly.",
+            "nl": "Schema's staan standaard aan in de portal. Via de REST-API moet je ze expliciet inschakelen.",
+            "fr": "Les schémas sont activés par défaut dans le portail. Via l'API REST, il faut les activer explicitement."
+          },
+          "source": {
+            "title": "What are lakehouse schemas?",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/lakehouse-schemas",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Features like materialized lake views require schema-enabled lakehouses."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "warehouse-clone-time-travel",
+      "layerId": "store",
+      "componentId": "warehouse",
+      "title": {
+        "en": "Warehouse: clone and time travel",
+        "nl": "Warehouse: clone en time travel",
+        "fr": "Entrepôt : clone et time travel"
+      },
+      "questions": [
+        {
+          "id": "wc-1",
+          "skills": [
+            "dp600-maintain"
+          ],
+          "prompt": {
+            "en": "What does a zero-copy table clone copy?",
+            "nl": "Wat kopieert een zero-copy tabelkloon?",
+            "fr": "Que copie un clone de table zero-copy ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Only the first million rows",
+                "nl": "Alleen de eerste miljoen rijen",
+                "fr": "Seulement le premier million de lignes"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "All data files, doubling storage",
+                "nl": "Alle databestanden, waardoor de opslag verdubbelt",
+                "fr": "Tous les fichiers de données, doublant le stockage"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only metadata; it references the same files in OneLake",
+                "nl": "Alleen metadata; hij verwijst naar dezelfde bestanden in OneLake",
+                "fr": "Seulement les métadonnées ; il référence les mêmes fichiers dans OneLake"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only the schema, no rows",
+                "nl": "Alleen het schema, geen rijen",
+                "fr": "Seulement le schéma, sans lignes"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "A clone is near-instant and cheap because the Parquet files aren't copied.",
+            "nl": "Een kloon is bijna direct en goedkoop omdat de Parquet-bestanden niet gekopieerd worden.",
+            "fr": "Un clone est quasi instantané et peu coûteux car les fichiers Parquet ne sont pas copiés."
+          },
+          "source": {
+            "title": "Clone table in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-warehouse/clone-table",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "A zero-copy clone creates a replica of the table by copying the metadata, while still referencing the same data files in OneLake."
+        },
+        {
+          "id": "wc-2",
+          "skills": [
+            "dp600-maintain"
+          ],
+          "prompt": {
+            "en": "How far back in history can a warehouse go by default for clones and time travel?",
+            "nl": "Hoe ver terug in de geschiedenis kan een warehouse standaard voor klonen en time travel?",
+            "fr": "Jusqu'où l'entrepôt peut-il remonter par défaut pour les clones et le time travel ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Unlimited",
+                "nl": "Onbeperkt",
+                "fr": "Illimité"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "24 hours, fixed",
+                "nl": "24 uur, vast",
+                "fr": "24 heures, fixe"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "7 days, fixed",
+                "nl": "7 dagen, vast",
+                "fr": "7 jours, fixe"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Thirty calendar days, configurable from 1 to 120",
+                "nl": "Dertig kalenderdagen, instelbaar van 1 tot 120",
+                "fr": "Trente jours calendaires, configurable de 1 à 120"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Data history is retained within the configured retention period.",
+            "nl": "Datageschiedenis wordt bewaard binnen de ingestelde retentieperiode.",
+            "fr": "L'historique est conservé pendant la période de rétention configurée."
+          },
+          "source": {
+            "title": "Clone table in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-warehouse/clone-table",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "By default, data history is retained for thirty calendar days, and can be configured from 1 to 120 days."
+        },
+        {
+          "id": "wc-3",
+          "skills": [
+            "dp600-maintain"
+          ],
+          "prompt": {
+            "en": "A bad release corrupted a table yesterday. Which T-SQL option lets you query it as it was before?",
+            "nl": "Een foute release heeft gisteren een tabel beschadigd. Welke T-SQL-optie laat je haar bevragen zoals ze eerder was?",
+            "fr": "Une mauvaise version a corrompu une table hier. Quelle option T-SQL permet de l'interroger telle qu'elle était avant ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "OPTION (FOR TIMESTAMP AS OF ...)",
+                "nl": "OPTION (FOR TIMESTAMP AS OF ...)",
+                "fr": "OPTION (FOR TIMESTAMP AS OF ...)"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "VACUUM",
+                "nl": "VACUUM",
+                "fr": "VACUUM"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "DROP STATISTICS",
+                "nl": "DROP STATISTICS",
+                "fr": "DROP STATISTICS"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "ALTER TABLE ... UNDO",
+                "nl": "ALTER TABLE ... UNDO",
+                "fr": "ALTER TABLE ... UNDO"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "The hint applies to the whole statement, including all joined warehouse tables. Time travel in warehouses is still in preview.",
+            "nl": "De hint geldt voor de hele statement, inclusief alle gejoinde warehouse-tabellen. Time travel in warehouses is nog in preview.",
+            "fr": "L'indice s'applique à toute l'instruction, y compris les tables jointes. Le time travel des entrepôts est encore en préversion."
+          },
+          "source": {
+            "title": "Query data as it existed in the past",
+            "url": "https://learn.microsoft.com/fabric/data-warehouse/time-travel",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "The FOR TIMESTAMP AS OF clause affects the entire statement, including all joined warehouse tables."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "sql-database-fabric",
+      "layerId": "store",
+      "componentId": "sqldb",
+      "title": {
+        "en": "SQL database in Fabric",
+        "nl": "SQL database in Fabric",
+        "fr": "SQL database dans Fabric"
+      },
+      "questions": [
+        {
+          "id": "sd-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What is SQL database in Fabric?",
+            "nl": "Wat is SQL database in Fabric?",
+            "fr": "Qu'est-ce que SQL database dans Fabric ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A KQL database",
+                "nl": "Een KQL-database",
+                "fr": "Une base KQL"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A read-only view of a warehouse",
+                "nl": "Een alleen-lezen weergave van een warehouse",
+                "fr": "Une vue en lecture seule d'un entrepôt"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A transactional database based on Azure SQL Database, for operational data",
+                "nl": "Een transactionele database op basis van Azure SQL Database, voor operationele data",
+                "fr": "Une base transactionnelle basée sur Azure SQL Database, pour les données opérationnelles"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A Spark metastore",
+                "nl": "Een Spark-metastore",
+                "fr": "Un metastore Spark"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "It is the operational (OLTP) side in Fabric, next to the analytical items.",
+            "nl": "Het is de operationele (OLTP) kant in Fabric, naast de analytische items.",
+            "fr": "C'est le côté opérationnel (OLTP) dans Fabric, à côté des éléments analytiques."
+          },
+          "source": {
+            "title": "SQL database in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/database/sql/overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "SQL database in Microsoft Fabric is a developer-friendly transactional database, based on Azure SQL Database, that allows you to easily create your operational database in Fabric."
+        },
+        {
+          "id": "sd-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Which engine runs a SQL database in Fabric?",
+            "nl": "Welke engine draait een SQL database in Fabric?",
+            "fr": "Quel moteur exécute une SQL database dans Fabric ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "VertiPaq",
+                "nl": "VertiPaq",
+                "fr": "VertiPaq"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The same SQL Database Engine as Azure SQL Database",
+                "nl": "Dezelfde SQL Database Engine als Azure SQL Database",
+                "fr": "Le même moteur SQL Database qu'Azure SQL Database"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Apache Spark",
+                "nl": "Apache Spark",
+                "fr": "Apache Spark"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "The Kusto engine",
+                "nl": "De Kusto-engine",
+                "fr": "Le moteur Kusto"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Your T-SQL skills and tools carry over.",
+            "nl": "Je T-SQL-kennis en tools blijven bruikbaar.",
+            "fr": "Vos compétences et outils T-SQL restent valables."
+          },
+          "source": {
+            "title": "SQL database in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/database/sql/overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "A SQL database in Fabric uses the same SQL Database Engine as Azure SQL Database."
+        },
+        {
+          "id": "sd-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "How does the data of a SQL database become available for analytics?",
+            "nl": "Hoe komt de data van een SQL database beschikbaar voor analyse?",
+            "fr": "Comment les données d'une SQL database deviennent-elles disponibles pour l'analyse ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "It cannot be used for analytics",
+                "nl": "Ze kan niet voor analyse gebruikt worden",
+                "fr": "Elle ne peut pas servir à l'analyse"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "You must schedule a nightly pipeline",
+                "nl": "Je moet een nachtelijke pipeline plannen",
+                "fr": "Il faut planifier un pipeline nocturne"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "You must export BACPAC files",
+                "nl": "Je moet BACPAC-bestanden exporteren",
+                "fr": "Il faut exporter des fichiers BACPAC"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "It is replicated into OneLake automatically, near real time, as Parquet",
+                "nl": "Ze wordt automatisch, bijna realtime, als Parquet naar OneLake gerepliceerd",
+                "fr": "Elle est répliquée automatiquement dans OneLake, quasi en temps réel, en Parquet"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Spark, notebooks and Power BI can use the replicated copy without you building ETL.",
+            "nl": "Spark, notebooks en Power BI kunnen de gerepliceerde kopie gebruiken zonder dat je ETL bouwt.",
+            "fr": "Spark, les notebooks et Power BI utilisent la copie répliquée sans ETL."
+          },
+          "source": {
+            "title": "SQL database in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/database/sql/overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Data in your SQL database is automatically replicated of into the OneLake and converted to Parquet, in an analytics-ready format."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "direct-lake-onelake",
+      "layerId": "serve",
+      "componentId": "semantic",
+      "title": {
+        "en": "Direct Lake on OneLake vs on SQL",
+        "nl": "Direct Lake on OneLake vs on SQL",
+        "fr": "Direct Lake on OneLake vs on SQL"
+      },
+      "questions": [
+        {
+          "id": "dlo-1",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "Which Direct Lake flavor never falls back to DirectQuery through the SQL analytics endpoint?",
+            "nl": "Welke Direct Lake-variant valt nooit terug op DirectQuery via het SQL analytics endpoint?",
+            "fr": "Quelle variante de Direct Lake ne bascule jamais en DirectQuery via le point de terminaison SQL ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Neither exists",
+                "nl": "Geen van beide bestaat",
+                "fr": "Aucune n'existe"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Both always fall back",
+                "nl": "Beide vallen altijd terug",
+                "fr": "Les deux basculent toujours"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Direct Lake on OneLake",
+                "nl": "Direct Lake on OneLake",
+                "fr": "Direct Lake on OneLake"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Direct Lake on SQL",
+                "nl": "Direct Lake on SQL",
+                "fr": "Direct Lake on SQL"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Direct Lake on SQL falls back when it can't read a Delta table directly, for example a SQL view. On OneLake there is no such fallback.",
+            "nl": "Direct Lake on SQL valt terug als het een Delta-tabel niet rechtstreeks kan lezen, bijvoorbeeld een SQL-view. On OneLake is er geen fallback.",
+            "fr": "Direct Lake on SQL bascule quand il ne peut pas lire une table Delta directement, par exemple une vue SQL. Sur OneLake, pas de repli."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Direct Lake on OneLake doesn't fall back to DirectQuery mode via the SQL analytics endpoint of the data source."
+        },
+        {
+          "id": "dlo-2",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "Your model must combine tables from a lakehouse and a warehouse. Which flavor fits?",
+            "nl": "Je model moet tabellen uit een lakehouse en een warehouse combineren. Welke variant past?",
+            "fr": "Votre modèle doit combiner des tables d'un lakehouse et d'un entrepôt. Quelle variante convient ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Neither can combine sources",
+                "nl": "Geen van beide kan bronnen combineren",
+                "fr": "Aucune ne peut combiner des sources"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only Import mode can",
+                "nl": "Alleen Import-modus kan dat",
+                "fr": "Seul le mode Import le peut"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Direct Lake on SQL: it supports many sources",
+                "nl": "Direct Lake on SQL: het ondersteunt veel bronnen",
+                "fr": "Direct Lake on SQL : il prend en charge plusieurs sources"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Direct Lake on OneLake: it can use one or more Fabric sources",
+                "nl": "Direct Lake on OneLake: het kan één of meer Fabric-bronnen gebruiken",
+                "fr": "Direct Lake on OneLake : il peut utiliser une ou plusieurs sources Fabric"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Direct Lake on SQL uses a single Fabric data source. On OneLake can use several and even add Import tables from other sources.",
+            "nl": "Direct Lake on SQL gebruikt één Fabric-bron. On OneLake kan er meerdere gebruiken en zelfs Import-tabellen uit andere bronnen toevoegen.",
+            "fr": "Direct Lake on SQL utilise une seule source Fabric. On OneLake peut en utiliser plusieurs et ajouter des tables Import d'autres sources."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Direct Lake on OneLake can use data from one or more Fabric data sources with Delta tables."
+        },
+        {
+          "id": "dlo-3",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "Where in the medallion architecture does Direct Lake fit best?",
+            "nl": "Waar in de medallion-architectuur past Direct Lake het best?",
+            "fr": "Où Direct Lake s'intègre-t-il le mieux dans l'architecture en médaillon ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "On a Git repository",
+                "nl": "Op een Git-repository",
+                "fr": "Sur un dépôt Git"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "On the gold analytics layer",
+                "nl": "Op de gold-analyselaag",
+                "fr": "Sur la couche d'analyse gold"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "On bronze, to read raw files",
+                "nl": "Op bronze, om ruwe bestanden te lezen",
+                "fr": "Sur bronze, pour lire les fichiers bruts"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "On a streaming queue",
+                "nl": "Op een streamingqueue",
+                "fr": "Sur une file de streaming"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Gold tables are curated and well-tuned, which is what Direct Lake needs for good performance.",
+            "nl": "Gold-tabellen zijn gecureerd en goed afgestemd, precies wat Direct Lake nodig heeft voor goede prestaties.",
+            "fr": "Les tables gold sont organisées et bien optimisées, ce dont Direct Lake a besoin."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Direct Lake is an ideal choice for the gold analytics layer in the medallion lakehouse architecture."
+        },
+        {
+          "id": "dlo-4",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "Your Direct Lake model is slow. What does the documentation point to first?",
+            "nl": "Je Direct Lake-model is traag. Waar wijst de documentatie eerst naar?",
+            "fr": "Votre modèle Direct Lake est lent. Que la documentation pointe-t-elle en premier ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Deleting the semantic model",
+                "nl": "Het semantisch model verwijderen",
+                "fr": "Supprimer le modèle sémantique"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Turning off OneLake",
+                "nl": "OneLake uitzetten",
+                "fr": "Désactiver OneLake"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Well-tuned Delta tables (V-Order, file and row-group size)",
+                "nl": "Goed afgestemde Delta-tabellen (V-Order, bestands- en row group-grootte)",
+                "fr": "Des tables Delta bien optimisées (V-Order, taille des fichiers et row groups)"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Switching to CSV",
+                "nl": "Overstappen op CSV",
+                "fr": "Passer au CSV"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Direct Lake reads Delta tables directly, so their layout decides performance.",
+            "nl": "Direct Lake leest Delta-tabellen rechtstreeks, dus hun opbouw bepaalt de prestaties.",
+            "fr": "Direct Lake lit directement les tables Delta : leur organisation détermine les performances."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Direct Lake performance depends on well-tuned Delta tables."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "real-time-dashboards",
+      "layerId": "serve",
+      "componentId": "rtdash",
+      "title": {
+        "en": "Real-Time Dashboards",
+        "nl": "Real-Time Dashboards",
+        "fr": "Tableaux de bord Real-Time"
+      },
+      "questions": [
+        {
+          "id": "rd-1",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "What do Real-Time Dashboards visualize?",
+            "nl": "Wat visualiseren Real-Time Dashboards?",
+            "fr": "Que visualisent les Real-Time Dashboards ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Only static Excel files",
+                "nl": "Alleen statische Excel-bestanden",
+                "fr": "Seulement des fichiers Excel statiques"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only capacity bills",
+                "nl": "Alleen capacity-facturen",
+                "fr": "Seulement les factures de capacité"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Streaming and historical data through tiles built on KQL queries",
+                "nl": "Streaming en historische data via tegels gebaseerd op KQL-queries",
+                "fr": "Des données en streaming et historiques via des tuiles basées sur des requêtes KQL"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only Git history",
+                "nl": "Alleen Git-geschiedenis",
+                "fr": "Seulement l'historique Git"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "They monitor, analyze and share streaming and historical data as an interactive collection of visual tiles.",
+            "nl": "Ze monitoren, analyseren en delen streaming en historische data als een interactieve verzameling visuele tegels.",
+            "fr": "Ils surveillent, analysent et partagent des données en streaming et historiques sous forme de tuiles interactives."
+          },
+          "source": {
+            "title": "Create a Real-Time Dashboard",
+            "url": "https://learn.microsoft.com/fabric/real-time-intelligence/dashboard-real-time-create",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Real-Time Dashboards help you monitor, analyze, and share streaming and historical data through an interactive collection of visual tiles."
+        },
+        {
+          "id": "rd-2",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "Which item must exist before you can fill a Real-Time Dashboard with data?",
+            "nl": "Welk item moet bestaan voordat je een Real-Time Dashboard met data kunt vullen?",
+            "fr": "Quel élément doit exister avant de remplir un Real-Time Dashboard ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A KQL database with data",
+                "nl": "Een KQL-database met data",
+                "fr": "Une base KQL contenant des données"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A paginated report",
+                "nl": "Een paginated report",
+                "fr": "Un rapport paginé"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A data gateway",
+                "nl": "Een data gateway",
+                "fr": "Une passerelle de données"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A deployment pipeline",
+                "nl": "Een deployment pipeline",
+                "fr": "Un pipeline de déploiement"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "The tiles run KQL queries against a KQL database, typically inside an eventhouse.",
+            "nl": "De tegels voeren KQL-queries uit op een KQL-database, meestal in een eventhouse.",
+            "fr": "Les tuiles exécutent des requêtes KQL sur une base KQL, généralement dans un eventhouse."
+          },
+          "source": {
+            "title": "Create a Real-Time Dashboard",
+            "url": "https://learn.microsoft.com/fabric/real-time-intelligence/dashboard-real-time-create",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "A KQL database with data"
+        }
+      ],
+      "roles": [
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "dynamic-data-masking",
+      "layerId": "govern",
+      "componentId": "security",
+      "title": {
+        "en": "Dynamic data masking",
+        "nl": "Dynamic data masking",
+        "fr": "Masquage dynamique des données"
+      },
+      "questions": [
+        {
+          "id": "dd-1",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "What does dynamic data masking do?",
+            "nl": "Wat doet dynamic data masking?",
+            "fr": "Que fait le masquage dynamique des données ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Limits sensitive data exposure by masking it to nonprivileged users",
+                "nl": "Beperkt blootstelling van gevoelige data door ze te maskeren voor gebruikers zonder rechten",
+                "fr": "Limite l'exposition des données sensibles en les masquant aux utilisateurs non privilégiés"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Encrypts the Parquet files on disk",
+                "nl": "Versleutelt de Parquet-bestanden op schijf",
+                "fr": "Chiffre les fichiers Parquet sur disque"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Deletes rows after 30 days",
+                "nl": "Verwijdert rijen na 30 dagen",
+                "fr": "Supprime les lignes après 30 jours"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Hides items from the OneLake catalog",
+                "nl": "Verbergt items in de OneLake-catalogus",
+                "fr": "Masque les éléments du catalogue OneLake"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Data stays unchanged in storage; privileged users or roles still see real values.",
+            "nl": "De data blijft ongewijzigd in opslag; bevoorrechte gebruikers of rollen zien nog steeds echte waarden.",
+            "fr": "Les données restent inchangées ; les utilisateurs ou rôles privilégiés voient les vraies valeurs."
+          },
+          "source": {
+            "title": "Dynamic data masking in Fabric Data Warehouse",
+            "url": "https://learn.microsoft.com/fabric/data-warehouse/dynamic-data-masking",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Dynamic data masking is a data protection feature that limits sensitive data exposure by masking it to nonprivileged users."
+        },
+        {
+          "id": "dd-2",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "Is dynamic data masking enough on its own to protect a sensitive column?",
+            "nl": "Is dynamic data masking op zichzelf genoeg om een gevoelige kolom te beschermen?",
+            "fr": "Le masquage dynamique suffit-il seul à protéger une colonne sensible ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Yes, it is a complete security boundary",
+                "nl": "Ja, het is een volledige beveiligingsgrens",
+                "fr": "Oui, c'est une frontière de sécurité complète"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Yes, but only for numeric columns",
+                "nl": "Ja, maar alleen voor numerieke kolommen",
+                "fr": "Oui, mais seulement pour les colonnes numériques"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "No, users can run exhaustive queries that expose pieces; combine it with column-level and row-level security",
+                "nl": "Nee, gebruikers kunnen uitputtende queries draaien die stukjes onthullen; combineer met column- en row-level security",
+                "fr": "Non, des requêtes exhaustives peuvent exposer des fragments ; combinez-le avec la sécurité par colonne et par ligne"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Yes, if V-Order is on",
+                "nl": "Ja, als V-Order aan staat",
+                "fr": "Oui, si V-Order est activé"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Masking limits exposure but doesn't stop a user from inferring values with repeated queries.",
+            "nl": "Masking beperkt blootstelling maar houdt een gebruiker niet tegen om waarden af te leiden met herhaalde queries.",
+            "fr": "Le masquage limite l'exposition mais n'empêche pas de déduire des valeurs avec des requêtes répétées."
+          },
+          "source": {
+            "title": "Dynamic data masking in Fabric Data Warehouse",
+            "url": "https://learn.microsoft.com/fabric/data-warehouse/dynamic-data-masking",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Dynamic data masking doesn't prevent database users from connecting directly to the database and running exhaustive queries that expose pieces of the sensitive data."
+        },
+        {
+          "id": "dd-3",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "How many masking function types are available?",
+            "nl": "Hoeveel soorten maskeerfuncties zijn er?",
+            "fr": "Combien de types de fonctions de masquage existe-t-il ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Ten",
+                "nl": "Tien",
+                "fr": "Dix"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "One",
+                "nl": "Eén",
+                "fr": "Un"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Two",
+                "nl": "Twee",
+                "fr": "Deux"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Four: default, email, random and custom string",
+                "nl": "Vier: default, email, random en custom string",
+                "fr": "Quatre : default, email, random et custom string"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Random masks numeric values within a range you choose; custom string keeps the first and last letters.",
+            "nl": "Random maskeert numerieke waarden binnen een gekozen bereik; custom string behoudt de eerste en laatste letters.",
+            "fr": "Random masque les valeurs numériques dans une plage choisie ; custom string garde les première et dernière lettres."
+          },
+          "source": {
+            "title": "Dynamic data masking in Fabric Data Warehouse",
+            "url": "https://learn.microsoft.com/fabric/data-warehouse/dynamic-data-masking",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Define a masking rule on a column in a table to obfuscate the data in that column. Four types of masks are available."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "network-security",
+      "layerId": "govern",
+      "componentId": "privatelink",
+      "title": {
+        "en": "Managed private endpoints and trusted workspace access",
+        "nl": "Managed private endpoints en trusted workspace access",
+        "fr": "Points de terminaison privés managés et accès d'espace de travail approuvé"
+      },
+      "questions": [
+        {
+          "id": "ns-1",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "Who creates managed private endpoints, and why?",
+            "nl": "Wie maakt managed private endpoints en waarom?",
+            "fr": "Qui crée les points de terminaison privés managés, et pourquoi ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Nobody; they are automatic",
+                "nl": "Niemand; ze zijn automatisch",
+                "fr": "Personne ; ils sont automatiques"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Microsoft support only",
+                "nl": "Alleen Microsoft support",
+                "fr": "Seulement le support Microsoft"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Any viewer, to share reports",
+                "nl": "Elke viewer, om rapporten te delen",
+                "fr": "Tout lecteur, pour partager des rapports"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Workspace admins, to reach data sources behind a firewall or blocked from the public internet",
+                "nl": "Workspace-admins, om databronnen achter een firewall of afgeschermd van het publieke internet te bereiken",
+                "fr": "Les admins d'espace de travail, pour atteindre des sources derrière un pare-feu ou fermées à Internet"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "They let Fabric workloads reach private data sources without exposing them to the public network.",
+            "nl": "Ze laten Fabric-workloads private bronnen bereiken zonder ze aan het publieke netwerk bloot te stellen.",
+            "fr": "Ils permettent aux charges Fabric d'atteindre des sources privées sans les exposer au réseau public."
+          },
+          "source": {
+            "title": "Managed private endpoints for Fabric",
+            "url": "https://learn.microsoft.com/fabric/security/security-managed-private-endpoints-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Managed private endpoints are connections that workspace admins can create to access data sources that are behind a firewall or that are blocked from public internet access."
+        },
+        {
+          "id": "ns-2",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "Your ADLS Gen2 account has its firewall on. How can a Fabric workspace with a workspace identity still reach it securely?",
+            "nl": "Je ADLS Gen2-account heeft zijn firewall aan. Hoe kan een Fabric-workspace met een workspace identity er toch veilig bij?",
+            "fr": "Votre compte ADLS Gen2 a son pare-feu activé. Comment un espace de travail Fabric avec identité d'espace de travail peut-il y accéder en sécurité ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A sensitivity label",
+                "nl": "Een gevoeligheidslabel",
+                "fr": "Une étiquette de confidentialité"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Trusted workspace access, with resource instance rules on the storage account",
+                "nl": "Trusted workspace access, met resource instance rules op het opslagaccount",
+                "fr": "L'accès d'espace de travail approuvé, avec des règles d'instance de ressource sur le compte de stockage"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Turn the firewall off",
+                "nl": "De firewall uitzetten",
+                "fr": "Désactiver le pare-feu"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Email the files",
+                "nl": "De bestanden mailen",
+                "fr": "Envoyer les fichiers par e-mail"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Resource instance rules allow specific Fabric workspaces through the storage firewall.",
+            "nl": "Resource instance rules laten specifieke Fabric-workspaces door de firewall van het opslagaccount.",
+            "fr": "Les règles d'instance de ressource autorisent des espaces de travail Fabric précis à traverser le pare-feu du stockage."
+          },
+          "source": {
+            "title": "Trusted workspace access",
+            "url": "https://learn.microsoft.com/fabric/security/security-trusted-workspace-access",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "To limit and protect access to firewall-enabled storage accounts from certain Fabric workspaces, you can set up resource instance rules to allow access from specific Fabric workspaces."
+        },
+        {
+          "id": "ns-3",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "Can you use trusted workspace access on a Fabric trial capacity?",
+            "nl": "Kun je trusted workspace access gebruiken op een Fabric-trialcapacity?",
+            "fr": "Peut-on utiliser l'accès d'espace de travail approuvé sur une capacité d'essai Fabric ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Yes, fully",
+                "nl": "Ja, volledig",
+                "fr": "Oui, entièrement"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "No, only on purchased F SKU capacities",
+                "nl": "Nee, alleen op gekochte F-SKU-capacities",
+                "fr": "Non, seulement sur des capacités F achetées"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Only with a P SKU",
+                "nl": "Alleen met een P-SKU",
+                "fr": "Seulement avec une SKU P"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Yes, for 7 days",
+                "nl": "Ja, gedurende 7 dagen",
+                "fr": "Oui, pendant 7 jours"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Trusted workspace access is generally available, but not supported in trial capacities.",
+            "nl": "Trusted workspace access is algemeen beschikbaar, maar niet ondersteund in trialcapacities.",
+            "fr": "L'accès d'espace de travail approuvé est en disponibilité générale mais non pris en charge sur les capacités d'essai."
+          },
+          "source": {
+            "title": "Trusted workspace access",
+            "url": "https://learn.microsoft.com/fabric/security/security-trusted-workspace-access",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Trusted workspace access isn't supported in Trial capacities."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "item-permissions",
+      "layerId": "govern",
+      "componentId": "security",
+      "title": {
+        "en": "Item permissions and sharing",
+        "nl": "Item-permissies en delen",
+        "fr": "Autorisations d'élément et partage"
+      },
+      "questions": [
+        {
+          "id": "pm-1",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "What is the scope of an item permission?",
+            "nl": "Wat is het bereik van een item-permissie?",
+            "fr": "Quelle est la portée d'une autorisation d'élément ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The whole capacity",
+                "nl": "De hele capacity",
+                "fr": "Toute la capacité"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The whole workspace",
+                "nl": "De hele workspace",
+                "fr": "Tout l'espace de travail"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "The whole tenant",
+                "nl": "De hele tenant",
+                "fr": "Tout le locataire"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Only that one item, not other items in the workspace",
+                "nl": "Alleen dat ene item, niet andere items in de workspace",
+                "fr": "Seulement cet élément, pas les autres de l'espace de travail"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Use item permissions to give someone access to a single item without a workspace role.",
+            "nl": "Gebruik item-permissies om iemand toegang tot één item te geven zonder workspace-rol.",
+            "fr": "Utilisez-les pour donner accès à un seul élément sans rôle d'espace de travail."
+          },
+          "source": {
+            "title": "Microsoft Fabric permission model",
+            "url": "https://learn.microsoft.com/fabric/security/permission-model",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Item permissions are confined to a specific item and don't apply to other items."
+        },
+        {
+          "id": "pm-2",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "You share an item with a colleague without extra options. What do they get by default?",
+            "nl": "Je deelt een item met een collega zonder extra opties. Wat krijgen ze standaard?",
+            "fr": "Vous partagez un élément avec un collègue sans option supplémentaire. Que reçoit-il par défaut ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Admin rights on the workspace",
+                "nl": "Adminrechten op de workspace",
+                "fr": "Les droits d'admin sur l'espace de travail"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Write access to the data",
+                "nl": "Schrijftoegang tot de data",
+                "fr": "L'accès en écriture aux données"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Nothing at all",
+                "nl": "Helemaal niets",
+                "fr": "Rien du tout"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Read permission on that item",
+                "nl": "Leesrechten op dat item",
+                "fr": "L'autorisation de lecture sur cet élément"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Sharing grants Read by default; you can add more permissions when you share.",
+            "nl": "Delen geeft standaard Read; je kunt bij het delen meer rechten toevoegen.",
+            "fr": "Le partage accorde Read par défaut ; vous pouvez ajouter des droits au moment du partage."
+          },
+          "source": {
+            "title": "Microsoft Fabric permission model",
+            "url": "https://learn.microsoft.com/fabric/security/permission-model",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Sharing an item grants the user the read permission for that item by default."
+        },
+        {
+          "id": "pm-3",
+          "skills": [
+            "dp700-implement"
+          ],
+          "prompt": {
+            "en": "A user has only Read on a report built on Direct Lake. Can they query the underlying data in SQL or OneLake?",
+            "nl": "Een gebruiker heeft alleen Read op een rapport gebouwd op Direct Lake. Kan die de onderliggende data in SQL of OneLake bevragen?",
+            "fr": "Un utilisateur n'a que Read sur un rapport Direct Lake. Peut-il interroger les données sous-jacentes en SQL ou OneLake ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Yes, through shortcuts only",
+                "nl": "Ja, alleen via shortcuts",
+                "fr": "Oui, via les raccourcis seulement"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only in the trial",
+                "nl": "Alleen in de trial",
+                "fr": "Seulement en essai"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "No, Read shows metadata and reports but not the underlying data",
+                "nl": "Nee, Read toont metadata en rapporten maar niet de onderliggende data",
+                "fr": "Non, Read donne les métadonnées et rapports mais pas les données sous-jacentes"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Yes, Read opens all tables",
+                "nl": "Ja, Read opent alle tabellen",
+                "fr": "Oui, Read ouvre toutes les tables"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Data access needs extra permissions on the underlying item or OneLake security.",
+            "nl": "Voor datatoegang zijn extra rechten op het onderliggende item of OneLake security nodig.",
+            "fr": "L'accès aux données exige des droits supplémentaires sur l'élément sous-jacent ou OneLake security."
+          },
+          "source": {
+            "title": "Microsoft Fabric permission model",
+            "url": "https://learn.microsoft.com/fabric/security/permission-model",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Read permissions allow users to see the metadata for that item and view any reports associated with it. However, read permissions don't allow users to access underlying data in SQL or OneLake."
+        }
+      ],
+      "roles": [
+        "architect",
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "ai-functions-wrangler",
+      "layerId": "intelligence",
+      "componentId": "aifunc",
+      "title": {
+        "en": "AI functions and Data Wrangler",
+        "nl": "AI functions en Data Wrangler",
+        "fr": "AI functions et Data Wrangler"
+      },
+      "questions": [
+        {
+          "id": "af-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "What do AI functions let you do?",
+            "nl": "Wat laten AI functions je doen?",
+            "fr": "Que permettent les AI functions ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Train a model from scratch in one click",
+                "nl": "In één klik een model vanaf nul trainen",
+                "fr": "Entraîner un modèle de zéro en un clic"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Create capacities",
+                "nl": "Capacities aanmaken",
+                "fr": "Créer des capacités"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Replace the Spark engine",
+                "nl": "De Spark-engine vervangen",
+                "fr": "Remplacer le moteur Spark"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Apply LLM-powered transformations to a DataFrame with one line, such as df.ai.classify()",
+                "nl": "LLM-transformaties op een DataFrame toepassen met één regel, zoals df.ai.classify()",
+                "fr": "Appliquer des transformations LLM à un DataFrame en une ligne, comme df.ai.classify()"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "They enrich, classify, summarize and extract from text at scale in pandas or PySpark.",
+            "nl": "Ze verrijken, classificeren, vatten samen en extraheren uit tekst op schaal in pandas of PySpark.",
+            "fr": "Elles enrichissent, classent, résument et extraient du texte à grande échelle avec pandas ou PySpark."
+          },
+          "source": {
+            "title": "AI functions in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-science/ai-functions/overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "AI Functions in Microsoft Fabric apply one-line, LLM-powered transformations to large pandas or PySpark DataFrames"
+        },
+        {
+          "id": "af-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "How do AI functions handle large DataFrames efficiently?",
+            "nl": "Hoe verwerken AI functions grote DataFrames efficiënt?",
+            "fr": "Comment les AI functions traitent-elles efficacement de grands DataFrames ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "They run one row per hour",
+                "nl": "Ze verwerken één rij per uur",
+                "fr": "Elles traitent une ligne par heure"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "They run hundreds of async inference calls with row-level content isolation",
+                "nl": "Ze draaien honderden asynchrone inferentie-aanroepen met isolatie van de inhoud per rij",
+                "fr": "Elles exécutent des centaines d'appels d'inférence asynchrones avec isolation du contenu par ligne"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "They copy the data to an external service",
+                "nl": "Ze kopiëren de data naar een externe dienst",
+                "fr": "Elles copient les données vers un service externe"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "They send the whole table in one prompt",
+                "nl": "Ze sturen de hele tabel in één prompt",
+                "fr": "Elles envoient toute la table dans un seul prompt"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "High concurrency keeps it fast, while row-level isolation keeps each row's content separate.",
+            "nl": "Hoge concurrency houdt het snel, terwijl isolatie per rij de inhoud gescheiden houdt.",
+            "fr": "La concurrence élevée la rend rapide, l'isolation par ligne garde le contenu séparé."
+          },
+          "source": {
+            "title": "AI functions in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-science/ai-functions/overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "They run with high concurrency by making hundreds of async inference calls while keeping row-level content isolation."
+        },
+        {
+          "id": "af-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "You cleaned a DataFrame visually in Data Wrangler. What can you export back to your notebook?",
+            "nl": "Je hebt een DataFrame visueel opgeschoond in Data Wrangler. Wat kun je terug naar je notebook exporteren?",
+            "fr": "Vous avez nettoyé un DataFrame visuellement dans Data Wrangler. Que pouvez-vous réexporter vers votre notebook ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Only a screenshot",
+                "nl": "Alleen een screenshot",
+                "fr": "Seulement une capture d'écran"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Only a CSV, never code",
+                "nl": "Alleen een CSV, nooit code",
+                "fr": "Seulement un CSV, jamais du code"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A reusable pandas or PySpark function",
+                "nl": "Een herbruikbare pandas- of PySpark-functie",
+                "fr": "Une fonction pandas ou PySpark réutilisable"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A new capacity",
+                "nl": "Een nieuwe capacity",
+                "fr": "Une nouvelle capacité"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Data Wrangler generates the transformation code, so the cleaning steps are repeatable.",
+            "nl": "Data Wrangler genereert de transformatiecode, zodat de opschoonstappen herhaalbaar zijn.",
+            "fr": "Data Wrangler génère le code de transformation : les étapes de nettoyage sont reproductibles."
+          },
+          "source": {
+            "title": "Accelerate data prep with Data Wrangler",
+            "url": "https://learn.microsoft.com/fabric/data-science/data-wrangler",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Export reusable pandas or PySpark functions back to your notebook"
+        }
+      ],
+      "roles": [
+        "data-engineer"
+      ]
+    },
+    {
+      "id": "ex-ingest-hybrid",
+      "layerId": "ingest",
+      "componentId": "pipelines",
+      "title": {
+        "en": "Architect: a hybrid ingestion design",
+        "nl": "Architect: een hybride ingestieontwerp",
+        "fr": "Architecte : une ingestion hybride"
+      },
+      "questions": [
+        {
+          "id": "exi-1",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "An Oracle database in the company datacenter is behind a firewall. Pipelines must read it. What do you set up?",
+            "nl": "Een Oracle-database in het eigen datacenter staat achter een firewall. Pipelines moeten ze lezen. Wat zet je op?",
+            "fr": "Une base Oracle du datacenter est derrière un pare-feu. Les pipelines doivent la lire. Que mettez-vous en place ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Open mirroring",
+                "nl": "Open mirroring",
+                "fr": "Open mirroring"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "An on-premises data gateway, version 3000.214.2 or later",
+                "nl": "Een on-premises data gateway, versie 3000.214.2 of nieuwer",
+                "fr": "Une passerelle de données locale, version 3000.214.2 ou ultérieure"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "An eventstream",
+                "nl": "Een eventstream",
+                "fr": "Un eventstream"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A OneLake shortcut",
+                "nl": "Een OneLake-shortcut",
+                "fr": "Un raccourci OneLake"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Why: the source is private, so the cloud service needs a gateway in your network. Old gateway versions can't serve Fabric pipelines.",
+            "nl": "Waarom: de bron is privé, dus de clouddienst heeft een gateway in je netwerk nodig. Oude gatewayversies kunnen Fabric-pipelines niet bedienen.",
+            "fr": "Pourquoi : la source est privée, le service cloud a besoin d'une passerelle dans votre réseau. Les anciennes versions ne servent pas les pipelines Fabric."
+          },
+          "source": {
+            "title": "Access on-premises data sources in Data Factory",
+            "url": "https://learn.microsoft.com/fabric/data-factory/how-to-access-on-premises-data",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "You need an on-premises data gateway version 3000.214.2 or later to support Fabric pipelines.",
+          "stage": {
+            "en": "Ingest · On-premises",
+            "nl": "Ingest · On-premises",
+            "fr": "Ingestion · Sur site"
+          }
+        },
+        {
+          "id": "exi-2",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "A SaaS vendor can push change files but has no Fabric connector. How do you land its data as Delta tables?",
+            "nl": "Een SaaS-leverancier kan wijzigingsbestanden pushen maar heeft geen Fabric-connector. Hoe laat je de data als Delta-tabellen landen?",
+            "fr": "Un éditeur SaaS peut pousser des fichiers de changements mais n'a pas de connecteur Fabric. Comment obtenir des tables Delta ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A Power BI import refresh",
+                "nl": "Een Power BI-importrefresh",
+                "fr": "Une actualisation d'import Power BI"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A Spark notebook polling every minute",
+                "nl": "Een Spark-notebook dat elke minuut pollt",
+                "fr": "Un notebook Spark qui interroge chaque minute"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Open mirroring: write to the landing zone and let the engine convert",
+                "nl": "Open mirroring: naar de landing zone schrijven en de engine laten omzetten",
+                "fr": "Open mirroring : écrire dans la landing zone et laisser le moteur convertir"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A sensitivity label",
+                "nl": "Een gevoeligheidslabel",
+                "fr": "Une étiquette de confidentialité"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Why: open mirroring accepts change data from any application and handles the complexity of applying it.",
+            "nl": "Waarom: open mirroring accepteert wijzigingsdata van elke toepassing en regelt het toepassen ervan.",
+            "fr": "Pourquoi : l'open mirroring accepte les changements de toute application et gère leur application."
+          },
+          "source": {
+            "title": "Open mirroring in Microsoft Fabric",
+            "url": "https://learn.microsoft.com/fabric/mirroring/open-mirroring",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "the mirroring replication engine manages the complexity of changes and converts data into Delta Parquet",
+          "stage": {
+            "en": "Ingest · SaaS source",
+            "nl": "Ingest · SaaS-bron",
+            "fr": "Ingestion · Source SaaS"
+          }
+        },
+        {
+          "id": "exi-3",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "The same load must run for ten customers with different source folders. How do you keep one pipeline?",
+            "nl": "Dezelfde load moet draaien voor tien klanten met verschillende bronmappen. Hoe hou je één pipeline?",
+            "fr": "Le même chargement doit tourner pour dix clients avec des dossiers différents. Comment garder un seul pipeline ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Ten cloned pipelines",
+                "nl": "Tien gekloonde pipelines",
+                "fr": "Dix pipelines clonés"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Ten workspaces",
+                "nl": "Tien workspaces",
+                "fr": "Dix espaces de travail"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A larger capacity",
+                "nl": "Een grotere capacity",
+                "fr": "Une capacité plus grande"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Parameters, with the folder passed in at run time",
+                "nl": "Parameters, met de map bij de run meegegeven",
+                "fr": "Des paramètres, le dossier étant transmis à l'exécution"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Why: parameters make a pipeline reusable. Remember that a parameter keeps its value for the whole run.",
+            "nl": "Waarom: parameters maken een pipeline herbruikbaar. Onthoud dat een parameter zijn waarde de hele run behoudt.",
+            "fr": "Pourquoi : les paramètres rendent un pipeline réutilisable. Une valeur de paramètre reste fixe pendant toute l'exécution."
+          },
+          "source": {
+            "title": "Parameters for Data Factory in Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-factory/parameters",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Parameters let you reuse the same pipeline with different values each time.",
+          "stage": {
+            "en": "Ingest · Orchestration",
+            "nl": "Ingest · Orkestratie",
+            "fr": "Ingestion · Orchestration"
+          }
+        },
+        {
+          "id": "exi-4",
+          "skills": [
+            "dp700-ingest"
+          ],
+          "prompt": {
+            "en": "A dataflow must ingest 20 GB of Parquet files from ADLS Gen2 quickly, keeping the low-code experience. What do you rely on?",
+            "nl": "Een dataflow moet snel 20 GB Parquet-bestanden uit ADLS Gen2 inladen met behoud van de low-code ervaring. Waarop reken je?",
+            "fr": "Un dataflow doit ingérer vite 20 Go de fichiers Parquet d'ADLS Gen2 en gardant l'expérience low-code. Sur quoi comptez-vous ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Fast copy, which applies to files of at least 100 MB",
+                "nl": "Fast copy, dat geldt voor bestanden van minstens 100 MB",
+                "fr": "Fast copy, qui s'applique aux fichiers d'au moins 100 Mo"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Autosave",
+                "nl": "Autosave",
+                "fr": "L'enregistrement automatique"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Endorsement",
+                "nl": "Endorsement",
+                "fr": "L'approbation"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A KQL database",
+                "nl": "Een KQL-database",
+                "fr": "Une base KQL"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Why: Fast copy gives the dataflow the backend of pipeline Copy activity once the data passes the size threshold.",
+            "nl": "Waarom: Fast copy geeft de dataflow de backend van de pipeline-Copy-activiteit zodra de data de groottedrempel passeert.",
+            "fr": "Pourquoi : Fast copy donne au dataflow le moteur de l'activité Copy au-delà du seuil de taille."
+          },
+          "source": {
+            "title": "Fast copy in Dataflow Gen2",
+            "url": "https://learn.microsoft.com/fabric/data-factory/dataflows-gen2-fast-copy",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "For file data: CSV or Parquet files that are at least 100 MB and stored in Azure Data Lake Storage (ADLS) Gen2 or blob storage",
+          "stage": {
+            "en": "Ingest · Large files",
+            "nl": "Ingest · Grote bestanden",
+            "fr": "Ingestion · Gros fichiers"
+          }
+        }
+      ],
+      "exercise": true,
+      "scenario": {
+        "en": "A retailer mixes an on-premises Oracle database, a SaaS app and large files in ADLS Gen2. Design the ingestion.",
+        "nl": "Een retailer combineert een on-premises Oracle-database, een SaaS-app en grote bestanden in ADLS Gen2. Ontwerp de ingestie.",
+        "fr": "Un distributeur mêle une base Oracle sur site, une application SaaS et de gros fichiers dans ADLS Gen2. Concevez l'ingestion."
+      },
+      "roles": [
+        "architect"
+      ]
+    },
+    {
+      "id": "ex-spark-tuning",
+      "layerId": "transform",
+      "componentId": "spark",
+      "title": {
+        "en": "Architect: tune the Spark estate",
+        "nl": "Architect: stem het Spark-landschap af",
+        "fr": "Architecte : optimiser le parc Spark"
+      },
+      "questions": [
+        {
+          "id": "ext-1",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Heavy aggregations on Delta tables are slow in Spark. Which feature targets exactly that?",
+            "nl": "Zware aggregaties op Delta-tabellen zijn traag in Spark. Welke functie mikt precies daarop?",
+            "fr": "Des agrégations lourdes sur des tables Delta sont lentes dans Spark. Quelle fonction cible ce cas ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Dynamic data masking",
+                "nl": "Dynamic data masking",
+                "fr": "Le masquage dynamique"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The native execution engine",
+                "nl": "De native execution engine",
+                "fr": "Le native execution engine"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Workspace roles",
+                "nl": "Workspace-rollen",
+                "fr": "Les rôles d'espace de travail"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A Real-Time Dashboard",
+                "nl": "Een Real-Time Dashboard",
+                "fr": "Un Real-Time Dashboard"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Why: the vectorized engine suits computationally intensive work on Parquet and Delta, not simple I/O-bound reads.",
+            "nl": "Waarom: de gevectoriseerde engine past bij rekenintensief werk op Parquet en Delta, niet bij simpele I/O-gebonden reads.",
+            "fr": "Pourquoi : le moteur vectorisé convient au calcul intensif sur Parquet et Delta, pas aux lectures simples limitées par les E/S."
+          },
+          "source": {
+            "title": "Native execution engine for Fabric Data Engineering",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/native-execution-engine-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "The engine is well-suited for queries that are computationally intensive, rather than simple or I/O-bound.",
+          "stage": {
+            "en": "Transform · Engine",
+            "nl": "Transform · Engine",
+            "fr": "Transformation · Moteur"
+          }
+        },
+        {
+          "id": "ext-2",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Analysts open many notebooks a day and each one waits for a new Spark session. What reduces the wait and the cost?",
+            "nl": "Analisten openen dagelijks veel notebooks en elk wacht op een nieuwe Spark-sessie. Wat verkort de wachttijd en de kost?",
+            "fr": "Les analystes ouvrent beaucoup de notebooks et chacun attend une nouvelle session Spark. Qu'est-ce qui réduit l'attente et le coût ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Row-level security",
+                "nl": "Row-level security",
+                "fr": "La sécurité au niveau des lignes"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A sensitivity label",
+                "nl": "Een gevoeligheidslabel",
+                "fr": "Une étiquette de confidentialité"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A bigger Power BI capacity",
+                "nl": "Een grotere Power BI-capacity",
+                "fr": "Une plus grande capacité Power BI"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "High concurrency mode, sharing one session per user",
+                "nl": "High concurrency-modus, met één gedeelde sessie per gebruiker",
+                "fr": "Le mode haute concurrence, une session partagée par utilisateur"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Why: standard mode starts a session per notebook. Shared sessions start faster and use resources better, within one user.",
+            "nl": "Waarom: standaardmodus start een sessie per notebook. Gedeelde sessies starten sneller en benutten resources beter, binnen één gebruiker.",
+            "fr": "Pourquoi : le mode standard démarre une session par notebook. Les sessions partagées démarrent plus vite, au sein d'un utilisateur."
+          },
+          "source": {
+            "title": "High concurrency mode in Apache Spark for Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/high-concurrency-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "In standard mode, each notebook or pipeline activity starts its own Spark session.",
+          "stage": {
+            "en": "Transform · Sessions",
+            "nl": "Transform · Sessies",
+            "fr": "Transformation · Sessions"
+          }
+        },
+        {
+          "id": "ext-3",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "Fifty notebooks need the same libraries and compute settings. Where do you define them once?",
+            "nl": "Vijftig notebooks hebben dezelfde libraries en computeinstellingen nodig. Waar definieer je ze één keer?",
+            "fr": "Cinquante notebooks ont besoin des mêmes bibliothèques et paramètres de calcul. Où les définir une fois ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "In each notebook by hand",
+                "nl": "In elke notebook met de hand",
+                "fr": "À la main dans chaque notebook"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "In a Git commit message",
+                "nl": "In een Git-commitbericht",
+                "fr": "Dans un message de commit Git"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "In an environment item, set as workspace default",
+                "nl": "In een environment-item, ingesteld als workspace default",
+                "fr": "Dans un élément environnement défini par défaut pour l'espace de travail"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "In the capacity metrics app",
+                "nl": "In de Capacity Metrics-app",
+                "fr": "Dans l'application Capacity Metrics"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Why: an environment gives governed, reusable defaults that notebooks and Spark job definitions inherit.",
+            "nl": "Waarom: een environment geeft beheerde, herbruikbare standaarden die notebooks en Spark job definitions erven.",
+            "fr": "Pourquoi : un environnement fournit des valeurs par défaut gouvernées dont héritent notebooks et définitions de travaux."
+          },
+          "source": {
+            "title": "Create, configure, and use an environment",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/create-and-use-environment",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Define Spark compute and libraries once, and apply them consistently across notebooks and Spark job definitions.",
+          "stage": {
+            "en": "Transform · Environment",
+            "nl": "Transform · Environment",
+            "fr": "Transformation · Environnement"
+          }
+        },
+        {
+          "id": "ext-4",
+          "skills": [
+            "dp600-prepare"
+          ],
+          "prompt": {
+            "en": "You start a new production workload. Which runtime do you pick?",
+            "nl": "Je start een nieuwe productieworkload. Welke runtime kies je?",
+            "fr": "Vous démarrez une nouvelle charge de production. Quel runtime choisissez-vous ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The latest GA runtime, currently Runtime 2.0",
+                "nl": "De nieuwste GA-runtime, momenteel Runtime 2.0",
+                "fr": "Le dernier runtime GA, actuellement Runtime 2.0"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "No runtime is needed",
+                "nl": "Geen runtime nodig",
+                "fr": "Aucun runtime nécessaire"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Any preview runtime",
+                "nl": "Een willekeurige previewruntime",
+                "fr": "N'importe quel runtime en préversion"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "The oldest runtime still available",
+                "nl": "De oudste runtime die nog beschikbaar is",
+                "fr": "Le plus ancien runtime encore disponible"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Why: Microsoft recommends the most recent generally available runtime for production.",
+            "nl": "Waarom: Microsoft raadt de meest recente algemeen beschikbare runtime aan voor productie.",
+            "fr": "Pourquoi : Microsoft recommande le runtime en disponibilité générale le plus récent pour la production."
+          },
+          "source": {
+            "title": "Apache Spark runtime in Fabric",
+            "url": "https://learn.microsoft.com/fabric/data-engineering/runtime",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Always use the most recent, generally available (GA) runtime version for your production workload, which currently is Runtime 2.0.",
+          "stage": {
+            "en": "Transform · Runtime",
+            "nl": "Transform · Runtime",
+            "fr": "Transformation · Runtime"
+          }
+        }
+      ],
+      "exercise": true,
+      "scenario": {
+        "en": "The data team's Spark jobs are slow and expensive. Review the setup like an architect.",
+        "nl": "De Spark-jobs van het datateam zijn traag en duur. Beoordeel de opzet als architect.",
+        "fr": "Les travaux Spark de l'équipe sont lents et coûteux. Passez la configuration en revue en tant qu'architecte."
+      },
+      "roles": [
+        "architect"
+      ]
+    },
+    {
+      "id": "ex-secure-serve",
+      "layerId": "serve",
+      "componentId": "semantic",
+      "title": {
+        "en": "Architect: serve a model safely",
+        "nl": "Architect: lever een model veilig",
+        "fr": "Architecte : servir un modèle en sécurité"
+      },
+      "questions": [
+        {
+          "id": "exv-1",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "The model must combine a lakehouse and a warehouse without DirectQuery fallback. What do you choose?",
+            "nl": "Het model moet een lakehouse en een warehouse combineren zonder DirectQuery-fallback. Wat kies je?",
+            "fr": "Le modèle doit combiner un lakehouse et un entrepôt sans repli DirectQuery. Que choisissez-vous ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A user data function",
+                "nl": "Een user data function",
+                "fr": "Une fonction de données utilisateur"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Direct Lake on OneLake",
+                "nl": "Direct Lake on OneLake",
+                "fr": "Direct Lake on OneLake"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A Real-Time Dashboard",
+                "nl": "Een Real-Time Dashboard",
+                "fr": "Un Real-Time Dashboard"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Direct Lake on SQL",
+                "nl": "Direct Lake on SQL",
+                "fr": "Direct Lake on SQL"
+              }
+            }
+          ],
+          "correctId": "b",
+          "explanation": {
+            "en": "Why: on OneLake can use several Fabric sources and doesn't fall back through the SQL analytics endpoint.",
+            "nl": "Waarom: on OneLake kan meerdere Fabric-bronnen gebruiken en valt niet terug via het SQL analytics endpoint.",
+            "fr": "Pourquoi : on OneLake peut utiliser plusieurs sources et ne bascule pas via le point de terminaison SQL."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Direct Lake on OneLake can use data from one or more Fabric data sources with Delta tables.",
+          "stage": {
+            "en": "Serve · Model",
+            "nl": "Serve · Model",
+            "fr": "Restitution · Modèle"
+          }
+        },
+        {
+          "id": "exv-2",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "Report consumers must see reports but never the underlying data in SQL or OneLake. Which permission fits?",
+            "nl": "Rapportconsumenten moeten rapporten zien maar nooit de onderliggende data in SQL of OneLake. Welke permissie past?",
+            "fr": "Les consommateurs doivent voir les rapports mais jamais les données sous-jacentes en SQL ou OneLake. Quelle autorisation convient ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "Member on the workspace",
+                "nl": "Member op de workspace",
+                "fr": "Member sur l'espace de travail"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "Admin on the capacity",
+                "nl": "Admin op de capacity",
+                "fr": "Admin sur la capacité"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "Read on the report only",
+                "nl": "Alleen Read op het rapport",
+                "fr": "Read sur le rapport seulement"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "Contributor on the workspace",
+                "nl": "Contributor op de workspace",
+                "fr": "Contributor sur l'espace de travail"
+              }
+            }
+          ],
+          "correctId": "c",
+          "explanation": {
+            "en": "Why: Read shows metadata and reports but doesn't open the underlying data.",
+            "nl": "Waarom: Read toont metadata en rapporten maar opent de onderliggende data niet.",
+            "fr": "Pourquoi : Read donne métadonnées et rapports sans ouvrir les données sous-jacentes."
+          },
+          "source": {
+            "title": "Microsoft Fabric permission model",
+            "url": "https://learn.microsoft.com/fabric/security/permission-model",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "However, read permissions don't allow users to access underlying data in SQL or OneLake.",
+          "stage": {
+            "en": "Serve · Access",
+            "nl": "Serve · Toegang",
+            "fr": "Restitution · Accès"
+          }
+        },
+        {
+          "id": "exv-3",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "Support staff may query customer rows but should see emails only as aXXX@XXXX.com. What do you configure in the warehouse?",
+            "nl": "Supportmedewerkers mogen klantrijen bevragen maar moeten e-mails alleen als aXXX@XXXX.com zien. Wat configureer je in de warehouse?",
+            "fr": "Le support peut interroger les clients mais ne doit voir les e-mails que sous la forme aXXX@XXXX.com. Que configurez-vous dans l'entrepôt ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "A deployment pipeline",
+                "nl": "Een deployment pipeline",
+                "fr": "Un pipeline de déploiement"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "A Spark environment",
+                "nl": "Een Spark-environment",
+                "fr": "Un environnement Spark"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "A bigger capacity",
+                "nl": "Een grotere capacity",
+                "fr": "Une plus grande capacité"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "A dynamic data masking rule on the email column",
+                "nl": "Een dynamic data masking-regel op de e-mailkolom",
+                "fr": "Une règle de masquage dynamique sur la colonne e-mail"
+              }
+            }
+          ],
+          "correctId": "d",
+          "explanation": {
+            "en": "Why: masking hides values from nonprivileged users. Pair it with column-level and row-level security, since masking alone can leak through repeated queries.",
+            "nl": "Waarom: masking verbergt waarden voor gebruikers zonder rechten. Combineer met column- en row-level security, want masking alleen kan lekken via herhaalde queries.",
+            "fr": "Pourquoi : le masquage cache les valeurs aux non-privilégiés. Combinez-le avec la sécurité par colonne et ligne, car il peut fuir par requêtes répétées."
+          },
+          "source": {
+            "title": "Dynamic data masking in Fabric Data Warehouse",
+            "url": "https://learn.microsoft.com/fabric/data-warehouse/dynamic-data-masking",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Dynamic data masking is a data protection feature that limits sensitive data exposure by masking it to nonprivileged users.",
+          "stage": {
+            "en": "Serve · Masking",
+            "nl": "Serve · Masking",
+            "fr": "Restitution · Masquage"
+          }
+        },
+        {
+          "id": "exv-4",
+          "skills": [
+            "dp600-model"
+          ],
+          "prompt": {
+            "en": "The Direct Lake report got slow after a few months of loads. What do you review first?",
+            "nl": "Het Direct Lake-rapport werd traag na enkele maanden loads. Wat bekijk je eerst?",
+            "fr": "Le rapport Direct Lake est devenu lent après quelques mois. Que vérifiez-vous d'abord ?"
+          },
+          "options": [
+            {
+              "id": "a",
+              "label": {
+                "en": "The Delta table layout: V-Order, file and row-group sizes",
+                "nl": "De opbouw van de Delta-tabellen: V-Order, bestands- en row group-groottes",
+                "fr": "L'organisation des tables Delta : V-Order, tailles de fichiers et de row groups"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "en": "The workspace icon",
+                "nl": "Het workspace-icoon",
+                "fr": "L'icône de l'espace de travail"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "en": "The Git branch name",
+                "nl": "De naam van de Git-branch",
+                "fr": "Le nom de la branche Git"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "en": "The report colors",
+                "nl": "De rapportkleuren",
+                "fr": "Les couleurs du rapport"
+              }
+            }
+          ],
+          "correctId": "a",
+          "explanation": {
+            "en": "Why: Direct Lake reads Delta files directly, so small or untuned files hurt. Run table maintenance.",
+            "nl": "Waarom: Direct Lake leest Delta-bestanden rechtstreeks, dus kleine of niet-afgestemde bestanden schaden. Draai table maintenance.",
+            "fr": "Pourquoi : Direct Lake lit directement les fichiers Delta ; fichiers petits ou non optimisés pénalisent. Lancez la maintenance."
+          },
+          "source": {
+            "title": "Direct Lake overview",
+            "url": "https://learn.microsoft.com/fabric/fundamentals/direct-lake-overview",
+            "verifiedOn": "2026-11-11"
+          },
+          "evidence": "Direct Lake performance depends on well-tuned Delta tables.",
+          "stage": {
+            "en": "Serve · Performance",
+            "nl": "Serve · Prestaties",
+            "fr": "Restitution · Performance"
+          }
+        }
+      ],
+      "exercise": true,
+      "scenario": {
+        "en": "A finance model on the gold layer goes to 500 report users, including support staff. Serve it safely and fast.",
+        "nl": "Een financieel model op de gold-laag gaat naar 500 rapportgebruikers, onder wie supportmedewerkers. Lever het veilig en snel.",
+        "fr": "Un modèle financier de la couche gold est destiné à 500 utilisateurs, dont le support. Servez-le en sécurité et vite."
+      },
+      "roles": [
+        "architect"
       ]
     }
   ],
