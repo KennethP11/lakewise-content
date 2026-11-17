@@ -1,12 +1,140 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T19:42:25Z",
+ "generatedAt": "2026-11-17T20:02:27Z",
  "source": {
   "title": "What's new in Microsoft Fabric",
   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
   "license": "CC BY 4.0"
  },
  "items": [
+  {
+   "id": "find-expensive-queries-from-capacity-metrics",
+   "title": "Find expensive queries from Capacity Metrics",
+   "status": "ga",
+   "month": "2026-11",
+   "date": "2026-11-05",
+   "workload": "Governance & admin",
+   "summary": "Find expensive queries from the Capacity Metrics app, now generally available.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
+  {
+   "id": "onelake-table-apis-now-with-iceberg-writes-plus-richer-table-metadata",
+   "title": "OneLake table APIs: Now with Iceberg writes, plus richer table metadata",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-05",
+   "workload": "OneLake",
+   "summary": "OneLake table APIs add Iceberg writes and richer table metadata, in preview.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
+  {
+   "id": "govern-fabric-connections-with-admin-apis-and-data-connection-policies",
+   "title": "Govern Fabric connections with admin APIs and data connection policies",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-05",
+   "workload": "Governance & admin",
+   "summary": "Admin APIs and data connection policies to govern Fabric connections, now in preview.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
+  {
+   "id": "salesforce-data-360-integration-with-onelake",
+   "title": "Salesforce Data 360 integration with OneLake",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-05",
+   "workload": "OneLake",
+   "summary": "Salesforce Data 360 integration with OneLake, now in preview.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
+  {
+   "id": "share-data-and-context-across-organizations-with-iq-share",
+   "title": "Share data and context across organizations with IQ Share",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-04",
+   "workload": "IQ",
+   "summary": "IQ Share lets organizations share data and context across tenants, now in preview.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
+  {
+   "id": "regular-expression-functions-in-microsoft-fabric-data-warehouse",
+   "title": "Regular expression functions in Microsoft Fabric Data Warehouse",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-03",
+   "workload": "Data Warehouse",
+   "summary": "Regular expression functions for Fabric Data Warehouse, now in preview.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
+  {
+   "id": "database-hub",
+   "title": "Database Hub",
+   "status": "ga",
+   "month": "2026-11",
+   "workload": "Databases",
+   "summary": "Database Hub provides a unified operational experience for managing database estates across Azure, Microsoft Fabric, on-premises environments, and supported multicloud environments.",
+   "url": "https://learn.microsoft.com/fabric/database/hub/overview",
+   "lessonId": null
+  },
+  {
+   "id": "mapping-data-flow-transforms-in-dataflow-gen2",
+   "title": "Mapping Data Flow transforms in Dataflow Gen2",
+   "status": "ga",
+   "month": "2026-11",
+   "workload": "Data Factory",
+   "summary": "Mapping data flow transforms in Dataflow Gen2 and the built-in Mapping Data Flow migration experience are generally available. Author, execute, and monitor Spark-based transformations in Fabric, or upgrade eligible Azure Data Factory and Azure Synapse Analytics pipelines…",
+   "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-mapping-data-flows-transforms",
+   "lessonId": null
+  },
+  {
+   "id": "use-onelake-as-native-storage-for-azure-databricks",
+   "title": "Use OneLake as native storage for Azure Databricks",
+   "status": "ga",
+   "month": "2026-10",
+   "date": "2026-10-30",
+   "workload": "OneLake",
+   "summary": "Azure Databricks can now use OneLake as native storage for Delta tables, generally available on the Fabric side.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
+  {
+   "id": "build-more-connected-workflows-with-fabric-actions-and-business-actions-in-fabri",
+   "title": "Build more connected workflows with Fabric Actions and Business Actions in Fabric Pipelines",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-30",
+   "workload": "Data Factory",
+   "summary": "Fabric Actions and Business Actions in pipelines, now in preview.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
+  {
+   "id": "custom-sql-pools-in-fabric-data-warehouse",
+   "title": "Custom SQL Pools in Fabric Data Warehouse",
+   "status": "ga",
+   "month": "2026-10",
+   "date": "2026-10-12",
+   "workload": "Data Warehouse",
+   "summary": "Custom SQL pools are now generally available in Fabric Data Warehouse.",
+   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
+   "source": "blog",
+   "lessonId": null
+  },
   {
    "id": "fabric-iq-in-microsoft-365-copilot",
    "title": "Fabric IQ in Microsoft 365 Copilot",
@@ -608,8 +736,8 @@
    "lessonId": null
   },
   {
-   "id": "sql-pool-statement-classifier",
-   "title": "SQL pool statement classifier",
+   "id": "warehouse-custom-sql-pools-and-the-sql-pool-statement-classifier",
+   "title": "Warehouse custom SQL pools and the SQL pool statement classifier",
    "status": "ga",
    "month": "2026-09",
    "workload": "Data Warehouse",
@@ -1938,16 +2066,6 @@
    "lessonId": null
   },
   {
-   "id": "database-hub",
-   "title": "Database Hub",
-   "status": "preview",
-   "month": null,
-   "workload": "Databases",
-   "summary": "Database Hub provides a unified operational experience for managing database estates across Azure, Microsoft Fabric, on-premises environments, and supported multicloud environments.",
-   "url": "https://learn.microsoft.com/fabric/database/hub/overview",
-   "lessonId": null
-  },
-  {
    "id": "data-factory-adaptive-performance-tuning",
    "title": "Data Factory Adaptive performance tuning",
    "status": "preview",
@@ -2238,6 +2356,16 @@
    "lessonId": null
   },
   {
+   "id": "fabric-horizondb",
+   "title": "Fabric HorizonDB",
+   "status": "preview",
+   "month": null,
+   "workload": "Databases",
+   "summary": "Fabric HorizonDB is a managed PostgreSQL service in Microsoft Fabric with workload-driven autoscaling. You can build operational applications with familiar PostgreSQL tools, mirror data to OneLake for analytics, query Fabric data through federation, and load analytical…",
+   "url": "https://learn.microsoft.com/fabric/database/horizondb/overview",
+   "lessonId": null
+  },
+  {
    "id": "fabric-iq-preview-workload",
    "title": "Fabric IQ (Preview) workload",
    "status": "preview",
@@ -2405,16 +2533,6 @@
    "workload": "Governance & admin",
    "summary": "The Schedule failures page in the Fabric monitoring hub lists every scheduled item with failure notifications configured and lets you add, edit, or remove recipients for any item from one place, without opening each item individually.",
    "url": "https://learn.microsoft.com/fabric/admin/monitoring-hub",
-   "lessonId": null
-  },
-  {
-   "id": "mapping-data-flow-transforms-in-dataflow-gen2",
-   "title": "Mapping Data Flow Transforms in Dataflow Gen2",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Mapping data flow transforms in Dataflow Gen2 introduces Spark-based transformation capabilities directly in the Dataflow Gen2 creation experience, enabling large-scale data transformations with Spark compute and migration of mapping data flows to Fabric. For pricing details,…",
-   "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-mapping-data-flows-transforms",
    "lessonId": null
   },
   {
@@ -2895,16 +3013,6 @@
    "workload": "Data Warehouse",
    "summary": "Fabric Data Warehouse now brings AI directly into T-SQL, enabling you to categorize and classify text, analyze sentiment, extract structured information, translate text across languages, and even correct grammar - all using built-in AI functions. To get started, see Use AI…",
    "url": "https://learn.microsoft.com/fabric/data-warehouse/ai-functions",
-   "lessonId": null
-  },
-  {
-   "id": "warehouse-custom-sql-pools",
-   "title": "Warehouse custom SQL pools",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Warehouse",
-   "summary": "Using custom SQL pools to balance performance and cost explains how workload routing and pool allocation affect performance, concurrency, and capacity consumption.",
-   "url": "https://learn.microsoft.com/fabric/data-warehouse/configure-custom-sql-pools-portal",
    "lessonId": null
   },
   {
