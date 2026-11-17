@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-10T20:51:38Z",
+ "generatedAt": "2026-11-17T19:42:25Z",
  "source": {
   "title": "What's new in Microsoft Fabric",
   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
@@ -748,6 +748,446 @@
    "lessonId": null
   },
   {
+   "id": "activator-rule-management",
+   "title": "Activator rule management",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Activator rule management provides a central Real-Time Hub view for rules created across Fabric experiences.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "activator-rules-from-catalog-and-workspace",
+   "title": "Activator rules from catalog and workspace",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Activator rules from catalog and workspace views let you create and manage rules from the context of the data they monitor.",
+   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/data-activator/activator-tutorial",
+   "lessonId": null
+  },
+  {
+   "id": "back-up-dataflow-query-results",
+   "title": "Back up Dataflow query results",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Dataflow query-result backup preserves prior query results in a lakehouse so you can compare or recover earlier refresh output.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "branch-workspace-admin-profile",
+   "title": "Branch workspace admin profile",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "CI/CD",
+   "summary": "Branch workspace admin profiles let administrators define governed identities and settings that developers use to create branch workspaces.",
+   "url": "https://learn.microsoft.com/fabric/cicd/git-integration/branched-workspace",
+   "lessonId": null
+  },
+  {
+   "id": "business-actions-activity",
+   "title": "Business Actions activity",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Platform",
+   "summary": "Business Actions activity lets pipelines call supported business systems and workflows.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "copy-job-and-eventstream-integration",
+   "title": "Copy job and Eventstream integration",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Copy job and Eventstream integration uses Eventstream as a Copy job source or destination.",
+   "url": "https://learn.microsoft.com/fabric/data-factory/what-is-copy-job",
+   "lessonId": null
+  },
+  {
+   "id": "custom-sort-in-dataflow-gen2",
+   "title": "Custom sort in Dataflow Gen2",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Custom sort in Dataflow Gen2 defines multi-column sort precedence in one dialog.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "data-agent-feedback-in-microsoft-365-copilot",
+   "title": "Data agent feedback in Microsoft 365 Copilot",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Science",
+   "summary": "Data agent feedback in Microsoft 365 Copilot helps creators review consumer feedback and improve agent responses.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "data-agent-runtime-model-upgrade",
+   "title": "Data agent runtime model upgrade",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Science",
+   "summary": "Data agent runtime model upgrade uses a newer model for planning, source routing, semantic querying, and natural language to SQL.",
+   "url": "https://learn.microsoft.com/fabric/data-science/data-agent-runtime",
+   "lessonId": null
+  },
+  {
+   "id": "data-agents-return-up-to-1-000-rows",
+   "title": "Data agents return up to 1,000 rows",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Science",
+   "summary": "Fabric data agents return up to 1,000 rows, expanding the results available for downstream analysis.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "data-agent-topics",
+   "title": "Data agent topics",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Science",
+   "summary": "Topics in Fabric data agents provide large, subject-specific guidance for supported data sources.",
+   "url": "https://learn.microsoft.com/fabric/data-science/data-agent-configurations",
+   "lessonId": null
+  },
+  {
+   "id": "database-agent",
+   "title": "Database agent",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Platform",
+   "summary": "Database agent analyzes SQL and PostgreSQL performance, availability, workload health, and cost signals in Database Hub.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "dataflow-data-visuals",
+   "title": "Dataflow data visuals",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Data visuals in Dataflow Gen2 profile and visualize transformed data while you author a query.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "dataflow-destination-expressions",
+   "title": "Dataflow destination expressions",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Dynamic destination expressions in Dataflow Gen2 derive destination names from parameters, refresh dates, and workspace context.",
+   "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-dynamic-expression-editor-data-destinations",
+   "lessonId": null
+  },
+  {
+   "id": "dataflow-dynamic-warehouse-schema",
+   "title": "Dataflow dynamic warehouse schema",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Dynamic warehouse destination schemas evolve destination tables when Dataflow Gen2 query output changes.",
+   "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings",
+   "lessonId": null
+  },
+  {
+   "id": "dataflow-offset-transformation",
+   "title": "Dataflow offset transformation",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Offset transformation in Dataflow Gen2 shifts date, datetime, or time values forward or backward without custom expressions.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "dataflow-refresh-details-in-monitoring-hub",
+   "title": "Dataflow refresh details in Monitoring hub",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Dataflow refresh details in Monitoring hub expose query-level refresh details without leaving the hub.",
+   "url": "https://learn.microsoft.com/fabric/data-factory/dataflows-gen2-monitor",
+   "lessonId": null
+  },
+  {
+   "id": "dataflow-shared-queries",
+   "title": "Dataflow shared queries",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Shared queries in Dataflow Gen2 let colleagues publish, discover, and reuse governed Power Query logic.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "delegated-custom-live-pool-management",
+   "title": "Delegated Custom Live Pool management",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Engineering",
+   "summary": "Delegated Custom Live Pool management lets workspace Members configure pools through Fabric environments when an administrator enables delegation.",
+   "url": "https://learn.microsoft.com/fabric/data-engineering/custom-live-pools-configure",
+   "lessonId": null
+  },
+  {
+   "id": "deployment-plans",
+   "title": "Deployment plans",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Platform",
+   "summary": "Deployment plans define item deployment order and pre/post actions on a visual canvas.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/understand-best-practices-fabric-cicd",
+   "lessonId": null
+  },
+  {
+   "id": "eventhouse-workspace-monitoring-logs",
+   "title": "Eventhouse workspace-monitoring logs",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Eventhouse workspace-monitoring logs expose throttling, suboptimal-size, and scale-out events.",
+   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/monitor-eventhouse",
+   "lessonId": null
+  },
+  {
+   "id": "eventstream-custom-connector",
+   "title": "Eventstream custom connector",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Eventstream custom connector adds proprietary or unsupported streaming sources through an extensible connector framework.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "eventstream-processing-logs",
+   "title": "Eventstream processing logs",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Eventstream processing logs send Azure Stream Analytics warnings, failures, and recovery events to workspace monitoring.",
+   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/fabric-workspace-monitoring",
+   "lessonId": null
+  },
+  {
+   "id": "eventstream-workspace-private-link",
+   "title": "Eventstream workspace Private Link",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Eventstream workspace Private Link secures supported streaming workloads at workspace scope.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "fabric-actions-activity",
+   "title": "Fabric Actions activity",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Platform",
+   "summary": "Fabric Actions activity gives pipelines authenticated access to supported Fabric REST operations.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "fabric-iq-data-agent-and-ontology-answers",
+   "title": "Fabric IQ data-agent and ontology answers",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "IQ",
+   "summary": "Fabric IQ data-agent and ontology answers extend business-question answering beyond reports and semantic models.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "file-level-git-commit",
+   "title": "File-level Git commit",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "CI/CD",
+   "summary": "File-level Git commit commits selected files from a supported Fabric item while unfinished files remain in the workspace.",
+   "url": "https://learn.microsoft.com/fabric/cicd/git-integration/granular-compare",
+   "lessonId": null
+  },
+  {
+   "id": "item-soft-delete-and-recovery-events",
+   "title": "Item soft-delete and recovery events",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Item soft-delete and recovery events expose lifecycle events in Real-Time Hub for automation and audit scenarios.",
+   "url": "https://learn.microsoft.com/fabric/real-time-hub/explore-fabric-workspace-item-events",
+   "lessonId": null
+  },
+  {
+   "id": "large-eventstream-and-eventhouse-messages",
+   "title": "Large Eventstream and Eventhouse messages",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Large message support ingests richer event payloads through Eventstream and Eventhouse.",
+   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/overview",
+   "lessonId": null
+  },
+  {
+   "id": "maps-external-feature-services",
+   "title": "Maps external feature services",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Platform",
+   "summary": "External feature services in Fabric Maps connect hosted GIS and standards-based geospatial services.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "ml-endpoint-runtime-and-tensor-support",
+   "title": "ML endpoint runtime and tensor support",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "ML endpoint runtime and tensor support add Spark 4.1 and tensor-based model support for real-time serving scenarios.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "modern-get-data-azure-browsing",
+   "title": "Modern Get Data Azure browsing",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Azure resource browsing in Modern Get Data selects supported Azure resources without copying endpoint values from the Azure portal.",
+   "url": "https://learn.microsoft.com/fabric/data-factory/get-data-dataflow-gen2",
+   "lessonId": null
+  },
+  {
+   "id": "notebook-toolkit-for-agentic-development",
+   "title": "Notebook toolkit for agentic development",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Science",
+   "summary": "Fabric Notebook Toolkit gives coding agents notebook-aware tools for authoring and validation.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "ontology-as-data-agent-context",
+   "title": "Ontology as data-agent context",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "IQ",
+   "summary": "Ontology as data-agent context grounds query generation in enterprise entities, relationships, definitions, and source bindings.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "ontology-as-real-time-dashboard-source",
+   "title": "Ontology as Real-Time Dashboard source",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "Ontology as a Real-Time Dashboard source brings business entities and relationships into live visualizations.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "pipeline-level-dependencies",
+   "title": "Pipeline-level dependencies",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Pipeline-level dependencies run downstream pipelines only when configured upstream conditions are met.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "real-time-dashboard-ai-custom-visual-builder",
+   "title": "Real-Time Dashboard AI custom visual builder",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Real-Time",
+   "summary": "AI custom visual builder generates purpose-built HTML visuals for Real-Time Dashboards from natural-language descriptions.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "send-email-from-dataflow-gen2",
+   "title": "Send email from Dataflow Gen2",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Factory",
+   "summary": "Send email from Dataflow Gen2 sends data-driven email directly from a dataflow without a separate orchestration step.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "snowflake-security-role-mirroring",
+   "title": "Snowflake security-role mirroring",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Mirroring",
+   "summary": "Snowflake security-role mirroring brings Snowflake role definitions into Fabric.",
+   "url": "https://learn.microsoft.com/fabric/mirroring/extended-capabilities",
+   "lessonId": null
+  },
+  {
+   "id": "update-policies-on-accelerated-shortcuts",
+   "title": "Update policies on accelerated shortcuts",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "OneLake",
+   "summary": "Update policies on accelerated shortcuts apply ingestion-time transformations to query-accelerated OneLake shortcuts.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "warehouse-analytical-functions",
+   "title": "Warehouse analytical functions",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Warehouse",
+   "summary": "Warehouse analytical functions add built-in statistical calculations to Fabric Data Warehouse and the SQL analytics endpoint.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "warehouse-pre-post-deployment-support",
+   "title": "Warehouse pre/post deployment support",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Warehouse",
+   "summary": "Warehouse pre/post deployment support runs validation and setup scripts around automated warehouse deployments.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "warehouse-t-sql-enhancements",
+   "title": "Warehouse T-SQL enhancements",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Warehouse",
+   "summary": "Warehouse T-SQL enhancements add constructs such as `QUALIFY` and expanded grouping syntax.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "warehouse-user-data-function-integration",
+   "title": "Warehouse User Data Function integration",
+   "status": "preview",
+   "month": "2026-09",
+   "workload": "Data Warehouse",
+   "summary": "Warehouse User Data Function integration invokes custom Python logic from T-SQL external functions.",
+   "url": "https://learn.microsoft.com/fabric/data-warehouse/fabric-user-data-functions",
+   "lessonId": null
+  },
+  {
    "id": "activator-rules-in-eventstream",
    "title": "Activator rules in Eventstream",
    "status": "ga",
@@ -908,6 +1348,46 @@
    "lessonId": null
   },
   {
+   "id": "git-integration-workspace-relation-api",
+   "title": "Git Integration Workspace Relation API",
+   "status": "preview",
+   "month": "2026-08",
+   "workload": "CI/CD",
+   "summary": "The Workspace Relations API lets automation create, query, update, and delete relationships between parent and branched workspaces.",
+   "url": "https://learn.microsoft.com/fabric/cicd/git-integration/branched-workspace",
+   "lessonId": null
+  },
+  {
+   "id": "reference-data-enrichment-in-eventstream",
+   "title": "Reference data enrichment in Eventstream",
+   "status": "preview",
+   "month": "2026-08",
+   "workload": "Real-Time",
+   "summary": "Reference data enrichment in Eventstream joins streaming events with Delta reference tables from a lakehouse by using no-code or SQL-based enrichment.",
+   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/enrich-events-with-reference-data",
+   "lessonId": null
+  },
+  {
+   "id": "upgrade-dataflow-gen1-to-dataflow-gen2-with-the-upgrade-wizard",
+   "title": "Upgrade Dataflow Gen1 to Dataflow Gen2 with the Upgrade Wizard",
+   "status": "preview",
+   "month": "2026-08",
+   "workload": "Data Factory",
+   "summary": "The Dataflows Upgrade Wizard upgrades one or more Dataflow Gen1 items in place while retaining their IDs, names, schedules, and connections.",
+   "url": "https://learn.microsoft.com/fabric/data-factory/migrate-to-dataflow-gen2-using-upgrade-wizard",
+   "lessonId": null
+  },
+  {
+   "id": "warehouse-ci-cd-2-0",
+   "title": "Warehouse CI/CD 2.0",
+   "status": "preview",
+   "month": "2026-08",
+   "workload": "Data Warehouse",
+   "summary": "Warehouse item definition version 2.0 uses DacFx-based incremental extraction for Git integration and more accurate comparisons and deployment plans in deployment pipelines.",
+   "url": "https://learn.microsoft.com/fabric/data-warehouse/development-deployment",
+   "lessonId": null
+  },
+  {
    "id": "custom-ca-and-mtls-in-eventstream-connectors",
    "title": "Custom CA and mTLS in Eventstream connectors",
    "status": "ga",
@@ -1058,6 +1538,136 @@
    "lessonId": null
   },
   {
+   "id": "change-git-branch-with-contributor-role",
+   "title": "Change Git branch with Contributor role",
+   "status": "preview",
+   "month": "2026-07",
+   "workload": "CI/CD",
+   "summary": "Change Git branch with Contributor role lets workspace Contributors and Members switch the connected Git branch without workspace Admin permissions.",
+   "url": "https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started",
+   "lessonId": null
+  },
+  {
+   "id": "fabric-cicd-tool-v1-2-0-new-bulk-publish-mode",
+   "title": "Fabric-CICD tool v1.2.0 – new bulk publish mode",
+   "status": "preview",
+   "month": "2026-07",
+   "workload": "Platform",
+   "summary": "fabric-cicd bulk publish mode lets fabric-cicd publish multiple items in one Fabric bulk import API call and fall back to standard publishing for unsupported scenarios.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "materialized-lake-view-refresh-features",
+   "title": "Materialized Lake View refresh features",
+   "status": "preview",
+   "month": "2026-07",
+   "workload": "Data Factory",
+   "summary": "The Refresh Materialized Lake View activity in Fabric Data Factory pipelines in Fabric Data Factory pipelines lets you refresh materialized lake views on demand or on a schedule within your pipeline orchestration. Event-driven refresh for materialized lake views triggers…",
+   "url": "https://learn.microsoft.com/fabric/data-factory/refresh-materialized-lake-view-activity",
+   "lessonId": null
+  },
+  {
+   "id": "ci-cd-support-for-sql-analytics-endpoint",
+   "title": "CI/CD Support for SQL analytics endpoint",
+   "status": "preview",
+   "month": "2026-06",
+   "workload": "Data Warehouse",
+   "summary": "CI/CD support for SQL analytics endpoint lets you manage SQL analytics endpoint definitions as DacFx database projects in Git alongside other Fabric items and deploy incremental schema changes through Fabric Deployment Pipelines.",
+   "url": "https://learn.microsoft.com/fabric/data-warehouse/development-deployment",
+   "lessonId": null
+  },
+  {
+   "id": "conditional-activity-retries-in-data-factory-pipelines",
+   "title": "Conditional activity retries in Data Factory pipelines",
+   "status": "preview",
+   "month": "2026-06",
+   "workload": "Data Factory",
+   "summary": "Conditional activity retries let you define exactly when a pipeline activity retries based on the error code, error message, or both with AND/OR logic, so long-running pipelines automatically recover from transient failures while fast-failing on errors that don't self-resolve.",
+   "url": "https://learn.microsoft.com/fabric/data-factory/activity-overview",
+   "lessonId": null
+  },
+  {
+   "id": "observability-for-fabric-data-agent-in-microsoft-foundry",
+   "title": "Observability for Fabric Data Agent in Microsoft Foundry",
+   "status": "preview",
+   "month": "2026-06",
+   "workload": "Data Science",
+   "summary": "Observability for Fabric Data Agent in Microsoft Foundry surfaces telemetry for every call to a Fabric Data Agent used as a tool inside a Foundry agent, including latency, status, and error details, so agent builders can debug and monitor production agents.",
+   "url": "https://learn.microsoft.com/fabric/data-science/concept-data-agent",
+   "lessonId": null
+  },
+  {
+   "id": "create-ai-auto-description-for-semantic-models",
+   "title": "Create AI Auto-Description for Semantic Models",
+   "status": "preview",
+   "month": "2026-04",
+   "workload": "Governance & admin",
+   "summary": "Auto-Description for Semantic Models uses Copilot to generate clear descriptions for semantic models from the model's metadata and structure, which model owners and contributors can review, edit, and regenerate directly from the semantic model details page in the OneLake catalog.",
+   "url": "https://learn.microsoft.com/fabric/governance/onelake-catalog-overview",
+   "lessonId": null
+  },
+  {
+   "id": "maven-support-in-fabric-environment",
+   "title": "Maven support in Fabric Environment",
+   "status": "preview",
+   "month": "2026-04",
+   "workload": "Data Engineering",
+   "summary": "Maven support in Fabric Environment lets Scala and Java developers add libraries from Maven repositories to a Fabric Environment by uploading and managing `pom.xml` files directly, so transitive dependencies are resolved without manually downloading and uploading JARs.",
+   "url": "https://learn.microsoft.com/fabric/data-engineering/environment-manage-library",
+   "lessonId": null
+  },
+  {
+   "id": "data-factory-mcp",
+   "title": "Data Factory MCP",
+   "status": "preview",
+   "month": "2026-03",
+   "workload": "Data Factory",
+   "summary": "Data Factory MCP enables AI assistants to create, test, and deploy Dataflow Gen2 through natural language without manual configuration.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "onelake-catalog-search-api-mcp-and-cli-tools",
+   "title": "OneLake Catalog search API, MCP, and CLI tools",
+   "status": "preview",
+   "month": "2026-03",
+   "workload": "Governance & admin",
+   "summary": "OneLake Catalog search API and MCP tool brings cross-workspace discovery to code with a single search request to locate matching items across your accessible estate based on catalog metadata and user permissions, with the capability also included as a built-in tool in the…",
+   "url": "https://learn.microsoft.com/fabric/governance/onelake-catalog-overview",
+   "lessonId": null
+  },
+  {
+   "id": "pass-parameter-values-to-fabric-items",
+   "title": "Pass Parameter Values to Fabric Items",
+   "status": "preview",
+   "month": "2025-07",
+   "workload": "Real-Time",
+   "summary": "Activator enables you to automatically activate Fabric items like pipeline and notebook whenever certain data conditions are met. You can not only activate and execute Fabric items but also pass values to the parameters defined in your Fabric items.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
+   "id": "notebook-copilot-inline-code-completion",
+   "title": "Notebook Copilot inline code completion",
+   "status": "preview",
+   "month": "2025-06",
+   "workload": "Data Engineering",
+   "summary": "Now in preview, Copilot Inline Code Completion is an AI feature that assists data scientists and engineers in writing Python code more quickly and easily.",
+   "url": "https://learn.microsoft.com/fabric/data-engineering/author-execute-notebook",
+   "lessonId": null
+  },
+  {
+   "id": "centralized-data-governance-in-the-onelake-catalog",
+   "title": "Centralized data governance in the OneLake catalog",
+   "status": "preview",
+   "month": "2025-02",
+   "workload": "OneLake",
+   "summary": "A new centralized data governance experience in the OneLake catalog is in preview. Data owners can view aggregated insights on the items they created, consider improving their governance by taking recommended actions, and access more information along with all available tools…",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
+   "lessonId": null
+  },
+  {
    "id": "activator-as-business-events-publisher",
    "title": "Activator as business events publisher",
    "status": "preview",
@@ -1065,26 +1675,6 @@
    "workload": "Real-Time",
    "summary": "Activator provides a no-code way to publish business events in Microsoft Fabric. When Activator detects that a condition is met in your data, it can emit a structured business event into Real-Time hub, making that signal discoverable, routable, and consumable by your entire…",
    "url": "https://learn.microsoft.com/fabric/real-time-intelligence/data-activator/activator-introduction",
-   "lessonId": null
-  },
-  {
-   "id": "activator-rule-management",
-   "title": "Activator rule management",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Activator rule management provides a central Real-Time Hub view for rules created across Fabric experiences.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "activator-rules-from-catalog-and-workspace",
-   "title": "Activator rules from catalog and workspace",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Activator rules from catalog and workspace views let you create and manage rules from the context of the data they monitor.",
-   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/data-activator/activator-tutorial",
    "lessonId": null
   },
   {
@@ -1248,26 +1838,6 @@
    "lessonId": null
   },
   {
-   "id": "back-up-dataflow-query-results",
-   "title": "Back up Dataflow query results",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Dataflow query-result backup preserves prior query results in a lakehouse so you can compare or recover earlier refresh output.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "branch-workspace-admin-profile",
-   "title": "Branch workspace admin profile",
-   "status": "preview",
-   "month": null,
-   "workload": "CI/CD",
-   "summary": "Branch workspace admin profiles let administrators define governed identities and settings that developers use to create branch workspaces.",
-   "url": "https://learn.microsoft.com/fabric/cicd/git-integration/branched-workspace",
-   "lessonId": null
-  },
-  {
    "id": "build-agent-with-ai",
    "title": "Build Agent with AI",
    "status": "preview",
@@ -1288,16 +1858,6 @@
    "lessonId": null
   },
   {
-   "id": "business-actions-activity",
-   "title": "Business Actions activity",
-   "status": "preview",
-   "month": null,
-   "workload": "Platform",
-   "summary": "Business Actions activity lets pipelines call supported business systems and workflows.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "capacity-operation-events-in-real-time-hub",
    "title": "Capacity Operation Events in Real-Time Hub",
    "status": "preview",
@@ -1308,16 +1868,6 @@
    "lessonId": null
   },
   {
-   "id": "centralized-data-governance-in-the-onelake-catalog",
-   "title": "Centralized data governance in the OneLake catalog",
-   "status": "preview",
-   "month": null,
-   "workload": "OneLake",
-   "summary": "A new centralized data governance experience in the OneLake catalog is in preview. Data owners can view aggregated insights on the items they created, consider improving their governance by taking recommended actions, and access more information along with all available tools…",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "change-event-streaming-in-sql-database-in-fabric",
    "title": "Change event streaming in SQL database in Fabric",
    "status": "preview",
@@ -1325,36 +1875,6 @@
    "workload": "Real-Time",
    "summary": "Change event streaming (CES) captures row-level DML changes (inserts, updates, and deletes) in SQL database in Fabric and publishes each change to Fabric Eventstream or Azure Event Hubs in near real time as a CloudEvent, enabling downstream analytics and event-driven…",
    "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "change-git-branch-with-contributor-role",
-   "title": "Change Git branch with Contributor role",
-   "status": "preview",
-   "month": null,
-   "workload": "CI/CD",
-   "summary": "Change Git branch with Contributor role lets workspace Contributors and Members switch the connected Git branch without workspace Admin permissions.",
-   "url": "https://learn.microsoft.com/fabric/cicd/git-integration/git-get-started",
-   "lessonId": null
-  },
-  {
-   "id": "ci-cd-support-for-sql-analytics-endpoint",
-   "title": "CI/CD Support for SQL analytics endpoint",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Warehouse",
-   "summary": "CI/CD support for SQL analytics endpoint lets you manage SQL analytics endpoint definitions as DacFx database projects in Git alongside other Fabric items and deploy incremental schema changes through Fabric Deployment Pipelines.",
-   "url": "https://learn.microsoft.com/fabric/data-warehouse/development-deployment",
-   "lessonId": null
-  },
-  {
-   "id": "conditional-activity-retries-in-data-factory-pipelines",
-   "title": "Conditional activity retries in Data Factory pipelines",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Conditional activity retries let you define exactly when a pipeline activity retries based on the error code, error message, or both with AND/OR logic, so long-running pipelines automatically recover from transient failures while fast-failing on errors that don't self-resolve.",
-   "url": "https://learn.microsoft.com/fabric/data-factory/activity-overview",
    "lessonId": null
   },
   {
@@ -1398,26 +1918,6 @@
    "lessonId": null
   },
   {
-   "id": "copy-job-and-eventstream-integration",
-   "title": "Copy job and Eventstream integration",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Copy job and Eventstream integration uses Eventstream as a Copy job source or destination.",
-   "url": "https://learn.microsoft.com/fabric/data-factory/what-is-copy-job",
-   "lessonId": null
-  },
-  {
-   "id": "create-ai-auto-description-for-semantic-models",
-   "title": "Create AI Auto-Description for Semantic Models",
-   "status": "preview",
-   "month": null,
-   "workload": "Governance & admin",
-   "summary": "Auto-Description for Semantic Models uses Copilot to generate clear descriptions for semantic models from the model's metadata and structure, which model owners and contributors can review, edit, and regenerate directly from the semantic model details page in the OneLake catalog.",
-   "url": "https://learn.microsoft.com/fabric/governance/onelake-catalog-overview",
-   "lessonId": null
-  },
-  {
    "id": "custom-authorization-for-api-for-graphql",
    "title": "Custom authorization for API for GraphQL",
    "status": "preview",
@@ -1428,46 +1928,6 @@
    "lessonId": null
   },
   {
-   "id": "custom-sort-in-dataflow-gen2",
-   "title": "Custom sort in Dataflow Gen2",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Custom sort in Dataflow Gen2 defines multi-column sort precedence in one dialog.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "data-agent-feedback-in-microsoft-365-copilot",
-   "title": "Data agent feedback in Microsoft 365 Copilot",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Science",
-   "summary": "Data agent feedback in Microsoft 365 Copilot helps creators review consumer feedback and improve agent responses.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "data-agent-runtime-model-upgrade",
-   "title": "Data agent runtime model upgrade",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Science",
-   "summary": "Data agent runtime model upgrade uses a newer model for planning, source routing, semantic querying, and natural language to SQL.",
-   "url": "https://learn.microsoft.com/fabric/data-science/data-agent-runtime",
-   "lessonId": null
-  },
-  {
-   "id": "data-agents-return-up-to-1-000-rows",
-   "title": "Data agents return up to 1,000 rows",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Science",
-   "summary": "Fabric data agents return up to 1,000 rows, expanding the results available for downstream analysis.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "data-agent-support-for-eventhouse-functions-materialized-views-and-shortcuts",
    "title": "Data Agent support for Eventhouse functions, materialized views, and shortcuts",
    "status": "preview",
@@ -1475,26 +1935,6 @@
    "workload": "Data Science",
    "summary": "Data Agent now discovers and queries Eventhouse user-defined functions (UDFs), materialized views, and shortcut tables, so it calls validated KQL logic, uses pre-aggregated views for faster answers, and reaches data federated from sources outside the eventhouse.",
    "url": "https://learn.microsoft.com/fabric/data-science/concept-data-agent",
-   "lessonId": null
-  },
-  {
-   "id": "data-agent-topics",
-   "title": "Data agent topics",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Science",
-   "summary": "Topics in Fabric data agents provide large, subject-specific guidance for supported data sources.",
-   "url": "https://learn.microsoft.com/fabric/data-science/data-agent-configurations",
-   "lessonId": null
-  },
-  {
-   "id": "database-agent",
-   "title": "Database agent",
-   "status": "preview",
-   "month": null,
-   "workload": "Platform",
-   "summary": "Database agent analyzes SQL and PostgreSQL performance, availability, workload health, and cost signals in Database Hub.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
    "lessonId": null
   },
   {
@@ -1528,16 +1968,6 @@
    "lessonId": null
   },
   {
-   "id": "data-factory-mcp",
-   "title": "Data Factory MCP",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Data Factory MCP enables AI assistants to create, test, and deploy Dataflow Gen2 through natural language without manual configuration.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "data-factory-on-premises-data-gateway-manual-update-option",
    "title": "Data Factory On-premises data gateway manual update option",
    "status": "preview",
@@ -1554,66 +1984,6 @@
    "month": null,
    "workload": "Data Factory",
    "summary": "The SharePoint Site Picker replaces manual URL entry with a browsable, searchable dropdown for selecting SharePoint sites across Dataflow Gen2, Pipelines, Copy job, and Lakehouse shortcuts.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "dataflow-data-visuals",
-   "title": "Dataflow data visuals",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Data visuals in Dataflow Gen2 profile and visualize transformed data while you author a query.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "dataflow-destination-expressions",
-   "title": "Dataflow destination expressions",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Dynamic destination expressions in Dataflow Gen2 derive destination names from parameters, refresh dates, and workspace context.",
-   "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-dynamic-expression-editor-data-destinations",
-   "lessonId": null
-  },
-  {
-   "id": "dataflow-dynamic-warehouse-schema",
-   "title": "Dataflow dynamic warehouse schema",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Dynamic warehouse destination schemas evolve destination tables when Dataflow Gen2 query output changes.",
-   "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-data-destinations-and-managed-settings",
-   "lessonId": null
-  },
-  {
-   "id": "dataflow-offset-transformation",
-   "title": "Dataflow offset transformation",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Offset transformation in Dataflow Gen2 shifts date, datetime, or time values forward or backward without custom expressions.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "dataflow-refresh-details-in-monitoring-hub",
-   "title": "Dataflow refresh details in Monitoring hub",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Dataflow refresh details in Monitoring hub expose query-level refresh details without leaving the hub.",
-   "url": "https://learn.microsoft.com/fabric/data-factory/dataflows-gen2-monitor",
-   "lessonId": null
-  },
-  {
-   "id": "dataflow-shared-queries",
-   "title": "Dataflow shared queries",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Shared queries in Dataflow Gen2 let colleagues publish, discover, and reuse governed Power Query logic.",
    "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
    "lessonId": null
   },
@@ -1648,16 +2018,6 @@
    "lessonId": null
   },
   {
-   "id": "delegated-custom-live-pool-management",
-   "title": "Delegated Custom Live Pool management",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Engineering",
-   "summary": "Delegated Custom Live Pool management lets workspace Members configure pools through Fabric environments when an administrator enables delegation.",
-   "url": "https://learn.microsoft.com/fabric/data-engineering/custom-live-pools-configure",
-   "lessonId": null
-  },
-  {
    "id": "delegated-onelake-shortcuts",
    "title": "Delegated OneLake Shortcuts",
    "status": "preview",
@@ -1685,16 +2045,6 @@
    "workload": "Real-Time",
    "summary": "DeltaFlow is a capability in Fabric Eventstream that transforms raw Change Data Capture (CDC) events into a flattened, analytics-ready format. Instead of working with deeply nested Debezium JSON payloads, DeltaFlow produces tabular rows that closely mirror the structure of…",
    "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/delta-flow-output-transformation",
-   "lessonId": null
-  },
-  {
-   "id": "deployment-plans",
-   "title": "Deployment plans",
-   "status": "preview",
-   "month": null,
-   "workload": "Platform",
-   "summary": "Deployment plans define item deployment order and pre/post actions on a visual canvas.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/understand-best-practices-fabric-cicd",
    "lessonId": null
   },
   {
@@ -1728,16 +2078,6 @@
    "lessonId": null
   },
   {
-   "id": "eventhouse-workspace-monitoring-logs",
-   "title": "Eventhouse workspace-monitoring logs",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Eventhouse workspace-monitoring logs expose throttling, suboptimal-size, and scale-out events.",
-   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/monitor-eventhouse",
-   "lessonId": null
-  },
-  {
    "id": "eventstream-business-events-publisher",
    "title": "Eventstream Business Events publisher",
    "status": "preview",
@@ -1748,26 +2088,6 @@
    "lessonId": null
   },
   {
-   "id": "eventstream-custom-connector",
-   "title": "Eventstream custom connector",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Eventstream custom connector adds proprietary or unsupported streaming sources through an extensible connector framework.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "eventstream-processing-logs",
-   "title": "Eventstream processing logs",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Eventstream processing logs send Azure Stream Analytics warnings, failures, and recovery events to workspace monitoring.",
-   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/fabric-workspace-monitoring",
-   "lessonId": null
-  },
-  {
    "id": "eventstream-workspace-monitoring",
    "title": "Eventstream workspace monitoring",
    "status": "preview",
@@ -1775,16 +2095,6 @@
    "workload": "Real-Time",
    "summary": "Workspace monitoring for Eventstreams lets you choose which eventstreams emit performance, error, and node-health data to three KQL tables in the workspace monitoring Eventhouse.",
    "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/fabric-workspace-monitoring",
-   "lessonId": null
-  },
-  {
-   "id": "eventstream-workspace-private-link",
-   "title": "Eventstream workspace Private Link",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Eventstream workspace Private Link secures supported streaming workloads at workspace scope.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
    "lessonId": null
   },
   {
@@ -1805,16 +2115,6 @@
    "workload": "Data Factory",
    "summary": "Extended Auto partition support in Copy job automatically scales out reads and writes for Oracle, Fabric Lakehouse, and SAP HANA without predefining partition columns or custom sharding logic.",
    "url": "https://learn.microsoft.com/fabric/data-factory/what-is-copy-job",
-   "lessonId": null
-  },
-  {
-   "id": "fabric-actions-activity",
-   "title": "Fabric Actions activity",
-   "status": "preview",
-   "month": null,
-   "workload": "Platform",
-   "summary": "Fabric Actions activity gives pipelines authenticated access to supported Fabric REST operations.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
    "lessonId": null
   },
   {
@@ -1854,16 +2154,6 @@
    "month": null,
    "workload": "Platform",
    "summary": "Fabric Apps functions and connectors add Fabric data connectors, PostgreSQL support, server-side functions, secret storage, application storage, and built-in metrics.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "fabric-cicd-tool-v1-2-0-new-bulk-publish-mode",
-   "title": "Fabric-CICD tool v1.2.0 – new bulk publish mode",
-   "status": "preview",
-   "month": null,
-   "workload": "Platform",
-   "summary": "fabric-cicd bulk publish mode lets fabric-cicd publish multiple items in one Fabric bulk import API call and fall back to standard publishing for unsupported scenarios.",
    "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
    "lessonId": null
   },
@@ -1948,16 +2238,6 @@
    "lessonId": null
   },
   {
-   "id": "fabric-iq-data-agent-and-ontology-answers",
-   "title": "Fabric IQ data-agent and ontology answers",
-   "status": "preview",
-   "month": null,
-   "workload": "IQ",
-   "summary": "Fabric IQ data-agent and ontology answers extend business-question answering beyond reports and semantic models.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "fabric-iq-preview-workload",
    "title": "Fabric IQ (Preview) workload",
    "status": "preview",
@@ -2018,16 +2298,6 @@
    "lessonId": null
   },
   {
-   "id": "file-level-git-commit",
-   "title": "File-level Git commit",
-   "status": "preview",
-   "month": null,
-   "workload": "CI/CD",
-   "summary": "File-level Git commit commits selected files from a supported Fabric item while unfinished files remain in the workspace.",
-   "url": "https://learn.microsoft.com/fabric/cicd/git-integration/granular-compare",
-   "lessonId": null
-  },
-  {
    "id": "folder-rest-api",
    "title": "Folder REST API",
    "status": "preview",
@@ -2035,16 +2305,6 @@
    "workload": "Platform",
    "summary": "You can now create and manage workspace folders in automation scenarios and integrate with other systems and tools. The Folder Rest API is now in preview. To get started, see Fabric REST API Folders.",
    "url": "https://learn.microsoft.com/fabric/fundamentals/workspaces-folders",
-   "lessonId": null
-  },
-  {
-   "id": "git-integration-workspace-relation-api",
-   "title": "Git Integration Workspace Relation API",
-   "status": "preview",
-   "month": null,
-   "workload": "CI/CD",
-   "summary": "The Workspace Relations API lets automation create, query, update, and delete relationships between parent and branched workspaces.",
-   "url": "https://learn.microsoft.com/fabric/cicd/git-integration/branched-workspace",
    "lessonId": null
   },
   {
@@ -2098,16 +2358,6 @@
    "lessonId": null
   },
   {
-   "id": "item-soft-delete-and-recovery-events",
-   "title": "Item soft-delete and recovery events",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Item soft-delete and recovery events expose lifecycle events in Real-Time Hub for automation and audit scenarios.",
-   "url": "https://learn.microsoft.com/fabric/real-time-hub/explore-fabric-workspace-item-events",
-   "lessonId": null
-  },
-  {
    "id": "jobinsight-diagnostics-library",
    "title": "JobInsight Diagnostics Library",
    "status": "preview",
@@ -2138,16 +2388,6 @@
    "lessonId": null
   },
   {
-   "id": "large-eventstream-and-eventhouse-messages",
-   "title": "Large Eventstream and Eventhouse messages",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Large message support ingests richer event payloads through Eventstream and Eventhouse.",
-   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/overview",
-   "lessonId": null
-  },
-  {
    "id": "load-fabric-onelake-data-in-excel",
    "title": "Load Fabric OneLake Data in Excel",
    "status": "preview",
@@ -2175,36 +2415,6 @@
    "workload": "Data Factory",
    "summary": "Mapping data flow transforms in Dataflow Gen2 introduces Spark-based transformation capabilities directly in the Dataflow Gen2 creation experience, enabling large-scale data transformations with Spark compute and migration of mapping data flows to Fabric. For pricing details,…",
    "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-mapping-data-flows-transforms",
-   "lessonId": null
-  },
-  {
-   "id": "maps-external-feature-services",
-   "title": "Maps external feature services",
-   "status": "preview",
-   "month": null,
-   "workload": "Platform",
-   "summary": "External feature services in Fabric Maps connect hosted GIS and standards-based geospatial services.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "materialized-lake-view-refresh-features",
-   "title": "Materialized Lake View refresh features",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "The Refresh Materialized Lake View activity in Fabric Data Factory pipelines in Fabric Data Factory pipelines lets you refresh materialized lake views on demand or on a schedule within your pipeline orchestration. Event-driven refresh for materialized lake views triggers…",
-   "url": "https://learn.microsoft.com/fabric/data-factory/refresh-materialized-lake-view-activity",
-   "lessonId": null
-  },
-  {
-   "id": "maven-support-in-fabric-environment",
-   "title": "Maven support in Fabric Environment",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Engineering",
-   "summary": "Maven support in Fabric Environment lets Scala and Java developers add libraries from Maven repositories to a Fabric Environment by uploading and managing `pom.xml` files directly, so transitive dependencies are resolved without manually downloading and uploading JARs.",
-   "url": "https://learn.microsoft.com/fabric/data-engineering/environment-manage-library",
    "lessonId": null
   },
   {
@@ -2308,16 +2518,6 @@
    "lessonId": null
   },
   {
-   "id": "ml-endpoint-runtime-and-tensor-support",
-   "title": "ML endpoint runtime and tensor support",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "ML endpoint runtime and tensor support add Spark 4.1 and tensor-based model support for real-time serving scenarios.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "modern-evaluation-engine-for-vnet-data-gateways",
    "title": "Modern evaluation engine for VNet data gateways",
    "status": "preview",
@@ -2325,16 +2525,6 @@
    "workload": "Data Factory",
    "summary": "Modern evaluation engine for VNet data gateways provides an opt-in execution path for supported mashup evaluations so you can test semantic model refresh, Dataflow Gen2 refresh, and DirectQuery performance without changing your private network architecture.",
    "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "modern-get-data-azure-browsing",
-   "title": "Modern Get Data Azure browsing",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Azure resource browsing in Modern Get Data selects supported Azure resources without copying endpoint values from the Azure portal.",
-   "url": "https://learn.microsoft.com/fabric/data-factory/get-data-dataflow-gen2",
    "lessonId": null
   },
   {
@@ -2388,16 +2578,6 @@
    "lessonId": null
   },
   {
-   "id": "notebook-copilot-inline-code-completion",
-   "title": "Notebook Copilot inline code completion",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Engineering",
-   "summary": "Now in preview, Copilot Inline Code Completion is an AI feature that assists data scientists and engineers in writing Python code more quickly and easily.",
-   "url": "https://learn.microsoft.com/fabric/data-engineering/author-execute-notebook",
-   "lessonId": null
-  },
-  {
    "id": "notebook-debug-within-vscode-dev",
    "title": "Notebook debug within vscode.dev",
    "status": "preview",
@@ -2405,36 +2585,6 @@
    "workload": "Data Engineering",
    "summary": "You can now place breakpoints and debug your Notebook code with the Synapse VS Code - Remote extension in vscode.dev. This update first starts with the Fabric Runtime 1.3 (EOSA).",
    "url": "https://learn.microsoft.com/fabric/data-engineering/runtime-1-3",
-   "lessonId": null
-  },
-  {
-   "id": "notebook-toolkit-for-agentic-development",
-   "title": "Notebook toolkit for agentic development",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Science",
-   "summary": "Fabric Notebook Toolkit gives coding agents notebook-aware tools for authoring and validation.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "observability-for-fabric-data-agent-in-microsoft-foundry",
-   "title": "Observability for Fabric Data Agent in Microsoft Foundry",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Science",
-   "summary": "Observability for Fabric Data Agent in Microsoft Foundry surfaces telemetry for every call to a Fabric Data Agent used as a tool inside a Foundry agent, including latency, status, and error details, so agent builders can debug and monitor production agents.",
-   "url": "https://learn.microsoft.com/fabric/data-science/concept-data-agent",
-   "lessonId": null
-  },
-  {
-   "id": "onelake-catalog-search-api-mcp-and-cli-tools",
-   "title": "OneLake Catalog search API, MCP, and CLI tools",
-   "status": "preview",
-   "month": null,
-   "workload": "Governance & admin",
-   "summary": "OneLake Catalog search API and MCP tool brings cross-workspace discovery to code with a single search request to locate matching items across your accessible estate based on catalog metadata and user permissions, with the capability also included as a built-in tool in the…",
-   "url": "https://learn.microsoft.com/fabric/governance/onelake-catalog-overview",
    "lessonId": null
   },
   {
@@ -2464,26 +2614,6 @@
    "month": null,
    "workload": "Governance & admin",
    "summary": "On-premises data gateway soft delete retains supported standard mode gateways for 30 days by default so tenant and gateway admins can recover accidental deletions.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "ontology-as-data-agent-context",
-   "title": "Ontology as data-agent context",
-   "status": "preview",
-   "month": null,
-   "workload": "IQ",
-   "summary": "Ontology as data-agent context grounds query generation in enterprise entities, relationships, definitions, and source bindings.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "ontology-as-real-time-dashboard-source",
-   "title": "Ontology as Real-Time Dashboard source",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Ontology as a Real-Time Dashboard source brings business entities and relationships into live visualizations.",
    "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
    "lessonId": null
   },
@@ -2568,26 +2698,6 @@
    "lessonId": null
   },
   {
-   "id": "pass-parameter-values-to-fabric-items",
-   "title": "Pass Parameter Values to Fabric Items",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Activator enables you to automatically activate Fabric items like pipeline and notebook whenever certain data conditions are met. You can not only activate and execute Fabric items but also pass values to the parameters defined in your Fabric items.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "pipeline-level-dependencies",
-   "title": "Pipeline-level dependencies",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Pipeline-level dependencies run downstream pipelines only when configured upstream conditions are met.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "prebuilt-foundry-tools-in-fabric-preview",
    "title": "Prebuilt Foundry Tools in Fabric preview",
    "status": "preview",
@@ -2618,16 +2728,6 @@
    "lessonId": null
   },
   {
-   "id": "real-time-dashboard-ai-custom-visual-builder",
-   "title": "Real-Time Dashboard AI custom visual builder",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "AI custom visual builder generates purpose-built HTML visuals for Real-Time Dashboards from natural-language descriptions.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "real-time-dashboards-time-series-visualization",
    "title": "Real-Time Dashboards Time Series Visualization",
    "status": "preview",
@@ -2645,16 +2745,6 @@
    "workload": "Data Factory",
    "summary": "Recent data in Dataflow Gen2 provides quick access to your most frequently used data items in the Power Query ribbon and Modern Get Data, letting you jump directly to recently used tables, files, folders, and databases without navigation.",
    "url": "https://learn.microsoft.com/fabric/data-factory/dataflows-gen2-overview",
-   "lessonId": null
-  },
-  {
-   "id": "reference-data-enrichment-in-eventstream",
-   "title": "Reference data enrichment in Eventstream",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Reference data enrichment in Eventstream joins streaming events with Delta reference tables from a lakehouse by using no-code or SQL-based enrichment.",
-   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/enrich-events-with-reference-data",
    "lessonId": null
   },
   {
@@ -2718,16 +2808,6 @@
    "lessonId": null
   },
   {
-   "id": "send-email-from-dataflow-gen2",
-   "title": "Send email from Dataflow Gen2",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "Send email from Dataflow Gen2 sends data-driven email directly from a dataflow without a separate orchestration step.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "service-principal-support-for-fabric-data-agents",
    "title": "Service principal support for Fabric data agents",
    "status": "preview",
@@ -2735,16 +2815,6 @@
    "workload": "Data Science",
    "summary": "Fabric data agents now support service principal (SPN) authentication, so custom apps and Microsoft Foundry agents call the data agent API with an application identity instead of a delegated user token. The data agent inherits workspace permissions.",
    "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "snowflake-security-role-mirroring",
-   "title": "Snowflake security-role mirroring",
-   "status": "preview",
-   "month": null,
-   "workload": "Mirroring",
-   "summary": "Snowflake security-role mirroring brings Snowflake role definitions into Fabric.",
-   "url": "https://learn.microsoft.com/fabric/mirroring/extended-capabilities",
    "lessonId": null
   },
   {
@@ -2808,26 +2878,6 @@
    "lessonId": null
   },
   {
-   "id": "update-policies-on-accelerated-shortcuts",
-   "title": "Update policies on accelerated shortcuts",
-   "status": "preview",
-   "month": null,
-   "workload": "OneLake",
-   "summary": "Update policies on accelerated shortcuts apply ingestion-time transformations to query-accelerated OneLake shortcuts.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "upgrade-dataflow-gen1-to-dataflow-gen2-with-the-upgrade-wizard",
-   "title": "Upgrade Dataflow Gen1 to Dataflow Gen2 with the Upgrade Wizard",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Factory",
-   "summary": "The Dataflows Upgrade Wizard upgrades one or more Dataflow Gen1 items in place while retaining their IDs, names, schedules, and connections.",
-   "url": "https://learn.microsoft.com/fabric/data-factory/migrate-to-dataflow-gen2-using-upgrade-wizard",
-   "lessonId": null
-  },
-  {
    "id": "upsert-to-delta-table-with-lakehouse-connector",
    "title": "Upsert to delta table with Lakehouse connector",
    "status": "preview",
@@ -2845,26 +2895,6 @@
    "workload": "Data Warehouse",
    "summary": "Fabric Data Warehouse now brings AI directly into T-SQL, enabling you to categorize and classify text, analyze sentiment, extract structured information, translate text across languages, and even correct grammar - all using built-in AI functions. To get started, see Use AI…",
    "url": "https://learn.microsoft.com/fabric/data-warehouse/ai-functions",
-   "lessonId": null
-  },
-  {
-   "id": "warehouse-analytical-functions",
-   "title": "Warehouse analytical functions",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Warehouse",
-   "summary": "Warehouse analytical functions add built-in statistical calculations to Fabric Data Warehouse and the SQL analytics endpoint.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "warehouse-ci-cd-2-0",
-   "title": "Warehouse CI/CD 2.0",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Warehouse",
-   "summary": "Warehouse item definition version 2.0 uses DacFx-based incremental extraction for Git integration and more accurate comparisons and deployment plans in deployment pipelines.",
-   "url": "https://learn.microsoft.com/fabric/data-warehouse/development-deployment",
    "lessonId": null
   },
   {
@@ -2888,16 +2918,6 @@
    "lessonId": null
   },
   {
-   "id": "warehouse-pre-post-deployment-support",
-   "title": "Warehouse pre/post deployment support",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Warehouse",
-   "summary": "Warehouse pre/post deployment support runs validation and setup scripts around automated warehouse deployments.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "warehouse-source-control",
    "title": "Warehouse source control",
    "status": "preview",
@@ -2905,26 +2925,6 @@
    "workload": "Data Warehouse",
    "summary": "Using Source control with Warehouse, you can manage development and deployment of versioned warehouse objects. You can use SQL Database Projects extension available inside of Visual Studio Code. For more information on warehouse source control, see CI/CD with Warehouses in…",
    "url": "https://learn.microsoft.com/fabric/data-warehouse/development-deployment",
-   "lessonId": null
-  },
-  {
-   "id": "warehouse-t-sql-enhancements",
-   "title": "Warehouse T-SQL enhancements",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Warehouse",
-   "summary": "Warehouse T-SQL enhancements add constructs such as `QUALIFY` and expanded grouping syntax.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
-   "id": "warehouse-user-data-function-integration",
-   "title": "Warehouse User Data Function integration",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Warehouse",
-   "summary": "Warehouse User Data Function integration invokes custom Python logic from T-SQL external functions.",
-   "url": "https://learn.microsoft.com/fabric/data-warehouse/fabric-user-data-functions",
    "lessonId": null
   },
   {
