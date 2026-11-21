@@ -1,12 +1,48 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T20:02:27Z",
+ "generatedAt": "2026-11-21T10:40:14Z",
  "source": {
   "title": "What's new in Microsoft Fabric",
   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
   "license": "CC BY 4.0"
  },
  "items": [
+  {
+   "id": "mirror-azure-monitor-data-in-microsoft-fabric",
+   "title": "Mirror Azure Monitor Data in Microsoft Fabric",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-10",
+   "summary": "Learn about the Mirror Azure Monitor feature in Microsoft Fabric, which connects Log Analytics tables to Fabric workloads without replicating data.",
+   "url": "https://learn.microsoft.com/fabric/mirroring/catalog-mirroring/azure-monitor",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Mirroring"
+  },
+  {
+   "id": "workspace-outbound-access-protection-for-power-bi-reports",
+   "title": "Workspace outbound access protection for Power BI reports",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-08",
+   "summary": "Learn how workspace outbound access protection applies to Power BI reports, including exceptions for semantic models in other workspaces.",
+   "url": "https://learn.microsoft.com/fabric/security/workspace-outbound-access-protection-power-bi-reports",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Platform"
+  },
+  {
+   "id": "azure-event-hubs-shortcuts-to-eventstreams",
+   "title": "Azure Event Hubs shortcuts to eventstreams",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-06",
+   "summary": "Learn how Azure Event Hubs shortcuts use a customer-owned event hub as an eventstream's default stream, including approval, topology, and preview limitations.",
+   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/event-hubs-shortcuts-overview",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Real-Time"
+  },
   {
    "id": "find-expensive-queries-from-capacity-metrics",
    "title": "Find expensive queries from Capacity Metrics",
@@ -54,6 +90,30 @@
    "url": "https://blog.fabric.microsoft.com/en-us/blog/",
    "source": "blog",
    "lessonId": null
+  },
+  {
+   "id": "semantic-views",
+   "title": "Semantic views",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-05",
+   "summary": "Define business metrics once alongside your data in OneLake with Semantic Views. Reuse definitions across teams and tools, independently of compute.",
+   "url": "https://learn.microsoft.com/fabric/fundamentals/semantic-views-overview",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "OneLake"
+  },
+  {
+   "id": "create-fabric-apps-with-power-bi-desktop-for-apps",
+   "title": "Create Fabric apps with Power BI Desktop for Apps",
+   "status": "preview",
+   "month": "2026-11",
+   "date": "2026-11-05",
+   "summary": "Create custom Fabric apps with natural language in Power BI Desktop for Apps. Connect existing semantic models, preview and edit locally, and publish to Fabric.",
+   "url": "https://learn.microsoft.com/fabric/apps/create-app-power-bi-desktop",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Platform"
   },
   {
    "id": "share-data-and-context-across-organizations-with-iq-share",
@@ -124,6 +184,90 @@
    "lessonId": null
   },
   {
+   "id": "data-connection-policies",
+   "title": "Data connection policies",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-29",
+   "summary": "Learn how Fabric tenant admins use data connection policies to govern which authentication methods and Microsoft Entra ID tenants cloud connections can use.",
+   "url": "https://learn.microsoft.com/fabric/data-factory/data-connection-policies",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Governance & admin"
+  },
+  {
+   "id": "workspace-detail-page-in-fabric-capacity-metrics-app-preview",
+   "title": "Workspace Detail Page in Fabric Capacity Metrics app preview",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-26",
+   "summary": "Learn how to investigate the items and consumption of a single workspace in the Fabric Capacity Metrics app preview report.",
+   "url": "https://learn.microsoft.com/fabric/enterprise/metrics-app-preview-workspace-detail-page",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Governance & admin"
+  },
+  {
+   "id": "connect-ai-agents-to-the-hosted-onelake-mcp-server",
+   "title": "Connect AI agents to the hosted OneLake MCP server",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-22",
+   "summary": "Connect to the hosted OneLake MCP server (preview) to browse files, inspect table metadata, and get file-transfer instructions. Includes tools and parameters.",
+   "url": "https://learn.microsoft.com/fabric/onelake/onelake-hosted-mcp",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "OneLake"
+  },
+  {
+   "id": "discover-item-endpoints-with-the-onelake-api",
+   "title": "Discover item endpoints with the OneLake API",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-22",
+   "summary": "Use the OneLake endpoint discovery API (preview) to find connection details, authentication audiences, MCP servers, and skills for a Microsoft Fabric item.",
+   "url": "https://learn.microsoft.com/fabric/onelake/table-apis/endpoint-discovery-api",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "OneLake"
+  },
+  {
+   "id": "microsoft-copilot-in-power-bi-and-fabric",
+   "title": "Microsoft Copilot in Power BI and Fabric",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-20",
+   "summary": "Learn how Microsoft Copilot in Power BI and Microsoft Fabric helps users ask questions about data, incorporate Microsoft 365 context, and work across supported experiences.",
+   "url": "https://learn.microsoft.com/fabric/iq/connectors/copilot-power-bi-fabric",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Data Science"
+  },
+  {
+   "id": "block-and-unblock-fabric-apps",
+   "title": "Block and unblock Fabric apps",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-15",
+   "summary": "Use the OneLake catalog to review Fabric apps across your tenant, block app loading while owners investigate concerns, and restore access when resolved.",
+   "url": "https://learn.microsoft.com/fabric/governance/block-unblock-fabric-apps",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "OneLake"
+  },
+  {
+   "id": "consume-a-data-agent-in-microsoft-foundry",
+   "title": "Consume a data agent in Microsoft Foundry",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-14",
+   "summary": "Learn how to consume a data agent in Microsoft Foundry (preview).",
+   "url": "https://learn.microsoft.com/fabric/data-science/data-agent-foundry",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Data Science"
+  },
+  {
    "id": "custom-sql-pools-in-fabric-data-warehouse",
    "title": "Custom SQL Pools in Fabric Data Warehouse",
    "status": "ga",
@@ -134,6 +278,18 @@
    "url": "https://blog.fabric.microsoft.com/en-us/blog/",
    "source": "blog",
    "lessonId": null
+  },
+  {
+   "id": "monitor-job-runs-in-the-monitor-hub",
+   "title": "Monitor job runs in the Monitor hub",
+   "status": "preview",
+   "month": "2026-10",
+   "date": "2026-10-05",
+   "summary": "Learn how to use the Jobs page in the Monitor hub to track Fabric job runs, filter to failures, and open run details to investigate problems.",
+   "url": "https://learn.microsoft.com/fabric/admin/monitoring-hub-jobs",
+   "source": "docs",
+   "lessonId": null,
+   "workload": "Platform"
   },
   {
    "id": "fabric-iq-in-microsoft-365-copilot",
