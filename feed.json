@@ -1,6 +1,6 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-21T10:40:14Z",
+ "generatedAt": "2026-11-21T10:50:48Z",
  "source": {
   "title": "What's new in Microsoft Fabric",
   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
@@ -8,135 +8,33 @@
  },
  "items": [
   {
-   "id": "mirror-azure-monitor-data-in-microsoft-fabric",
-   "title": "Mirror Azure Monitor Data in Microsoft Fabric",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-10",
-   "summary": "Learn about the Mirror Azure Monitor feature in Microsoft Fabric, which connects Log Analytics tables to Fabric workloads without replicating data.",
-   "url": "https://learn.microsoft.com/fabric/mirroring/catalog-mirroring/azure-monitor",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Mirroring"
-  },
-  {
-   "id": "workspace-outbound-access-protection-for-power-bi-reports",
-   "title": "Workspace outbound access protection for Power BI reports",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-08",
-   "summary": "Learn how workspace outbound access protection applies to Power BI reports, including exceptions for semantic models in other workspaces.",
-   "url": "https://learn.microsoft.com/fabric/security/workspace-outbound-access-protection-power-bi-reports",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Platform"
-  },
-  {
-   "id": "azure-event-hubs-shortcuts-to-eventstreams",
-   "title": "Azure Event Hubs shortcuts to eventstreams",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-06",
-   "summary": "Learn how Azure Event Hubs shortcuts use a customer-owned event hub as an eventstream's default stream, including approval, topology, and preview limitations.",
-   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/event-hubs-shortcuts-overview",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Real-Time"
-  },
-  {
-   "id": "find-expensive-queries-from-capacity-metrics",
-   "title": "Find expensive queries from Capacity Metrics",
+   "id": "sql-analytics-endpoint-metadata-sync",
+   "title": "SQL analytics endpoint metadata sync",
    "status": "ga",
    "month": "2026-11",
-   "date": "2026-11-05",
+   "workload": "Data Engineering",
+   "summary": "New metadata sync on SQL analytics endpoint provides improved data freshness, and performance.",
+   "url": "https://learn.microsoft.com/fabric/data-engineering/sql-analytics-endpoint-metadata-sync",
+   "lessonId": null
+  },
+  {
+   "id": "publish-and-consume-business-events-from-eventstream",
+   "title": "Publish and consume Business Events from Eventstream",
+   "status": "ga",
+   "month": "2026-11",
+   "workload": "Real-Time",
+   "summary": "Turn streaming data into business events and consume them in Eventstream to filter, transform, and route business signals in real time.",
+   "url": "https://learn.microsoft.com/fabric/real-time-intelligence/event-streams/add-destination-business-events",
+   "lessonId": null
+  },
+  {
+   "id": "workspace-level-surge-protection",
+   "title": "Workspace-level surge protection",
+   "status": "ga",
+   "month": "2026-11",
    "workload": "Governance & admin",
-   "summary": "Find expensive queries from the Capacity Metrics app, now generally available.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
-   "lessonId": null
-  },
-  {
-   "id": "onelake-table-apis-now-with-iceberg-writes-plus-richer-table-metadata",
-   "title": "OneLake table APIs: Now with Iceberg writes, plus richer table metadata",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-05",
-   "workload": "OneLake",
-   "summary": "OneLake table APIs add Iceberg writes and richer table metadata, in preview.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
-   "lessonId": null
-  },
-  {
-   "id": "govern-fabric-connections-with-admin-apis-and-data-connection-policies",
-   "title": "Govern Fabric connections with admin APIs and data connection policies",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-05",
-   "workload": "Governance & admin",
-   "summary": "Admin APIs and data connection policies to govern Fabric connections, now in preview.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
-   "lessonId": null
-  },
-  {
-   "id": "salesforce-data-360-integration-with-onelake",
-   "title": "Salesforce Data 360 integration with OneLake",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-05",
-   "workload": "OneLake",
-   "summary": "Salesforce Data 360 integration with OneLake, now in preview.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
-   "lessonId": null
-  },
-  {
-   "id": "semantic-views",
-   "title": "Semantic views",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-05",
-   "summary": "Define business metrics once alongside your data in OneLake with Semantic Views. Reuse definitions across teams and tools, independently of compute.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/semantic-views-overview",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "OneLake"
-  },
-  {
-   "id": "create-fabric-apps-with-power-bi-desktop-for-apps",
-   "title": "Create Fabric apps with Power BI Desktop for Apps",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-05",
-   "summary": "Create custom Fabric apps with natural language in Power BI Desktop for Apps. Connect existing semantic models, preview and edit locally, and publish to Fabric.",
-   "url": "https://learn.microsoft.com/fabric/apps/create-app-power-bi-desktop",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Platform"
-  },
-  {
-   "id": "share-data-and-context-across-organizations-with-iq-share",
-   "title": "Share data and context across organizations with IQ Share",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-04",
-   "workload": "IQ",
-   "summary": "IQ Share lets organizations share data and context across tenants, now in preview.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
-   "lessonId": null
-  },
-  {
-   "id": "regular-expression-functions-in-microsoft-fabric-data-warehouse",
-   "title": "Regular expression functions in Microsoft Fabric Data Warehouse",
-   "status": "preview",
-   "month": "2026-11",
-   "date": "2026-11-03",
-   "workload": "Data Warehouse",
-   "summary": "Regular expression functions for Fabric Data Warehouse, now in preview.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
+   "summary": "Workspace-level surge protection lets capacity admins cap a workspace's compute consumption, automatically or manually block excessive consumers, exempt mission-critical workspaces, and restore blocked workspaces. For release status, see the Microsoft Fabric roadmap.",
+   "url": "https://learn.microsoft.com/fabric/enterprise/surge-protection",
    "lessonId": null
   },
   {
@@ -158,138 +56,6 @@
    "summary": "Mapping data flow transforms in Dataflow Gen2 and the built-in Mapping Data Flow migration experience are generally available. Author, execute, and monitor Spark-based transformations in Fabric, or upgrade eligible Azure Data Factory and Azure Synapse Analytics pipelines…",
    "url": "https://learn.microsoft.com/fabric/data-factory/dataflow-gen2-mapping-data-flows-transforms",
    "lessonId": null
-  },
-  {
-   "id": "use-onelake-as-native-storage-for-azure-databricks",
-   "title": "Use OneLake as native storage for Azure Databricks",
-   "status": "ga",
-   "month": "2026-10",
-   "date": "2026-10-30",
-   "workload": "OneLake",
-   "summary": "Azure Databricks can now use OneLake as native storage for Delta tables, generally available on the Fabric side.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
-   "lessonId": null
-  },
-  {
-   "id": "build-more-connected-workflows-with-fabric-actions-and-business-actions-in-fabri",
-   "title": "Build more connected workflows with Fabric Actions and Business Actions in Fabric Pipelines",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-30",
-   "workload": "Data Factory",
-   "summary": "Fabric Actions and Business Actions in pipelines, now in preview.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
-   "lessonId": null
-  },
-  {
-   "id": "data-connection-policies",
-   "title": "Data connection policies",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-29",
-   "summary": "Learn how Fabric tenant admins use data connection policies to govern which authentication methods and Microsoft Entra ID tenants cloud connections can use.",
-   "url": "https://learn.microsoft.com/fabric/data-factory/data-connection-policies",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Governance & admin"
-  },
-  {
-   "id": "workspace-detail-page-in-fabric-capacity-metrics-app-preview",
-   "title": "Workspace Detail Page in Fabric Capacity Metrics app preview",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-26",
-   "summary": "Learn how to investigate the items and consumption of a single workspace in the Fabric Capacity Metrics app preview report.",
-   "url": "https://learn.microsoft.com/fabric/enterprise/metrics-app-preview-workspace-detail-page",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Governance & admin"
-  },
-  {
-   "id": "connect-ai-agents-to-the-hosted-onelake-mcp-server",
-   "title": "Connect AI agents to the hosted OneLake MCP server",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-22",
-   "summary": "Connect to the hosted OneLake MCP server (preview) to browse files, inspect table metadata, and get file-transfer instructions. Includes tools and parameters.",
-   "url": "https://learn.microsoft.com/fabric/onelake/onelake-hosted-mcp",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "OneLake"
-  },
-  {
-   "id": "discover-item-endpoints-with-the-onelake-api",
-   "title": "Discover item endpoints with the OneLake API",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-22",
-   "summary": "Use the OneLake endpoint discovery API (preview) to find connection details, authentication audiences, MCP servers, and skills for a Microsoft Fabric item.",
-   "url": "https://learn.microsoft.com/fabric/onelake/table-apis/endpoint-discovery-api",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "OneLake"
-  },
-  {
-   "id": "microsoft-copilot-in-power-bi-and-fabric",
-   "title": "Microsoft Copilot in Power BI and Fabric",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-20",
-   "summary": "Learn how Microsoft Copilot in Power BI and Microsoft Fabric helps users ask questions about data, incorporate Microsoft 365 context, and work across supported experiences.",
-   "url": "https://learn.microsoft.com/fabric/iq/connectors/copilot-power-bi-fabric",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Data Science"
-  },
-  {
-   "id": "block-and-unblock-fabric-apps",
-   "title": "Block and unblock Fabric apps",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-15",
-   "summary": "Use the OneLake catalog to review Fabric apps across your tenant, block app loading while owners investigate concerns, and restore access when resolved.",
-   "url": "https://learn.microsoft.com/fabric/governance/block-unblock-fabric-apps",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "OneLake"
-  },
-  {
-   "id": "consume-a-data-agent-in-microsoft-foundry",
-   "title": "Consume a data agent in Microsoft Foundry",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-14",
-   "summary": "Learn how to consume a data agent in Microsoft Foundry (preview).",
-   "url": "https://learn.microsoft.com/fabric/data-science/data-agent-foundry",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Data Science"
-  },
-  {
-   "id": "custom-sql-pools-in-fabric-data-warehouse",
-   "title": "Custom SQL Pools in Fabric Data Warehouse",
-   "status": "ga",
-   "month": "2026-10",
-   "date": "2026-10-12",
-   "workload": "Data Warehouse",
-   "summary": "Custom SQL pools are now generally available in Fabric Data Warehouse.",
-   "url": "https://blog.fabric.microsoft.com/en-us/blog/",
-   "source": "blog",
-   "lessonId": null
-  },
-  {
-   "id": "monitor-job-runs-in-the-monitor-hub",
-   "title": "Monitor job runs in the Monitor hub",
-   "status": "preview",
-   "month": "2026-10",
-   "date": "2026-10-05",
-   "summary": "Learn how to use the Jobs page in the Monitor hub to track Fabric job runs, filter to failures, and open run details to investigate problems.",
-   "url": "https://learn.microsoft.com/fabric/admin/monitoring-hub-jobs",
-   "source": "docs",
-   "lessonId": null,
-   "workload": "Platform"
   },
   {
    "id": "fabric-iq-in-microsoft-365-copilot",
@@ -2352,16 +2118,6 @@
    "lessonId": null
   },
   {
-   "id": "eventstream-business-events-publisher",
-   "title": "Eventstream Business Events publisher",
-   "status": "preview",
-   "month": null,
-   "workload": "Real-Time",
-   "summary": "Eventstream now publishes Business Events as a built-in destination, so you filter, aggregate, threshold, and emit governed, discoverable business signals from the Eventstream canvas with no code.",
-   "url": "https://learn.microsoft.com/fabric/fundamentals/whats-new",
-   "lessonId": null
-  },
-  {
    "id": "eventstream-workspace-monitoring",
    "title": "Eventstream workspace monitoring",
    "status": "preview",
@@ -3092,16 +2848,6 @@
    "lessonId": null
   },
   {
-   "id": "sql-analytics-endpoint-metadata-sync-option",
-   "title": "SQL analytics endpoint metadata sync option",
-   "status": "preview",
-   "month": null,
-   "workload": "Data Engineering",
-   "summary": "You can now opt in to the new SQL analytics endpoint metadata sync option, a preview feature. The new option, which is currently opt-in only and currently applies only to new SQL analytics endpoints, is faster, provides a new manual metadata sync option, and provides time…",
-   "url": "https://learn.microsoft.com/fabric/data-engineering/sql-analytics-endpoint-metadata-sync",
-   "lessonId": null
-  },
-  {
    "id": "sql-database-data-virtualization",
    "title": "SQL database data virtualization",
    "status": "preview",
@@ -3189,16 +2935,6 @@
    "workload": "Data Warehouse",
    "summary": "Using Source control with Warehouse, you can manage development and deployment of versioned warehouse objects. You can use SQL Database Projects extension available inside of Visual Studio Code. For more information on warehouse source control, see CI/CD with Warehouses in…",
    "url": "https://learn.microsoft.com/fabric/data-warehouse/development-deployment",
-   "lessonId": null
-  },
-  {
-   "id": "workspace-level-surge-protection",
-   "title": "Workspace-level surge protection",
-   "status": "preview",
-   "month": null,
-   "workload": "Governance & admin",
-   "summary": "Workspace-level surge protection lets capacity admins cap a workspace's compute consumption, automatically or manually block excessive consumers, exempt mission-critical workspaces, and restore blocked workspaces.",
-   "url": "https://learn.microsoft.com/fabric/enterprise/surge-protection",
    "lessonId": null
   },
   {
